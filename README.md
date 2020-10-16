@@ -1,6 +1,6 @@
 # wordpress-developer-challenge
 
-Olá. Seja bem vindo ao desafio WP Buildbox.
+Olá! Seja bem vindo ao desafio Wordpress Buildbox.
 
 Nosso objetivo é validar seus conhecimentos avançados em desenvolvimento WordPress, além de habilidades com front-end.
 
@@ -9,6 +9,7 @@ Estamos à procura de alguém que vá além de customizar temas prontos. Nossos 
 Nesse link você encontra o protótipo de um site que vamos utilizar como base. Vamos construir uma plataforma de vídeos chamada “Play”. Você precisa criar o tema WordPress (front-end e back-end) com fidelidade ao design proposto e que seja responsivo, se adaptando a qualquer tamanho de tela.
 
 **Desktop:** https://xd.adobe.com/view/4ef93bf1-8b2a-4d9f-8dc1-38bb056538ff-1baa/
+
 **Mobile:** https://xd.adobe.com/view/736a1c45-d953-4fda-9e02-3c86d2a0047b-2639/
 
 ## Pontos de atenção:
@@ -41,7 +42,7 @@ https://br.wordpress.org/plugins/custom-post-type-ui/
 * Se forem utilizados, as configurações tanto de Custom Post Types quanto de Custom fields devem ser exportadas para código PHP e adicionadas ao código do tema. Não vamos considerar nenhuma configuração que venha do painel do WordPress.
 
 
-**Para submeter o resultado deste desafio, você deve fazer um Fork deste repositório e solicitar um Pull Request do seu tema (wp-content/themes/desafio-wp), com seu nome completo na descrição, para nossa avaliação. Nós aqui na Build vamos instalar e avaliar seu projeto. **
+**Para submeter o resultado deste desafio, você deve fazer um Fork deste repositório e solicitar um Pull Request do seu tema (wp-content/themes/desafio-wp), com seu nome completo na descrição, para nossa avaliação. Nós aqui na Build vamos instalar e avaliar seu projeto.**
 
 
 Mãos à obra e boa sorte!
