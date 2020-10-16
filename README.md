@@ -24,12 +24,9 @@ Nesse link você encontra o protótipo de um site que vamos utilizar como base. 
 - Criar uma taxonomia customizada para segmentar os vídeos (Filmes, Documentários, Séries);
 - Todas as informações dos vídeos devem ser carregadas dinamicamente na tela consultando o banco de dados, como Título, Imagem de Capa, Descrição, Tempo de Duração, Sinopse e Embed de Vídeo. Também deve ser possível editar todas essas informação de cada vídeo na edição de post do painel de admin;
 - O tema deve ter no mínimo 3 templates:
-    o	Home
-    último vídeo publicado em destaque e carrosséis horizontais agrupados por taxonomia
-    o	Arquivo
-    página de arquivo da taxonomia que exibe todos os vídeos de cada tipo (Filmes, Documentários, Séries)
-    o	Single
-    página de detalhe de um vídeo com Embed de YouTube
+    - Home: último vídeo publicado em destaque e carrosséis horizontais agrupados por taxonomia
+    - Arquivo: página de arquivo da taxonomia que exibe todos os vídeos de cada tipo (Filmes, Documentários, Séries)
+    - Single: página de detalhe de um vídeo com Embed de YouTube
 
 ## Plugins WordPress permitidos:
 
