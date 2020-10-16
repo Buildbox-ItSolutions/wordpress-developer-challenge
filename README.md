@@ -30,10 +30,10 @@ Nesse link você encontra o protótipo de um site que vamos utilizar como base. 
 
 ## Plugins WordPress permitidos:
 
-- Advanced Custom Fields*
+- Advanced Custom Fields
 https://wordpress.org/plugins/advanced-custom-fields/
 
-- Custom Post Type UI*
+- Custom Post Type UI
 https://br.wordpress.org/plugins/custom-post-type-ui/
 
 * Se forem utilizados, as configurações tanto de Custom Post Types quanto de Custom fields devem ser exportadas para código PHP e adicionadas ao código do tema. Não vamos considerar nenhuma configuração que venha do painel do WordPress.
