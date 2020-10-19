@@ -38,13 +38,13 @@ https://xd.adobe.com/view/736a1c45-d953-4fda-9e02-3c86d2a0047b-2639/specs
 https://wordpress.org/plugins/advanced-custom-fields/
 
 - Custom Post Type UI\
-https://br.wordpress.org/plugins/custom-post-type-ui/\
+https://br.wordpress.org/plugins/custom-post-type-ui/
 
 Se forem utilizados, as configurações tanto de Custom Post Types quanto de Custom fields devem ser exportadas para código PHP e adicionadas ao código do tema. Não vamos considerar nenhuma configuração que venha do painel do WordPress.
 
 ## Como enviar:
 
-**Para submeter o resultado deste desafio, você deve fazer um Fork deste repositório e solicitar um Pull Request do seu tema (wp-content/themes/desafio-wp), com seu nome completo na descrição, para nossa avaliação. Nós aqui na Build vamos instalar e avaliar seu projeto.**
+Para submeter o resultado deste desafio, você deve fazer um Fork deste repositório e solicitar um Pull Request do seu tema (wp-content/themes/desafio-wp), com seu nome completo na descrição, para nossa avaliação. Nós aqui na Build vamos instalar e avaliar seu projeto.
 
 
 Mãos à obra e boa sorte!
