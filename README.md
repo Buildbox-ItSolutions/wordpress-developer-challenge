@@ -10,8 +10,10 @@ Nesse link você encontra o protótipo de um site que vamos utilizar como base. 
 
 ## Design:
 
-Desktop:\ https://xd.adobe.com/view/4ef93bf1-8b2a-4d9f-8dc1-38bb056538ff-1baa/specs
-Mobile:\ https://xd.adobe.com/view/736a1c45-d953-4fda-9e02-3c86d2a0047b-2639/specs
+Desktop:\
+https://xd.adobe.com/view/4ef93bf1-8b2a-4d9f-8dc1-38bb056538ff-1baa/specs
+Mobile:\
+https://xd.adobe.com/view/736a1c45-d953-4fda-9e02-3c86d2a0047b-2639/specs
 
 ## Pontos de atenção:
 
