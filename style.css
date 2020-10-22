@@ -7,3 +7,306 @@ Author: Fagner JB.
 Author URI: https://fagnerjb.com/
 License: MIT
 */
+@font-face {
+   font-family: "Circular Spotify";
+   font-weight: normal;
+   src: url('assets/fonts/CircularSpotifyTxT-Med.eot');
+   src: url('assets/fonts/CircularSpotifyTxT-Med.eot#ie') format('embedded-opentype'),
+      url('assets/fonts/CircularSpotifyTxT-Med.woff2') format('woff2'),
+      url('assets/fonts/CircularSpotifyTxT-Med.woff') format('woff'),
+      url('assets/fonts/CircularSpotifyTxT-Med.ttf')  format('truetype'),
+      url('assets/fonts/CircularSpotifyTxT-Med.svg#svg') format('svg');
+}
+
+@font-face {
+   font-family: "Circular Spotify";
+   font-weight: bold;
+   src: url('assets/fonts/CircularSpotifyTxT-Black.eot');
+   src: url('assets/fonts/CircularSpotifyTxT-Black.eot#ie') format('embedded-opentype'),
+      url('assets/fonts/CircularSpotifyTxT-Black.woff2') format('woff2'),
+      url('assets/fonts/CircularSpotifyTxT-Black.woff') format('woff'),
+      url('assets/fonts/CircularSpotifyTxT-Black.ttf')  format('truetype'),
+      url('assets/fonts/CircularSpotifyTxT-Black.svg#svg') format('svg');
+}
+
+:root{
+   --color-background:#000;
+   --color-dark: #121212;
+   --color-foreground: #fff;
+   --color-alternative: #f00;
+   font-size: 16pt;
+}
+
+*::before,
+*::after,
+*{
+   margin:0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+   width: 10px;
+   height: 10px;
+ }
+
+ /* Track */
+ ::-webkit-scrollbar-track {
+   background: var(--color-dark);
+ }
+
+ /* Handle */
+ ::-webkit-scrollbar-thumb {
+   background: var(--color-foreground);
+   border-radius: 5px;
+ }
+
+ /* Handle on hover */
+ ::-webkit-scrollbar-thumb:hover {
+   background: var(--color-alternative);
+ }
+
+body{
+   background-color: var(--color-background);
+   font-family: "Circular Spotify",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+   color: var(--color-foreground);
+}
+
+a{
+   color: inherit;
+   text-decoration: none;
+}
+
+.logo-svg{
+   vertical-align: middle;
+   fill: var(--color-foreground);
+}
+
+.current-cat,
+.carousels__title{
+   color: var(--color-alternative);
+}
+
+header{
+   width: 100%;
+   background-color: rgba(0, 0, 0, .9);
+   position: fixed;
+   top: 0;
+   padding: 1rem 0;
+}
+
+.container{
+   width: 100%;
+   max-width: 1640px;
+   margin: auto;
+}
+
+.header__container{
+   display: flex;
+   flex-flow: row nowrap;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.header__logo,
+.footer__logo{
+   font-size: 1.33rem;
+   font-weight: bold;
+   text-transform: lowercase;
+   letter-spacing: -0.05rem;
+}
+
+.header__menu{
+   list-style: none;
+   display: flex;
+   flex-flow: row nowrap;
+   gap: 50px;
+   font-size: .77rem;
+   letter-spacing: -0.54px;
+}
+
+.video-cat,
+.video-duration{
+   width: 128px;
+   padding: .45rem 0 .25rem;
+   border-radius: 3px;
+   text-align: center;
+   font-size: .7rem;
+   letter-spacing: 0.54px;
+}
+
+.video-cat{
+   background-color: var(--color-foreground);
+   color: #5A5A5A;
+}
+
+.video-duration{
+   border: 1px solid var(--color-foreground)
+}
+
+.feature{
+   min-height: 100vh;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.feature__content{
+   min-height: 100vh;
+   background-color: rgba(0, 0, 0, .3)
+}
+
+.feature__info{
+   padding-top: 45vh;
+}
+
+.feature__title{
+   font-size: 3rem;
+   line-height: 3rem;
+   font-weight: bold;
+   letter-spacing: -4px;
+   width: 100%;
+   max-width: 820px;
+   padding: 1.05rem 0;
+}
+
+.feature__btn{
+   background-color: var(--color-alternative);
+   border-radius: 3px;
+   width: 310px;
+   padding: 1rem 0;
+   text-align: center;
+}
+
+.video-info{
+   display: flex;
+   flex-flow: row nowrap;
+   gap: 10px;
+}
+
+.carousels__title{
+   font-size: 1.33rem;
+   padding: 2.2rem 0 1.1rem;
+}
+
+.carousels__videos{
+   display: flex;
+   flex-flow: row nowrap;
+   gap: 20px;
+   overflow-x: scroll;
+}
+
+.video{
+   width: 200px;
+}
+
+.video__thumbnail{
+   width: 200px;
+   height: 320px;
+   overflow: hidden;
+}
+
+.video__thumbnail img{
+   width: auto;
+   height: 320px;
+}
+
+.video__duration{
+   margin-top: 1rem;
+}
+
+.video__name{
+   margin: .6rem 0 1rem;
+   white-space: normal;
+   letter-spacing: -0.3px;
+}
+
+footer{
+   background-color: var(--color-dark);
+   margin-top: 5.5rem;
+   padding: 3.5rem 0 5.5rem;
+}
+
+.footer__copy{
+   margin-top: 1.5rem;
+   font-size: .7rem;
+}
+
+
+.archive-container{
+   display: flex;
+   flex-flow: row nowrap;
+   gap: 25px;
+}
+
+.archive-info{
+   flex-basis: 50%;
+}
+
+.archive-info__sticky{
+   position: sticky;
+   top: 8rem;
+}
+
+.archive-info__title{
+   margin-top: 8rem;
+   margin-bottom: 1rem;
+   color: var(--color-alternative);
+   font-size: 1.5rem;
+}
+
+.archive-info__description,
+.single-video__description{
+   font-size: .75rem;
+   letter-spacing: 0.54px;
+}
+
+.archive-videos{
+   margin-top: 8rem;
+   flex-basis: 50%;
+   display: flex;
+   flex-flow: row wrap;
+   gap: 20px;
+}
+
+
+.small-container{
+   width: 100%;
+   max-width: 960px;
+   margin: auto;
+}
+
+.single-video{
+   margin-top: 8rem;
+}
+
+.single-title{
+   margin: 1rem 0 3rem;
+}
+
+.single-video__embed{
+   position: relative;
+   display: block;
+   width: 100%;
+   padding: 0;
+   overflow: hidden;
+}
+
+.single-video__embed::before{
+   display: block;
+   content: "";
+   padding-top:56.25%
+}
+
+.video-embed{
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   border: 0;
+}
+
+.single-video__description{
+   margin-top: 3rem;
+}
