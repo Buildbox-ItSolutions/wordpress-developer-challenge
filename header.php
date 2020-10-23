@@ -10,7 +10,7 @@
 </head>
 
 <body <?php body_class() ?>>
-   <header>
+   <header class="header">
       <div class="header__container container">
          <div class="header__logo">
             <a href="<?php bloginfo('url') ?>">
@@ -20,7 +20,7 @@
                <?php bloginfo("title"); ?>
             </a>
          </div>
-         <nav>
+         <nav class="header__nav">
             <ul class="header__menu">
                <?php
 

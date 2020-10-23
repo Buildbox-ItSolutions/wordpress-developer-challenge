@@ -7,9 +7,17 @@ require_once('includes/video_type.php');
 add_action('wp_enqueue_scripts', 'enqueue_css_js');
 function enqueue_css_js()
 {
+
+   wp_enqueue_style(
+      'fontawesome',
+      'https://use.fontawesome.com/releases/v5.15.1/css/all.css'
+   );
+
+
    wp_enqueue_style(
       'main-style',
-      get_bloginfo('stylesheet_url')
+      get_bloginfo('stylesheet_url'),
+      array('fontawesome')
    );
 }
 
@@ -18,6 +26,9 @@ add_action('wp_head', 'head_tags');
 function head_tags()
 {
 ?>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <link rel="shortcut icon" href="<?php echo get_template_directory_uri() ?>/assets/favicon.ico">
    <title>
       <?php
 

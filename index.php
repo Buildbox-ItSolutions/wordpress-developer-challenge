@@ -13,7 +13,7 @@ $duration    = get_video_info($feature->ID);
 
 ?>
 <div class="feature" style="background-image: url(<?php echo $feature_img ?>)">
-   <div class="feature__content">
+   <div class="feature__layer">
       <div class="container">
          <div class="feature__info video-info">
             <div class="feature__info__cat video-cat">
