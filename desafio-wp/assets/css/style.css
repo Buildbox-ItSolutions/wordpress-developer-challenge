@@ -1,0 +1,988 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+  outline: none;
+  word-wrap: break-word;
+}
+
+li {
+  list-style: none;
+}
+
+@font-face {
+  font-family: "Circular Spotify Tx T Black";
+  src: url("../../assets/fonts/CircularSpotifyTxT-Black.eot");
+  src: url("../../assets/fonts/CircularSpotifyTxT-Black.svg");
+  src: url("../../assets/fonts/CircularSpotifyTxT-Black.ttf");
+  src: url("../../assets/fonts/CircularSpotifyTxT-Black.woff");
+  src: url("../../assets/fonts/CircularSpotifyTxT-Black.woff2");
+}
+
+@font-face {
+  font-family: "Circular Spotify Tx T Medium";
+  src: url("../../assets/fonts/CircularSpotifyTxT-Med.eot");
+  src: url("../../assets/fonts/CircularSpotifyTxT-Med.svg");
+  src: url("../../assets/fonts/CircularSpotifyTxT-Med.ttf");
+  src: url("../../assets/fonts/CircularSpotifyTxT-Med.woff");
+  src: url("../../assets/fonts/CircularSpotifyTxT-Med.woff2");
+}
+
+@font-face {
+  font-family: "Circular Spotify Tx T Book";
+  src: url("../../assets/fonts/CircularSpotifyTxT-Book.eot");
+  src: url("../../assets/fonts/CircularSpotifyTxT-Book.svg");
+  src: url("../../assets/fonts/CircularSpotifyTxT-Book.ttf");
+  src: url("../../assets/fonts/CircularSpotifyTxT-Book.woff");
+  src: url("../../assets/fonts/CircularSpotifyTxT-Book.woff2");
+}
+
+@font-face {
+  font-family: "Circular Spotify Tx T Light";
+  src: url("../../assets/fonts/CircularSpotifyTxT-Light.eot");
+  src: url("../../assets/fonts/CircularSpotifyTxT-Light.svg");
+  src: url("../../assets/fonts/CircularSpotifyTxT-Light.ttf");
+  src: url("../../assets/fonts/CircularSpotifyTxT-Light.woff");
+  src: url("../../assets/fonts/CircularSpotifyTxT-Light.woff2");
+}
+
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container, .container-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media screen and (min-width: 1600px) {
+  .container, .container-grid {
+    max-width: 1600px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1599px) {
+  .container, .container-grid {
+    max-width: 1200px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .container, .container-grid {
+    max-width: 992px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .container, .container-grid {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .container, .container-grid {
+    max-width: 576px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .container, .container-grid {
+    max-width: 576px;
+  }
+}
+
+header {
+  background: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  top: 0;
+  padding: 30px 0;
+}
+
+header .container-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .logo a {
+  max-width: 100px;
+}
+
+@media screen and (max-width: 575px) {
+  header .logo a {
+    width: 70px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  header .logo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 2000;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 10px 0;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  header nav {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 2000;
+    width: 100%;
+    left: 0;
+  }
+}
+
+header nav ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  gap: 15px 40px;
+}
+
+@media screen and (max-width: 575px) {
+  header nav ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    padding: 15px 0 10px 0;
+    text-align: center;
+  }
+}
+
+header nav li.active a {
+  color: #FF0000;
+}
+
+header nav li.ico-filmes a::before {
+  display: none;
+}
+
+@media screen and (max-width: 575px) {
+  header nav li.ico-filmes a::before {
+    display: block;
+    width: 25px;
+    margin: 0 auto 10px auto;
+    height: 23px;
+    content: url(../img/ico-filme.png);
+  }
+}
+
+header nav li.ico-documentarios a::before {
+  display: none;
+}
+
+@media screen and (max-width: 575px) {
+  header nav li.ico-documentarios a::before {
+    display: block;
+    width: 25px;
+    margin: 0 auto 10px auto;
+    height: 23px;
+    content: url(../img/ico-doc.png);
+  }
+}
+
+header nav li.ico-series a::before {
+  display: none;
+}
+
+@media screen and (max-width: 575px) {
+  header nav li.ico-series a::before {
+    display: block;
+    width: 25px;
+    margin: 0 auto 10px auto;
+    height: 23px;
+    content: url(../img/ico-series.png);
+  }
+}
+
+header nav li.active.icon a::before, header nav li:hover.icon a::before {
+  -webkit-filter: invert(88%) sepia(99%) saturate(4821%) hue-rotate(358deg) brightness(105%) contrast(101%);
+          filter: invert(88%) sepia(99%) saturate(4821%) hue-rotate(358deg) brightness(105%) contrast(101%);
+}
+
+header nav a {
+  font-family: "Circular Spotify Tx T Medium", sans-serif;
+  font-size: 1.1875em;
+  color: #ffffff;
+  padding: 5px;
+}
+
+header nav a:hover {
+  color: #FF0000;
+}
+
+@media screen and (max-width: 575px) {
+  header nav a {
+    font-family: "Circular Spotify Tx T Medium", sans-serif;
+    font-size: 0.875em;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  header {
+    position: static;
+    height: 0;
+    padding: 0;
+  }
+}
+
+footer {
+  background: #121212;
+  padding: 110px 0 180px 0;
+  color: #ffffff;
+  font-size: 1em;
+  letter-spacing: 0.54px;
+}
+
+footer p {
+  margin-top: 30px;
+  width: 100%;
+}
+
+footer a {
+  display: inline-block;
+}
+
+@media screen and (max-width: 575px) {
+  footer {
+    padding: 80px 0 160px 0;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  footer .container {
+    width: 100%;
+  }
+}
+
+.not-found {
+  margin: 200px 0 100px 0;
+  text-align: center;
+  color: #ffffff;
+}
+
+.not-found p {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.not-found span {
+  font-size: 1.5em;
+}
+
+.main-index {
+  margin-top: 60px;
+}
+
+body, html {
+  background: #000000;
+  padding-top: 0;
+}
+
+a, form, p, span {
+  font-family: "Circular Spotify Tx T Medium", sans-serif;
+  font-size: 1.125em;
+}
+
+@media screen and (max-width: 575px) {
+  a, form, p, span {
+    font-family: "Circular Spotify Tx T Medium", sans-serif;
+    font-size: 0.875em;
+  }
+}
+
+h1, h2, h3 {
+  font-weight: normal;
+}
+
+.btn-sm {
+  color: #ffffff;
+  border-radius: 3px;
+  font-family: "Circular Spotify Tx T Medium", sans-serif;
+  font-size: 1.125em;
+  border: 1px solid #fff;
+  padding: 6px 40px 4px 40px;
+  line-height: 1.0625em;
+}
+
+@media screen and (max-width: 575px) {
+  .btn-sm {
+    padding: 6px 35px 4px 35px;
+    font-family: "Circular Spotify Tx T Medium", sans-serif;
+    font-size: 0.875em;
+  }
+}
+
+.btn-lg {
+  font-family: "Circular Spotify Tx T Medium", sans-serif;
+  font-size: 1.125em;
+  color: #ffffff;
+  background: #FF0000;
+  display: inline-block;
+  padding: 23px 75px;
+  letter-spacing: 0.54px;
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 575px) {
+  .btn-lg {
+    padding: 15px 40px;
+    font-family: "Circular Spotify Tx T Medium", sans-serif;
+    font-size: 0.875em;
+  }
+}
+
+.intro {
+  height: calc(100vh + 32px);
+  margin-top: -32px;
+  overflow: hidden;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.intro .bg {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+}
+
+.intro .bg img {
+  -webkit-filter: opacity(50%);
+          filter: opacity(50%);
+}
+
+@media screen and (max-width: 575px) {
+  .intro .bg img {
+    height: 100vh;
+    max-width: 200%;
+    overflow: hidden;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .intro .bg img {
+    height: 100vh;
+    max-width: 200%;
+    overflow: hidden;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .intro .bg img {
+    height: 100vh;
+    overflow: hidden;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .intro .bg img {
+    overflow: hidden;
+  }
+}
+
+.intro .container-grid {
+  padding-top: 12%;
+  z-index: 2;
+  width: 100%;
+}
+
+@media screen and (min-width: 1600px) {
+  .intro .container-grid {
+    padding-top: 15%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .intro .container-grid {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.intro h1 {
+  font-size: 6.25em;
+  color: #ffffff;
+  font-family: "Circular Spotify Tx T Black", sans-serif;
+  max-width: 800px;
+  letter-spacing: -4px;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 575px) {
+  .intro h1 {
+    font-size: 2.8125em;
+    max-width: 80%;
+    letter-spacing: -1.6px;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .intro h1 {
+    font-size: 3.125em;
+    letter-spacing: -1.6px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .intro h1 {
+    font-size: 4.375em;
+  }
+}
+
+.intro .bts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.intro .bts .btn-sm:first-child {
+  margin-right: 10px;
+  background: #ffffff;
+  color: #5A5A5A;
+}
+
+.item img {
+  border-radius: 3px;
+}
+
+.item .link-page {
+  height: auto;
+  border-radius: 3px;
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1599px) {
+  .item .link-page {
+    height: auto;
+    height: 387px;
+    overflow: hidden;
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .item {
+    min-width: -webkit-min-content;
+    min-width: -moz-min-content;
+    min-width: min-content;
+    width: calc(50% - 20px);
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .item {
+    width: 180px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .item {
+    width: 200px;
+  }
+}
+
+.item span {
+  display: inline-block;
+  margin: 30px 0 15px 0;
+}
+
+.item h3 {
+  color: #ffffff;
+  font-family: "Circular Spotify Tx T Black", sans-serif;
+  font-size: 1.6875em;
+  margin-right: 20px;
+  letter-spacing: -0.3px;
+}
+
+@media screen and (max-width: 575px) {
+  .item h3 {
+    font-size: 1.4375em;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .item h3 {
+    font-size: 1.5625em;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1599px) {
+  .item h3 {
+    font-size: 1.25em;
+  }
+}
+
+.main {
+  padding: 100px 20px 0 0;
+}
+
+.main .slider {
+  overflow: hidden;
+  margin-bottom: 60px;
+}
+
+@media screen and (max-width: 575px) {
+  .main .slider {
+    padding: 30px 0 0 0;
+  }
+}
+
+.main .slider .item {
+  width: calc(100% - 30px);
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 575px) {
+  .main .slider .item {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .main .slider .slick-slide {
+    width: 50% !important;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .main .slider .slick-slide {
+    width: 33.333% !important;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .main .slider .slick-slide {
+    width: 25% !important;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .main .slider .slick-slide {
+    width: 25% !important;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1599px) {
+  .main .slider .slick-slide {
+    width: 16.666% !important;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .main .slider .slick-slide {
+    width: 16.666% !important;
+  }
+}
+
+.main h2 {
+  font-size: 2.1875em;
+  font-family: "Circular Spotify Tx T Black", sans-serif;
+  color: #FF0000;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 575px) {
+  .main h2 {
+    font-size: 1.875em;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .main h2 {
+    font-size: 1.875em;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1599px) {
+  .main h2 {
+    font-size: 1.875em;
+  }
+}
+
+.list-categoria {
+  padding: 150px 0 100px 0;
+}
+
+@media screen and (max-width: 575px) {
+  .list-categoria {
+    padding: 100px 0 60px 0;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .list-categoria {
+    padding: 215px 0 60px 0;
+  }
+}
+
+.list-categoria .container-grid {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  gap: 20px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 575px) {
+  .list-categoria .container-grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .list-categoria .container-grid {
+    -ms-grid-columns: 60% 40%;
+        grid-template-columns: 60% 40%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .list-categoria .container-grid {
+    -ms-grid-columns: 60% 40%;
+        grid-template-columns: 60% 40%;
+    gap: 40px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .list-categoria .container-grid {
+    -ms-grid-columns: 45% 55%;
+        grid-template-columns: 45% 55%;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1599px) {
+  .list-categoria .container-grid {
+    -ms-grid-columns: 42% 58%;
+        grid-template-columns: 42% 58%;
+  }
+}
+
+.list-categoria .descri {
+  position: relative;
+}
+
+.list-categoria .info {
+  position: fixed;
+  max-width: 40%;
+  z-index: 4;
+}
+
+@media screen and (max-width: 575px) {
+  .list-categoria .info {
+    position: static;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .list-categoria .info {
+    max-width: 44%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .list-categoria .info {
+    max-width: 52%;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .list-categoria .info {
+    max-width: 40%;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1599px) {
+  .list-categoria .info {
+    max-width: 35%;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .list-categoria .info {
+    max-width: 35%;
+  }
+}
+
+.list-categoria h2 {
+  font-size: 2.5em;
+  font-family: "Circular Spotify Tx T Black", sans-serif;
+  color: #FF0000;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 575px) {
+  .list-categoria h2 {
+    font-size: 1.875em;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .list-categoria h2 {
+    font-size: 2.1875em;
+  }
+}
+
+.list-categoria p {
+  color: #ffffff;
+  word-break: break-all;
+  line-height: 35px;
+}
+
+.list-categoria .content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 100px;
+  gap: 30px;
+  row-gap: 100px;
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .list-categoria .content {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    justify-items: center;
+    gap: 40px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .list-categoria .content {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .list-categoria .content {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    justify-items: center;
+    gap: 40px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .list-categoria .content {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 0 0 0 40px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1599px) {
+  .list-categoria .content {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px 20px;
+  }
+}
+
+.list-categoria .item {
+  max-width: 100%;
+  padding: 0;
+  min-width: -webkit-min-content;
+  min-width: -moz-min-content;
+  min-width: min-content;
+}
+
+@media screen and (max-width: 575px) {
+  .list-categoria .item {
+    min-width: -webkit-fit-content;
+    min-width: -moz-fit-content;
+    min-width: fit-content;
+  }
+}
+
+.single {
+  padding: 150px 0 120px 0;
+}
+
+@media screen and (max-width: 575px) {
+  .single {
+    padding: 100px 0 60px 0;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .single .container-grid {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.single .content {
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1600px) {
+  .single .content {
+    width: 65%;
+  }
+}
+
+.single .bts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.single .bts .btn-sm:first-child {
+  margin-right: 10px;
+  background: #ffffff;
+  color: #5A5A5A;
+}
+
+.single h1 {
+  font-size: 2.5em;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1599px) {
+  .single h1 {
+    font-size: 4.375em;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .single h1 {
+    font-size: 4.375em;
+  }
+}
+
+.single .vid {
+  position: relative;
+  margin: 60px 0;
+  overflow: hidden;
+}
+
+.single .wp-video video {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.single .embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.single .embed-container video,
+.single .embed-container object,
+.single .embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.single p {
+  color: #ffffff;
+  line-height: 35px;
+}

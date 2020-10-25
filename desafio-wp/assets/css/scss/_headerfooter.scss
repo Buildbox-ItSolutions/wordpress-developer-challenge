@@ -1,0 +1,167 @@
+
+header{
+    background: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    padding: 30px 0;
+    .container-grid{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo a{
+        max-width: 100px;
+        @include media-querie(xs){
+            width: 70px;
+        }
+    }
+    .logo{
+        @include media-querie(xs){
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 2000;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        } 
+    }
+    nav{
+        @include media-querie(xs){
+            position: fixed;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 2000;
+            width: 100%;
+            left: 0;
+        } 
+    }
+
+    nav ul{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 15px 40px;
+        @include media-querie(xs){
+            justify-content: center;
+            grid-template-columns: 1fr 1fr 1fr;
+            padding: 15px 0 10px 0;
+            text-align: center;
+        }
+        
+    }
+    nav li{
+        
+        &.active a{
+            color: $cor-secundaria;
+            
+        }
+       
+        &.ico-filmes a::before{
+            display: none;
+            @include media-querie(xs){
+                display: block;
+                width: 25px;
+                margin: 0 auto 10px auto;
+                height: 23px;
+                content: url(../img/ico-filme.png);
+            }
+            
+        }
+        &.ico-documentarios a::before{
+            display: none;
+            @include media-querie(xs){
+                display: block;
+                width: 25px;
+                margin: 0 auto 10px auto;
+                height: 23px;
+                content: url(../img/ico-doc.png);
+            }
+            
+        }
+        &.ico-series a::before{
+            display: none;
+            @include media-querie(xs){
+                display: block;
+                width: 25px;
+                margin: 0 auto 10px auto;
+                height: 23px;
+                content: url(../img/ico-series.png);
+            }
+            
+        }
+        &.active, &:hover{
+            &.icon a::before{
+                filter: invert(88%) sepia(99%) saturate(4821%) hue-rotate(358deg) brightness(105%) contrast(101%);
+            }
+        }
+        
+
+    }
+    nav a{
+        @include tipo-1(19);
+        color: $cor-primaria;
+        padding: 5px;
+        &:hover{
+            color: $cor-secundaria;
+        }
+        @include media-querie(xs){
+            @include tipo-1(14);
+        }
+
+        
+    }
+
+    @include media-querie(xs){
+        position: static;
+        height: 0;
+        padding: 0;
+    }
+
+}
+
+footer{
+    background: #121212;
+    padding: 110px 0 180px 0;
+    color: $cor-primaria;
+    font-size: em(16);
+    letter-spacing: 0.54px;
+    p{
+        margin-top: 30px;
+        width: 100%;
+    }
+    a{
+        display: inline-block;
+    }
+
+    @include media-querie(xs){
+        padding: 80px 0 160px 0;
+        text-align: center;
+    }
+    .container{
+        @include media-querie(xs){
+            width: 100%;
+        }
+    }
+}
+
+.not-found{
+    margin: 200px 0 100px 0;
+    text-align:center; 
+    color: $cor-primaria;
+    p{
+        font-size: em(40);
+        margin-bottom: 20px;
+    }
+    span{
+        font-size: em(24);
+    }
+}
+
+.main-index{
+    margin-top: 60px;
+}
+
