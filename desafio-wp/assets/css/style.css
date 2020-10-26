@@ -239,12 +239,12 @@ header nav li.active a {
   color: #FF0000;
 }
 
-header nav li.ico-filmes a::before {
+header nav li:first-child a::before {
   display: none;
 }
 
 @media screen and (max-width: 575px) {
-  header nav li.ico-filmes a::before {
+  header nav li:first-child a::before {
     display: block;
     width: 25px;
     margin: 0 auto 10px auto;
@@ -253,12 +253,12 @@ header nav li.ico-filmes a::before {
   }
 }
 
-header nav li.ico-documentarios a::before {
+header nav li:nth-child(2) a::before {
   display: none;
 }
 
 @media screen and (max-width: 575px) {
-  header nav li.ico-documentarios a::before {
+  header nav li:nth-child(2) a::before {
     display: block;
     width: 25px;
     margin: 0 auto 10px auto;
@@ -267,12 +267,12 @@ header nav li.ico-documentarios a::before {
   }
 }
 
-header nav li.ico-series a::before {
+header nav li:last-child a::before {
   display: none;
 }
 
 @media screen and (max-width: 575px) {
-  header nav li.ico-series a::before {
+  header nav li:last-child a::before {
     display: block;
     width: 25px;
     margin: 0 auto 10px auto;
@@ -281,7 +281,7 @@ header nav li.ico-series a::before {
   }
 }
 
-header nav li.active.icon a::before, header nav li:hover.icon a::before {
+header nav li.active a::before, header nav li:hover a::before {
   -webkit-filter: invert(88%) sepia(99%) saturate(4821%) hue-rotate(358deg) brightness(105%) contrast(101%);
           filter: invert(88%) sepia(99%) saturate(4821%) hue-rotate(358deg) brightness(105%) contrast(101%);
 }

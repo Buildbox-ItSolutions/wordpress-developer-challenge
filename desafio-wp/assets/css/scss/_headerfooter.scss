@@ -57,10 +57,9 @@ header{
         
         &.active a{
             color: $cor-secundaria;
-            
         }
        
-        &.ico-filmes a::before{
+        &:first-child a::before{
             display: none;
             @include media-querie(xs){
                 display: block;
@@ -71,7 +70,7 @@ header{
             }
             
         }
-        &.ico-documentarios a::before{
+        &:nth-child(2) a::before{
             display: none;
             @include media-querie(xs){
                 display: block;
@@ -82,7 +81,7 @@ header{
             }
             
         }
-        &.ico-series a::before{
+        &:last-child a::before{
             display: none;
             @include media-querie(xs){
                 display: block;
@@ -94,7 +93,7 @@ header{
             
         }
         &.active, &:hover{
-            &.icon a::before{
+            & a::before{
                 filter: invert(88%) sepia(99%) saturate(4821%) hue-rotate(358deg) brightness(105%) contrast(101%);
             }
         }
