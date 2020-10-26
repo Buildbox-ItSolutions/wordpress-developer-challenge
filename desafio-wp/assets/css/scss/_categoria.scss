@@ -1,0 +1,119 @@
+.list-categoria{
+    padding: 150px 0 100px 0;
+    @include media-querie(xs){
+        padding: 100px 0 60px 0;
+    }
+    @include media-querie(xxl){
+        padding: 215px 0 60px 0;
+    }
+    .container-grid{
+        position: relative;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 20px;
+        overflow: hidden;
+        @include media-querie(xs){
+            grid-template-columns: 1fr;
+        }
+        @include media-querie(sm){
+            grid-template-columns: 60% 40%;
+        }
+        @include media-querie(md){
+            grid-template-columns: 60% 40%;
+            gap: 40px;
+        }
+        @include media-querie(lg){
+            grid-template-columns: 45% 55%;
+        }
+        @include media-querie(xl){
+            grid-template-columns: 42% 58%;
+        }
+    }
+    .descri{position: relative;}
+    .info{
+        position: fixed;
+        max-width: 40%;
+        z-index: 4;
+        @include media-querie(xs){
+            position: static;
+            max-width: 100%;
+        }
+        @include media-querie(sm){
+            max-width: 44%;
+            
+        }
+        @include media-querie(md){
+            max-width: 52%;
+        }
+        @include media-querie(lg){
+            max-width: 40%;
+        }
+        @include media-querie(xl){
+            max-width: 35%;
+        }
+        @include media-querie(xxl){
+            max-width: 35%;
+        }
+    }
+    
+    h2{
+        font-size: em(40);
+        font-family: $Black;
+        color: $cor-secundaria;
+        width: 100%;
+        margin-bottom: 30px;
+        @include media-querie(xs){
+            font-size: em(30);
+        }
+        @include media-querie(sm){
+            font-size: em(35);
+        }
+    }
+    p{
+        color: $cor-primaria;
+        word-break: break-all;
+        line-height: 35px;
+    }
+    .content{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-bottom: 100px;
+        gap: 30px;
+        row-gap: 100px;
+
+        @include media-querie(sm){
+            grid-template-columns:  100%;
+            justify-items: center;
+            gap: 40px;
+        }
+        @include media-querie(xs){
+            grid-template-columns:  1fr 1fr;
+            gap: 40px;
+            margin-top: 30px;
+        }
+        @include media-querie(md){
+            grid-template-columns:  100%;
+            justify-items: center;
+            gap: 40px;
+        }
+        @include media-querie(lg){
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            padding: 0 0 0 40px;
+        }
+        @include media-querie(xl){
+            // justify-items: save;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 40px 20px;
+        }
+    }
+    .item{
+        max-width: 100%;
+        padding: 0;
+        min-width: min-content;
+        @include media-querie(xs){
+            min-width: fit-content;
+        }
+    }
+
+}

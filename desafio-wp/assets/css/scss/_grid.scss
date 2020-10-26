@@ -1,0 +1,142 @@
+// Variaveis do grid
+$cols: 12;
+$gutter: 20px;
+$xxl-device: 1600px;
+$xl-device: 1200px;
+$l-device: 992px;
+$m-device: 768px;
+$s-device: 576px;
+
+// Box-Sizing
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+// Mixin de media-querie
+@mixin media-querie($size) {
+    @if $size == xxl{
+        @media screen and (min-width: $xxl-device) {
+            @content;
+        }
+    }
+    @else if $size == xl{
+       @media screen and (min-width: $xl-device) and (max-width: $xxl-device - 1) {
+            @content;
+        } 
+    }
+    @else if $size == lg{
+        @media screen and (min-width: $l-device) and (max-width: $xl-device - 1) {
+            @content;
+        } 
+    }
+    @else if $size == md{
+        @media screen and (min-width: $m-device) and (max-width: $l-device - 1) {
+            @content;
+        } 
+    }
+    @else if $size == sm{
+        @media screen and (min-width: $s-device) and (max-width: $m-device - 1){
+            @content;
+        } 
+    }
+
+    @else if $size == xs{
+        @media screen and (max-width: $s-device - 1){
+            @content;
+        } 
+    }
+}
+
+// Função do Grid 
+@function grid($col, $offset: false){
+    $width: $col / $cols * 100 + "%";
+    $result: calc(#{$width} - #{$gutter});
+    @if $offset == offset {
+        $gutter: $gutter / 2;
+        $result: calc(#{$width} - #{$gutter});
+    }
+    @return $result;
+}
+
+// Gerar classe de grid
+@for $i from 1 through $cols{
+    .grid-#{$i} {
+        width: grid($i);
+    }
+}
+
+// Mixin estrutura do grid 
+@mixin grid-structure {
+    float: left;
+    min-height: 1px;
+    margin-left: $gutter / 2;
+    margin-right: $gutter / 2;
+    @include media-querie(xs){
+        width: 100%;
+        float: none;
+        margin-left: 0;
+        margin-right:0;
+    }
+}
+
+[class^="grid-"]{
+    @include grid-structure;
+}
+
+// Mixin clearfix
+@mixin clearfix {
+    &::after, &::before{
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+@mixin container {
+    max-width: $xl-device;
+    margin: 0 auto;
+    position: relative;
+    @include media-querie(xxl){
+        max-width: $xxl-device;
+        padding: 0;
+    }
+    @include media-querie(xl){
+        max-width: $xl-device;
+    }
+    @include media-querie(lg){
+        max-width: $l-device;
+    }
+    @include media-querie(md){
+        max-width: $m-device;
+    }
+    @include media-querie(sm){
+        max-width: $s-device;
+    }
+    @include media-querie(xs){
+        max-width: $s-device;
+    }
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.container{
+    @include container;
+    @include clearfix;
+}
+.container-grid{
+    @include container;
+}
+
+@mixin row {
+    margin-right: - $gutter / 2;
+    margin-left: - $gutter / 2;
+    position: relative;
+    @include media-querie(xs){
+        margin-left: 0;
+        margin-right: 0;
+        @include clearfix;
+    }
+}
+
+.row{
+    @include row;
+}

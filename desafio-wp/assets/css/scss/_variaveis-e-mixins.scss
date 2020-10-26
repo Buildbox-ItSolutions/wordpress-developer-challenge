@@ -1,0 +1,147 @@
+// Cores 
+$base: #000000;
+$cor-primaria: #ffffff;
+$cor-secundaria:#FF0000;
+
+
+// Fontes
+@font-face {
+    font-family: "Circular Spotify Tx T Black";
+    src: url("../../assets/fonts/CircularSpotifyTxT-Black.eot"); 
+    src: url("../../assets/fonts/CircularSpotifyTxT-Black.svg"); 
+    src: url("../../assets/fonts/CircularSpotifyTxT-Black.ttf"); 
+    src: url("../../assets/fonts/CircularSpotifyTxT-Black.woff"); 
+    src: url("../../assets/fonts/CircularSpotifyTxT-Black.woff2"); 
+}
+
+@font-face {
+    font-family: "Circular Spotify Tx T Medium";
+    src: url("../../assets/fonts/CircularSpotifyTxT-Med.eot"); 
+    src: url("../../assets/fonts/CircularSpotifyTxT-Med.svg"); 
+    src: url("../../assets/fonts/CircularSpotifyTxT-Med.ttf"); 
+    src: url("../../assets/fonts/CircularSpotifyTxT-Med.woff"); 
+    src: url("../../assets/fonts/CircularSpotifyTxT-Med.woff2"); 
+}
+
+@font-face {
+    font-family: "Circular Spotify Tx T Book";
+    src: url("../../assets/fonts/CircularSpotifyTxT-Book.eot"); 
+    src: url("../../assets/fonts/CircularSpotifyTxT-Book.svg"); 
+    src: url("../../assets/fonts/CircularSpotifyTxT-Book.ttf"); 
+    src: url("../../assets/fonts/CircularSpotifyTxT-Book.woff"); 
+    src: url("../../assets/fonts/CircularSpotifyTxT-Book.woff2"); 
+}
+
+@font-face {
+    font-family: "Circular Spotify Tx T Light";
+    src: url("../../assets/fonts/CircularSpotifyTxT-Light.eot"); 
+    src: url("../../assets/fonts/CircularSpotifyTxT-Light.svg"); 
+    src: url("../../assets/fonts/CircularSpotifyTxT-Light.ttf"); 
+    src: url("../../assets/fonts/CircularSpotifyTxT-Light.woff"); 
+    src: url("../../assets/fonts/CircularSpotifyTxT-Light.woff2"); 
+}
+
+$Black: 'Circular Spotify Tx T Black', sans-serif;
+$Bold:'Circular Spotify Tx T Bold', sans-serif;
+$Medium:'Circular Spotify Tx T Medium', sans-serif;
+$Book:'Circular Spotify Tx T Book', sans-serif;
+$light: 'Circular Spotify Tx T Light', sans-serif;
+
+//Tipografia
+@function em($pixel, $contexto: 16){
+    @return $pixel / $contexto + em;
+}
+
+@mixin tipo-1($size) {
+     font-family: $Medium;
+    @if $size == 14{
+        font-size: em(14);
+    }
+    @else if $size == 18{
+        font-size: em(18);
+    }
+    @else if $size == 19{
+        font-size: em(19);
+    }
+}
+
+// Variaveis da media-querie
+$cols: 12;
+$gutter: 20px;
+$xxl-device: 1600px;
+$xl-device: 1200px;
+$l-device: 992px;
+$m-device: 768px;
+$s-device: 576px;
+
+// Box-Sizing
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+// Mixin de media-querie
+@mixin media-querie($size) {
+    @if $size == xxl{
+        @media screen and (min-width: $xxl-device) {
+            @content;
+        }
+    }
+    @else if $size == xl{
+       @media screen and (min-width: $xl-device) and (max-width: $xxl-device - 1) {
+            @content;
+        } 
+    }
+    @else if $size == lg{
+        @media screen and (min-width: $l-device) and (max-width: $xl-device - 1) {
+            @content;
+        } 
+    }
+    @else if $size == md{
+        @media screen and (min-width: $m-device) and (max-width: $l-device - 1) {
+            @content;
+        } 
+    }
+    @else if $size == sm{
+        @media screen and (min-width: $s-device) and (max-width: $m-device - 1){
+            @content;
+        } 
+    }
+
+    @else if $size == xs{
+        @media screen and (max-width: $s-device - 1){
+            @content;
+        } 
+    }
+}
+
+@mixin container {
+    max-width: $xl-device;
+    margin: 0 auto;
+    position: relative;
+    @include media-querie(xxl){
+        max-width: $xxl-device;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    @include media-querie(xl){
+        max-width: $xl-device;
+    }
+    @include media-querie(lg){
+        max-width: $l-device;
+    }
+    @include media-querie(md){
+        max-width: $m-device;
+    }
+    @include media-querie(sm){
+        max-width: $s-device;
+    }
+    @include media-querie(xs){
+        max-width: $s-device;
+    }
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.container, .container-grid{
+    @include container;
+}
