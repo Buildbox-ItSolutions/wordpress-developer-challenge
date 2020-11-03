@@ -1,0 +1,60 @@
+
+header    
+    font-family: $font-family
+    background-color: $color-primary
+    position: fixed
+    z-index: 99999
+    width: 100%
+    @include responsive(phone)
+        position: relative   
+    .container-row
+        width: 90%        
+        margin: 0 auto        
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        height: 92px
+        @include responsive(phone)
+            flex-direction: column
+            justify-content: center
+            height: 83px            
+
+        .logo            
+            height: 33px
+            cursor: pointer
+            a
+                img                    
+                    width: 103px
+                    height: 33px 
+                    @include responsive(phone)
+                        width: 71px
+                        height: 23px                                   
+              
+
+        nav
+            ul
+                li
+                    display: inline 
+                    list-style: none
+                    a
+                        color: $color-white 
+                        text-decoration: none
+                        font-size: 19px
+                        letter-spacing: 0.57px
+                        margin: 0 27px
+                        transition: all ease .4s
+                        &:hover
+                            color: $color-secondary    
+                .current_page_item
+                    a
+                        color: $color-secondary
+            @include responsive(phone)
+                display: none           
+                        
+             
+
+      
+
+
+  
