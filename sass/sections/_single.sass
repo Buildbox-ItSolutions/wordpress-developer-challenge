@@ -1,0 +1,111 @@
+.single-movie    
+    height: 400px
+    width: 100%
+    position: relative 
+    background-color: rgba(7, 7, 7, 0.5)
+    @include responsive(phone)
+        height: 300px    
+    .container
+        margin-top: 75px
+        width: 100%     
+        position: absolute
+        top: 35%       
+        z-index: 999
+        @include responsive(phone)
+            width: 90%
+            margin-top: 5px 
+        .info
+            margin: auto
+            width: 60%
+            position: relative           
+            @include responsive(phone)
+                width: 90%
+            h1
+                color: $color-white
+                font-weight: 900
+                letter-spacing: -2.8px
+                font-size: 70px                                                               
+                @include responsive(phone)
+                    font-size: 40px
+                    line-height: 40px
+                    letter-spacing: .5px        
+        .container-row
+            margin: 50px auto
+            width: 60%
+            @include responsive(phone)
+                width: 90%
+            button.movie
+                font-size: 18px
+                border-radius: 3px
+                background: $color-white
+                height: 32px
+                margin: 0 3px
+                border: none
+                color: $color-light-grey
+                padding: 0 40px
+                transition: all ease .4s
+                &:hover
+                    background: $color-secondary                   
+                    color: $color-white
+                a
+                    color: $color-light-grey
+                    &:hover
+                        background: $color-secondary                   
+                        color: $color-white
+                   
+                @include responsive(phone)
+                    font-size: 12px	                                     
+
+            button.time
+                font-size: 18px
+                border-radius: 3px
+                background: transparent
+                height: 32px
+                margin: 0 3px
+                border: 1px solid $color-white
+                color: $color-white 
+                padding: 0 40px
+                transition: all ease .4s
+                &:hover                    
+                    background: $color-white
+                    color: $color-light-grey
+                @include responsive(phone)
+                    font-size: 12px
+
+
+.video-info     
+    padding: 120px 
+    @include responsive(phone)            
+        top: 30px
+    @include responsive(phone)
+        padding-left: 10px
+        padding-right: 10px    
+    iframe
+       position: relative      
+       top: 50px 
+       height: 800px
+       width: 100%
+       margin-bottom: 80px
+       @include responsive(phone)
+            max-height: 500px
+            width: 100%
+            top: 30px
+            margin-bottom: 20px
+                                      	       
+    .description
+        width: 50%
+        margin: auto        
+        padding: 40px 0
+        @include responsive(phone)
+            width: 90%
+            padding: 20px 0
+        p
+            font-family: $font-family        
+            color: $color-white
+            font-size: 18px
+            font-weight: 400
+            line-height: 35px                  
+            @include responsive(phone)
+                font-size: 16px
+                line-height: 25px  
+                

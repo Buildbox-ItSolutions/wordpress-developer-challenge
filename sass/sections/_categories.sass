@@ -1,0 +1,31 @@
+.categories
+    padding: 100px 0
+    display: flex
+    flex-direction: column 
+    .movie-types 
+        display: none 
+        @include responsive(phone)                   
+            display: flex
+            flex-direction: row        
+            justify-content: space-around          
+            height: 83px 
+            width: 100%
+            background-color: rgba(21, 21, 21, .5)
+            margin: -100px 0 30px 0 
+            .type           
+                height: 100px           
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                text-align: center
+                height: auto            
+            img 
+                margin-bottom: 10px
+                vertical-align: center                    
+                width: 22px
+                height: 22px                
+        p
+            text-align: center
+            color: $color-white
+            font-size: 9px 

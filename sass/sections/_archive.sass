@@ -1,0 +1,88 @@
+.archive
+    padding-top: 300px
+    padding-bottom: 60px
+    @include responsive(phone)
+        padding-top: 130px
+        padding-bottom: 50px
+    .container
+        .row
+            .info
+                height: 25vh 
+                min-height: 200px        
+                position: -webkit-sticky
+                position: sticky
+                top: 200px
+                bottom: 100px
+
+                .archive-title
+                    font-size: 40px
+                    font-weight: 900
+                    color: $color-secondary
+                    text-align: left
+                    margin-bottom: 30px
+                    visibility: hidden
+                    span
+                        display: block
+                        visibility: visible    
+                @include responsive(phone)
+                    position: relative
+                    top: 5px
+                    margin-bottom: 320px
+            h2
+                color: $color-secondary
+                font-weight: 900
+                font-size: 40px
+                margin-bottom:  30px
+                @include responsive(phone)
+                    text-align: center
+                
+            p
+                text-align: left
+                color: $color-white
+                font-size: 18px
+                line-height: 35px
+                width: 80%
+                padding-bottom: 100px
+                @include responsive(phone)
+                    text-align: center
+                    width: 95%                    
+
+            .category
+                .item
+                    margin-bottom: 60px
+                                    
+                    
+                    img
+                        object-fit: cover                        
+                        padding: 10px
+                        border-radius: 14px  
+                        
+                        @include responsive(phone)
+                            max-height: 350px
+                                             
+                    button.carousel-button
+                        width: 120px
+                        font-size: 18px
+                        border-radius: 3px
+                        background: transparent
+                        height: 32px
+                        margin: 30px 0  20px 0
+                        border: 1px solid $color-white
+                        color: $color-white 
+                        padding: 0 20px
+                        transition: all ease .4s
+                        @include responsive(phone)
+                            font-size: 12px
+                            width: 110px
+                            padding: 0 14px 
+                        &:hover                    
+                            background: $color-white
+                            color: $color-light-grey                     
+
+                    h3.carousel-title
+                        color: $color-white
+                        font-size: 30px
+                        line-height: 35px
+                        font-weight: 900
+                        letter-spacing: -0.3px
+                         
