@@ -42,7 +42,7 @@
 <?php endif ?>
 <?php wp_reset_postdata() ?>
     <!-- Menu -->
-    <nav class="nav">
+    <nav class="nav" <?= (is_admin_bar_showing()) ? 'style="top: 32px"' : "" ?>>
         <div class="container nav__bar">
             <a href="<?= home_url() ?>" class="logo"><img src="<?= get_template_directory_uri() ?>/assets/img/logo.png" alt="Play"></a>
             <ul class="nav__links">
