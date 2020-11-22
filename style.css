@@ -173,11 +173,11 @@ body {
   }
 }
 
-.nav__link:hover, .nav__link--ativo {
+.nav__link:hover, .nav__link--active {
   color: #ff0000;
 }
 
-.nav__link:hover svg, .nav__link--ativo svg {
+.nav__link:hover svg, .nav__link--active svg {
   fill: #ff0000;
 }
 
@@ -253,11 +253,7 @@ body {
 }
 
 .section {
-  padding: 50px 0;
-}
-
-.section--big {
-  padding: 80px 0;
+  margin: 50px 0;
 }
 
 .section__header {
@@ -337,7 +333,7 @@ body {
 }
 
 .section__embed {
-  margin: 50px 0;
+  margin: 50px -15px;
   position: relative;
   padding-bottom: 56.25%;
   height: 0;
@@ -366,11 +362,4 @@ footer {
 footer .copyright {
   margin: 0;
   line-height: 100px;
-}
-
-.fixed {
-  position: fixed;
-  width: inherit;
-  max-width: inherit;
-  top: 0;
 }

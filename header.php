@@ -10,7 +10,7 @@
 <body <?php body_class() ?>>
 
 <?php $videos = new WP_Query(array("post_type" => "video", "posts_per_page" => 1)) ?>
-<?php if (is_home() && $videos->have_posts()) : // Só será exibido na Home ?>
+<?php if (is_home() || is_front_page() && $videos->have_posts()) : // Só será exibido na Home ?>
     <!-- Último vídeo cadastrado -->
     <?php while ($videos->have_posts()) : $videos->the_post() ?>
         <?php if (has_post_thumbnail()) : // Verifica se tem thumbnail ?>
@@ -42,7 +42,7 @@
 <?php endif ?>
 <?php wp_reset_postdata() ?>
     <!-- Menu -->
-    <nav class="nav" <?= (is_admin_bar_showing()) ? 'style="top: 32px"' : "" ?>>
+    <nav class="nav">
         <div class="container nav__bar">
             <a href="<?= home_url() ?>" class="logo"><img src="<?= get_template_directory_uri() ?>/assets/img/logo.png" alt="Play"></a>
             <ul class="nav__links">

@@ -161,7 +161,7 @@ body {
 			margin: 0 auto 5px;
 			transition: fill 150ms;
 		}
-		&:hover, &--ativo {
+		&:hover, &--active {
 			color: $cor-principal;
 			svg {
 				fill: $cor-principal;
@@ -222,10 +222,7 @@ body {
 }
 
 .section {
-	padding: 50px 0;
-	&--big {
-		padding: 80px 0;
-	}
+	margin: 50px 0;
 	&__header {
 		font-family: "Circular Spotify Bold";
 		&--big {
@@ -281,7 +278,7 @@ body {
 		//height: 387px;
 	}	
 	&__embed {
-		margin: 50px 0;
+		margin: 50px -15px;
 		position: relative;
 		padding-bottom: 56.25%; // 16:9
 		height: 0;
@@ -306,11 +303,4 @@ footer {
 		margin: 0;
 		line-height: 100px;
 	}
-}
-
-.fixed {
-	position: fixed;
-	width: inherit;
-	max-width: inherit;
-	top: 0;
 }

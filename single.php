@@ -4,9 +4,9 @@
     <div class="container">
         <?php if (have_posts()) : ?>
             <?php while (have_posts()) : the_post() ?>
-                <div class="section section--big">
+                <div class="section">
                     <div class="row">
-                        <div class="col-md-8 offset-md-2">
+                        <div class="col-10 offset-1 col-md-8 offset-md-2">
                             <p>
                                 <?php $categoria = get_the_terms($post->ID, 'categoria-video') // Verifica se existe categoria ?>
                                 <?php if (isset($categoria[0]->slug)) : ?>
@@ -25,7 +25,7 @@
                         </div>
                     <?php endif ?>
                     <div class="row">
-                        <div class="col-md-8 offset-md-2">
+                        <div class="col-10 offset-1 col-md-8 offset-md-2">
                             <?php if (get_post_meta( $post->ID, "video_sinopse", true )) : // Verifica se existe sinopse ?>
                                 <h3>Sinopse:</h3>
                                 <p><?= get_post_meta( $post->ID, "video_sinopse", true ) ?></p>

@@ -17,7 +17,7 @@
                     <div class="col-lg-6 offset-lg-1 margin-top">
                         <div class="row">
                             <?php while (have_posts()) : the_post() ?>
-                                <a href="<?php the_permalink() ?>" class="col-6 col-sm-4 col-md-3 col-lg-4">
+                                <a href="<?php the_permalink() ?>" class="col-6 col-sm-4 col-md-4 col-lg-6 col-xl-4">
                                     <!-- Verifica se tem thumbnail -->
                                     <?php if (has_post_thumbnail()) : ?>
                                         <img src="<?= get_the_post_thumbnail_url(get_the_ID(), "video-thumbnails") ?>" class="section__thumbnail">
