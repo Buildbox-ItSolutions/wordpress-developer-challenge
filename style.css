@@ -1,0 +1,376 @@
+/* 
+    Theme Name: Play
+	Author: Ivander Carlos Dias
+	Author URI: https://www.linkedin.com/in/ivander-carlos-dias/
+	Version: 1.0
+	Description: Tema criado para o desafio proposto pela empresa Buildbox IT Solutions.
+*/
+@font-face {
+  font-family: "Circular Spotify Light";
+  src: url("assets/fonts/CircularSpotifyTxT-Light.eot");
+  src: url("assets/fonts/CircularSpotifyTxT-Light.svg");
+  src: url("assets/fonts/CircularSpotifyTxT-Light.ttf");
+  src: url("assets/fonts/CircularSpotifyTxT-Light.woff");
+  src: url("assets/fonts/CircularSpotifyTxT-Light.woff2");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Circular Spotify Book";
+  src: url("assets/fonts/CircularSpotifyTxT-Book.eot");
+  src: url("assets/fonts/CircularSpotifyTxT-Book.svg");
+  src: url("assets/fonts/CircularSpotifyTxT-Book.ttf");
+  src: url("assets/fonts/CircularSpotifyTxT-Book.woff");
+  src: url("assets/fonts/CircularSpotifyTxT-Book.woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Circular Spotify Bold";
+  src: url("assets/fonts/CircularSpotifyTxT-Bold.eot");
+  src: url("assets/fonts/CircularSpotifyTxT-Bold.svg");
+  src: url("assets/fonts/CircularSpotifyTxT-Bold.ttf");
+  src: url("assets/fonts/CircularSpotifyTxT-Bold.woff");
+  src: url("assets/fonts/CircularSpotifyTxT-Bold.woff2");
+  font-weight: 900;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1400px;
+}
+
+.margin-top {
+  margin-top: 40px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Circular Spotify Book";
+  background-color: #000;
+  color: #fff;
+  font-size: 18px;
+  line-height: 35px;
+  letter-spacing: .54px;
+}
+
+.header {
+  padding-top: 92px;
+}
+
+.header--full {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  height: 100vh;
+  min-height: 600px;
+  background-position: center;
+  background-size: cover;
+}
+
+.header--full:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.header__tittle {
+  font-family: "Circular Spotify Bold";
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .header__tittle {
+    font-size: 100px;
+    line-height: 100px;
+    letter-spacing: -4px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header__tittle {
+    font-size: 52px;
+    line-height: 52px;
+    letter-spacing: -1.6px;
+  }
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.93);
+}
+
+.nav__bar {
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__links {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media screen and (max-width: 767px) {
+  .nav__links {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 0;
+    background-color: rgba(0, 0, 0, 0.93);
+  }
+  .nav__links li {
+    flex-grow: 1;
+  }
+}
+
+.nav__link {
+  display: block;
+  text-align: center;
+  letter-spacing: .57px;
+  padding: 0 25px;
+  transition: color 150ms;
+}
+
+.nav__link svg {
+  margin: 0 auto 5px;
+  transition: fill 150ms;
+}
+
+@media screen and (min-width: 768px) {
+  .nav__link svg {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav__link svg {
+    display: block;
+  }
+}
+
+.nav__link:hover, .nav__link--ativo {
+  color: #ff0000;
+}
+
+.nav__link:hover svg, .nav__link--ativo svg {
+  fill: #ff0000;
+}
+
+@media screen and (min-width: 768px) {
+  .nav__link {
+    font-size: 19px;
+    line-height: 27px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav__link {
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+
+.logo {
+  display: inline-block;
+}
+
+@media screen and (max-width: 767px) {
+  .logo {
+    margin: auto;
+  }
+}
+
+.logo img {
+  display: block;
+  max-width: 104px;
+}
+
+.logo--footer {
+  margin-top: 100px;
+}
+
+.btn {
+  display: inline-block;
+  font-family: "Circular Spotify Book";
+  font-size: 18px;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.btn__big {
+  min-width: 310px;
+  background: #ff0000;
+  padding: 0 25px;
+}
+
+@media screen and (min-width: 768px) {
+  .btn__big {
+    line-height: 64px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .btn__big {
+    min-width: 180px;
+    line-height: 38px;
+  }
+}
+
+.btn__small {
+  border: 1px solid #fff;
+  min-width: 128px;
+  padding: 2px 10px;
+}
+
+.btn__small--white {
+  background-color: #fff;
+  color: #5A5A5A;
+}
+
+.section {
+  padding: 50px 0;
+}
+
+.section--big {
+  padding: 80px 0;
+}
+
+.section__header {
+  font-family: "Circular Spotify Bold";
+}
+
+.section__header--big {
+  margin-top: 0;
+  letter-spacing: -1px;
+  color: #ff0000;
+}
+
+@media screen and (min-width: 768px) {
+  .section__header--big {
+    font-size: 40px;
+    line-height: 56px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section__header--big {
+    font-size: 32px;
+  }
+}
+
+.section__header--big-white {
+  margin: 0;
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .section__header--big-white {
+    letter-spacing: -2.8px;
+    font-size: 70px;
+    line-height: 100px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section__header--big-white {
+    font-size: 38px;
+    line-height: 40px;
+    letter-spacing: -1.2px;
+  }
+}
+
+.section__header--small {
+  letter-spacing: -.5px;
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .section__header--small {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section__header--small {
+    font-size: 27px;
+    line-height: 27px;
+  }
+}
+
+.section__slider {
+  margin: 0 -15px;
+}
+
+.section__slider--item {
+  margin: 0 15px;
+}
+
+.section__thumbnail {
+  display: block;
+  border-radius: 3px;
+}
+
+.section__embed {
+  margin: 50px 0;
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.section__embed iframe {
+  width: 100% !important;
+  height: 100% !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+footer {
+  text-align: center;
+  min-height: 385px;
+  background-color: #121212;
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    text-align: left;
+  }
+}
+
+footer .copyright {
+  margin: 0;
+  line-height: 100px;
+}
+
+.fixed {
+  position: fixed;
+  width: inherit;
+  max-width: inherit;
+  top: 0;
+}
