@@ -8,7 +8,7 @@ Estamos à procura de alguém que vá além de customizar temas prontos. Nossos 
 
 Nesse link você encontra o protótipo de um site que vamos utilizar como base. Vamos construir uma plataforma de vídeos chamada “Play”. Você precisa criar o tema WordPress (front-end e back-end) com fidelidade ao design proposto e que seja responsivo, se adaptando a qualquer tamanho de tela.
 
-## Design:
+## Design: 
 
 Desktop:\
 https://xd.adobe.com/view/4ef93bf1-8b2a-4d9f-8dc1-38bb056538ff-1baa/specs
