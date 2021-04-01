@@ -1,0 +1,85 @@
+.nav .nav-item {
+  width: 155px; }
+
+.badge {
+  font-size: 12px;
+  padding: 5px 40px 3px; }
+
+header {
+  justify-content: center;
+  padding: 0; }
+  header .menu-topo {
+    display: none; }
+
+.banner {
+  height: 498px;
+  padding: 1.5rem !important; }
+  .banner picture img.destaque {
+    max-width: 200%; }
+  .banner h1 {
+    font-size: 40px;
+    width: auto; }
+  .banner .btn-assistir-destaque {
+    font-size: 12px;
+    padding: .375rem 5rem; }
+
+.categoria {
+  padding: 1.5rem; }
+  .categoria p {
+    font-size: 12px; }
+  .categoria ul.nav {
+    height: 350px;
+    flex-wrap: initial; }
+    .categoria ul.nav .nav-item {
+      width: 140px; }
+      .categoria ul.nav .nav-item .capa {
+        width: 140px;
+        height: 232px; }
+    .categoria ul.nav .slick-prev {
+      z-index: 1 !important;
+      left: -20px !important; }
+    .categoria ul.nav .slick-next {
+      right: -6px !important; }
+
+.categoria.integra {
+  padding: 1.5rem;
+  margin-top: 0.5rem !important; }
+  .categoria.integra h1 {
+    font-size: 23px; }
+  .categoria.integra ul.nav {
+    height: auto;
+    justify-content: space-between; }
+
+.single .padding {
+  padding: 1.5rem; }
+.single h1 {
+  font-size: 28px; }
+.single video {
+  width: 100%;
+  height: 211px;
+  padding: 0; }
+.single p {
+  font-size: 12px; }
+
+.categorias-icones {
+  display: block; }
+
+footer {
+  width: 100%;
+  height: 301px;
+  text-align: center;
+  padding: 0; }
+  footer .logo {
+    width: 100%;
+    height: 22.87px;
+    margin-top: 15%;
+    float: none; }
+    footer .logo path {
+      fill: #fff; }
+  footer span {
+    width: 100%;
+    font-size: 12px;
+    clear: none;
+    float: none; }
+
+/*# sourceMappingURL=style-375.css.map */

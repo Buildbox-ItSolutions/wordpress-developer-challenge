@@ -1,0 +1,29 @@
+
+@font-face {
+    font-family: 'Circular Spotify Black';
+    font-weight: 900;
+    font-style: normal;
+    src: url('../fonts/CircularSpotifyTxT-Black.eot');
+    src: local('Circular Spotify Tx T'),
+        url('../fonts/CircularSpotifyTxT-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CircularSpotifyTxT-Black.woff2') format('woff2'),
+        url('../fonts/CircularSpotifyTxT-Black.woff') format('woff'),
+        url('../fonts/CircularSpotifyTxT-Black.ttf') format('truetype'),
+        url('../fonts/CircularSpotifyTxT-Black.svg#CircularSpotifyTxT-Black') format('svg');
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Circular Spotify Medium';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/CircularSpotifyTxT-Med.eot');
+    src: local('Circular Spotify Medium'),
+        url('../fonts/CircularSpotifyTxT-Med.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CircularSpotifyTxT-Med.woff2') format('woff2'),
+        url('../fonts/CircularSpotifyTxT-Med.woff') format('woff'),
+        url('../fonts/CircularSpotifyTxT-Med.ttf') format('truetype'),
+        url('../fonts/CircularSpotifyTxT-Med.svg#CircularSpotifyTxT-Med') format('svg');
+    font-display: swap;
+}
