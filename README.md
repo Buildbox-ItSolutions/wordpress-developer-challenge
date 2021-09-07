@@ -2,4 +2,4 @@
 
 Tema criado por Gabriel Lemos
 
-Demo: https://play.gabriellemos.com
+Demo: http://playtheme.tk/
