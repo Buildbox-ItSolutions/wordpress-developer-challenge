@@ -3,7 +3,7 @@
         <section class="footer-content">
             <div class="container">
                 <div class="logo">
-                    <img class="logomarca" src="<?= get_template_directory_uri()?>./assets/img/logo-play.svg" alt="logo">
+                    <img class="logomarca" src="<?= get_template_directory_uri() . '/assets/img/logo-play.svg'?>" alt="logo">
                 </div>
                 <div class="copyright">
                     © 2020 — Play — Todos os direitos reservados.
@@ -53,7 +53,7 @@
 
     
 
-    <script src="<?= get_template_directory_uri()?>./assets/js/main.js"></script>
+    <script src="<?= get_template_directory_uri() . '/assets/js/main.js'?>"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             var elms = document.getElementsByClassName('splide');

@@ -25,7 +25,7 @@
     <meta name="msapplication-TileColor" content="#000">
     <meta name="msapplication-TileImage" content="<?= get_template_directory_uri() . '/assets/img/favicons/ms-icon-144x144.png' ?>">
     <meta name="theme-color" content="#000">
-    <link rel="stylesheet" href="<?= get_template_directory_uri()?> ./assets/css/main-minify.css">
+    <link rel="stylesheet" href="<?= get_template_directory_uri() . '/assets/css/main-minify.css'?>">
 </head>
 
 <body>
@@ -34,7 +34,7 @@
             <div class="navmenu">
                 <div class="logo">
                     <a href="<?= get_site_url() ?>">
-                        <img class="logomarca" src="<?= get_template_directory_uri()?> ./assets/img/logo-play.svg" alt="logo">
+                        <img class="logomarca" src="<?= get_template_directory_uri() . '/assets/img/logo-play.svg'?>" alt="logo">
                     </a>
                 </div>
                 <?php
