@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color:#000000;
+}
+
+p {
+    color: #fff;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    background-color: #000000E6;
+}
+
+h1 {
+    font-size: 70px;
+    color: #fff;
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+}
+
+a h1 {
+    color: #fff;
+}
+
+h2 {
+    color: #FF0000;
+    font-size: 40px;
+    font-family: 'Work Sans', sans-serif;
+    line-height: .9;
+}
+
+section {
+    margin: 6rem 0;
+}
+
+h3 {
+    color: #fff;
+    font-size: 30px;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 1.1;
+    margin-top: 20px;
+}
+
+.container {
+    padding: 0 100px;
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    padding: 15px;
+}
+
+.flex-section {
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 100%;
+    overflow-x:auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    position: relative;
+    z-index: 500;
+}
+
+.grid-section {
+    display: grid;
+    grid-template-columns: 40% 30%;
+}
+
+.grid-videos {
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    grid-gap: 2rem;
+    margin-left: 10rem;
+}
+
+/* --------------------POST--------------------*/
+
+
+
+
+
