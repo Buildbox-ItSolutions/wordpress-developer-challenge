@@ -19,7 +19,7 @@ Version: 1.0
 
 .btn-small {
     background-color: #fff;
-    font-family: 'Roboto', sans-serif;
+    font-family: "CircularSpotifyTxT-Med", sans-serif;
     color: #5A5A5A;
     padding: 2px 2rem;
     border-radius: 3px;
@@ -31,7 +31,7 @@ Version: 1.0
     border: 1px solid #fff;
     border-radius: 3px;
     color: #fff;
-    font-family: 'Roboto', sans-serif;
+    font-family: "CircularSpotifyTxT-Med", sans-serif;
 }
 
 .btn {
@@ -40,7 +40,7 @@ Version: 1.0
     color: #fff;
     padding: 1rem 5rem;
     border-radius: 3px;
-    font-family: 'Roboto', sans-serif;
+    font-family: "CircularSpotifyTxT-Med", sans-serif;
 }
 /* -----------------------NAVIGATION------------------------------- */
 
@@ -66,7 +66,7 @@ Version: 1.0
     color: #fff;
     padding: 10px;
     font-size: 19px;
-    font-family: 'Work Sans', sans-serif;
+    font-family: "CircularSpotifyTxT-Med", sans-serif;
     transition: all .5s;
 }
 
@@ -78,7 +78,7 @@ Version: 1.0
 
 header {
     height: 680px;
-    font-family: 'Work Sans', sans-serif;
+    font-family: CircularSpotifyTxT, sans-serif;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

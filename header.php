@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Work+Sans&display=swap" rel="stylesheet">
-    <link  href="./assets/fonts/CircularSpotifyTxT-Light.eot" rel="stylesheet">
     <script src="https://kit.fontawesome.com/839f710714.js" crossorigin="anonymous"></script>
     <title><?php bloginfo('name'); ?></title>
     <?php wp_head(); ?>

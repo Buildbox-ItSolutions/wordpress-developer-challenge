@@ -4,8 +4,25 @@ body {
     background-color:#000000;
 }
 
+@font-face {
+    font-family: "CircularSpotifyTxT-Med";
+    src: url('../assets/fonts/CircularSpotifyTxT-Med.woff') format("woff"),
+         url('../assets/fonts/CircularSpotifyTxT-Med.woff2') format("woff2");
+         font-weight: "normal";
+         font-style: "normal";
+}
+
+@font-face {
+    font-family: "CircularSpotifyTxT-Black";
+    src: url('../assets/fonts/CircularSpotifyTxT-Black.woff') format("woff"),
+         url('../assets/fonts/CircularSpotifyTxT-Black.woff2') format("woff2");
+         font-weight: "normal";
+         font-style: "normal";
+}
+
 p {
     color: #fff;
+    font-family: "CircularSpotifyTxT-Med", sans-serif;
 }
 
 ul {
@@ -16,10 +33,6 @@ a {
     text-decoration: none;
 }
 
-p {
-    font-family: 'Roboto', sans-serif;
-}
-
 nav {
     background-color: #000000E6;
 }
@@ -27,7 +40,7 @@ nav {
 h1 {
     font-size: 70px;
     color: #fff;
-    font-family: 'Work Sans', sans-serif;
+    font-family: "CircularSpotifyTxT-Black";
     margin: 0;
 }
 
@@ -38,7 +51,7 @@ a h1 {
 h2 {
     color: #FF0000;
     font-size: 40px;
-    font-family: 'Work Sans', sans-serif;
+    font-family: "CircularSpotifyTxT-Black", sans-serif;
     line-height: .9;
 }
 
@@ -49,7 +62,7 @@ section {
 h3 {
     color: #fff;
     font-size: 30px;
-    font-family: 'Work Sans', sans-serif;
+    font-family: "CircularSpotifyTxT-Black", sans-serif;
     line-height: 1.1;
     margin-top: 20px;
 }

@@ -11,8 +11,8 @@
                 <span  class="btn-minutes"><?php the_field('duracao',$id); ?>m</span>
                 <h1><?php the_title() ?></h1>
             </div>
-            <div>
-                <?php the_field('video',$id);  ?>
+            <div class="video">
+                <div><?php the_field('video',$id);  ?></div>
             </div>
             <div>
                 <p><?php the_content() ?></p>
