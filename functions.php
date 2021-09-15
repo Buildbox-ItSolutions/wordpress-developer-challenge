@@ -83,6 +83,158 @@ function special_nav_class($classes, $item) {
  * REGISTERING CTP AND TAX
 */
 
+
+if( function_exists('acf_add_local_field_group') ):
+
+    acf_add_local_field_group(array(
+        'key' => 'group_613ee869388f7',
+        'title' => 'Videos',
+        'fields' => array(
+            array(
+                'key' => 'field_613ee9821574d',
+                'label' => 'Descrição',
+                'name' => 'descricao',
+                'type' => 'textarea',
+                'instructions' => '',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'default_value' => '',
+                'placeholder' => '',
+                'maxlength' => '',
+                'rows' => '',
+                'new_lines' => '',
+            ),
+            array(
+                'key' => 'field_613ee8704b6d8',
+                'label' => 'Tempo de Duração',
+                'name' => 'tempo_de_duracao',
+                'type' => 'text',
+                'instructions' => '',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'default_value' => '',
+                'placeholder' => '',
+                'prepend' => '',
+                'append' => '',
+                'maxlength' => '',
+            ),
+            array(
+                'key' => 'field_613ee8984b6d9',
+                'label' => 'Sinopse',
+                'name' => 'sinopse',
+                'type' => 'textarea',
+                'instructions' => '',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'default_value' => '',
+                'placeholder' => '',
+                'maxlength' => '',
+                'rows' => '',
+                'new_lines' => '',
+            ),
+            array(
+                'key' => 'field_613ee8a74b6da',
+                'label' => 'Embed de Vídeo',
+                'name' => 'embed_de_video',
+                'type' => 'oembed',
+                'instructions' => '',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'width' => '',
+                'height' => '',
+            ),
+            array(
+                'key' => 'field_613ee91b4b6db',
+                'label' => 'Imagem de Capa',
+                'name' => 'imagem_de_capa',
+                'type' => 'image',
+                'instructions' => '',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'return_format' => 'url',
+                'preview_size' => 'full',
+                'library' => 'all',
+                'min_width' => '',
+                'min_height' => '',
+                'min_size' => '',
+                'max_width' => '',
+                'max_height' => '',
+                'max_size' => '',
+                'mime_types' => '',
+            ),
+            array(
+                'key' => 'field_613efe1e6b2a4',
+                'label' => 'video_category',
+                'name' => 'video_category',
+                'type' => 'taxonomy',
+                'instructions' => '',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'taxonomy' => 'tipo_de_video',
+                'field_type' => 'select',
+                'allow_null' => 0,
+                'add_term' => 1,
+                'save_terms' => 0,
+                'load_terms' => 0,
+                'return_format' => 'id',
+                'multiple' => 0,
+            ),
+        ),
+        'location' => array(
+            array(
+                array(
+                    'param' => 'post_type',
+                    'operator' => '==',
+                    'value' => 'video',
+                ),
+            ),
+        ),
+        'menu_order' => 0,
+        'position' => 'normal',
+        'style' => 'default',
+        'label_placement' => 'top',
+        'instruction_placement' => 'label',
+        'hide_on_screen' => array(
+            0 => 'featured_image',
+        ),
+        'active' => true,
+        'description' => '',
+    ));
+    
+    endif;		
+
+
+
 function cptui_register_my_cpts_video() {
 
     /**
@@ -198,7 +350,5 @@ function cptui_register_my_cpts_video() {
     add_action( 'init', 'cptui_register_my_taxes_tipo_de_video' );
 
 
-
-    
 ?>
 
