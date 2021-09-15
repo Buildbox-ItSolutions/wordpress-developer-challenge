@@ -1,0 +1,77 @@
+footer{
+    background: #121212;
+    opacity: 1;
+    min-height: 360px;
+}
+footer .container-fluid{
+    padding-left: 20px;
+    text-align: center;
+}
+.footer__copyright{
+    margin-top: 33px;
+    font-family:  Circular Spotify Tx T;
+    letter-spacing: 0.54px;
+    color: #FFFFFF;
+}
+footer {
+    padding-top: 130px;
+    align-items: flex-start;
+}
+.hide_fixed_Footer{
+    display: none!important;
+}
+@media screen and (min-width: 1000px) {
+    footer .container-fluid{
+        padding-left: 141px;
+        text-align: left;
+    }
+    footer {
+        padding-top: 0px;
+        align-items: center;
+    }
+}
+/*style of sticky bottom menu*/
+.menu_rodape{
+    background:#000000E6;
+    padding: 23px 0px;
+}
+.menu_rodape ul{
+    display: inline-flex;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 100%;
+    padding-right: 50px;
+
+}
+.menu_rodape ul li a span{
+    font-size: 9pt;
+}
+.menu_rodape ul li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+body > nav.navbar.fixed-bottom.menu_rodape.d-block.d-sm-none div{
+    position: relative;
+    top: 15px;
+}
+
+/*adicionar icones ao sticky menu*/
+.menu_rodape ul li:nth-child(1):before{
+    content: url('../img/stick-menu/filmes-icon.svg');
+    width:40px;
+    height: 25px;
+    padding-left: 10px;
+}
+.menu_rodape ul li:nth-child(2):before{
+    content: url('../img/stick-menu/documentarios-icon.svg');
+    width: 40px;
+    height: 25px;
+    padding-left: 10px;
+}
+.menu_rodape ul li:nth-child(3):before{
+    content: url('../img/stick-menu/series-icon.svg');
+    width: 40px;
+    height: 25px;
+    padding-left: 10px;
+}

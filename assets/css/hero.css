@@ -1,0 +1,90 @@
+.hero{
+    
+    background-size: cover;
+    height: 100vh;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+#overlay{
+    position: absolute; 
+    width: 100%;
+    height: 100%; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.7); /* Black background with opacity */
+    cursor: pointer; 
+}
+.hero h1{  
+    font-size: 40pt;
+    line-height: 40pt;
+    font-family: Circular Spotify Tx T;
+    font-weight: 900;
+    color: #fff;
+    width: 50%;
+    margin-bottom: 20px;
+}
+.hero a{
+    background: #FF0000 0% 0% no-repeat padding-box;
+    border-radius: 3px;
+    opacity: 1;
+    text-align: center;
+    font-family: Circular Spotify Tx T;
+    font-weight: medium;
+    font-size: 18px;
+    color: #fff;
+    width: 50%;
+    letter-spacing: 0.54px;
+    color: #FFFFFF;
+    opacity: 1;
+    padding: 20px 80px;
+    
+}
+.hero__boxes{
+    width: 15%;
+    justify-content: space-between
+}
+.hero__boxes p{
+    font-size: 12px;
+}
+.hero__boxes .slider__box {
+    width: 37%;
+    min-width: 104px;
+}
+.hero__boxes > div:nth-child(1){
+    background: white;
+}
+.hero__boxes > div:nth-child(2){
+    margin-left: 20px;
+}
+.hero__boxes > div:nth-child(1) p {
+    color: #000;
+}
+
+@media screen and (min-width: 1000px) {
+    .hero{
+        padding-left: 141px;
+    }
+    .hero h1{  
+        font-size: 100px;
+        line-height: 100px;
+        margin-bottom: 50px;
+        margin-top: 20px;
+    }
+    .hero a{
+        padding: 20px 100px;      
+    }
+    .hero__boxes .slider__box{
+        width: 48%;
+        min-width: 141px;
+    }
+    .hero__boxes p{
+        font-size: 18px;
+    }
+    
+}

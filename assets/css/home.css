@@ -1,0 +1,16 @@
+.series, .documentarios, .filmes{
+    padding-left:20px;
+    padding-bottom: 80px;
+    height: 80vh;
+    margin-top: 26px;
+    padding-top: 100px;
+}
+.series{
+    margin-bottom: 210px;
+}
+@media screen and (min-width: 1000px) {
+    .series, .documentarios, .filmes{
+        padding-left:141px;
+        height: 80vh;
+    }
+  }

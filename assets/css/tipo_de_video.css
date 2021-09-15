@@ -1,0 +1,90 @@
+.tipo_de_video{
+    min-height: 100vh;
+    padding-top: 170px;
+}
+.section_tax__description, .section_tax .section__titles {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.section_tax__description{
+    font-family: Circular Spotify Tx T;
+    font-size: 12pt;
+    line-height: 22px;
+    letter-spacing: 0.54px;
+    color: #FFFFFF;
+}
+.content__box__title{
+    font-size: 20pt;
+    line-height: 30px;
+    font-family: Circular Spotify Tx T;
+    letter-spacing: -0.3px;
+    color: #FFFFFF;
+    font-weight: 900;
+    
+}
+.content__box{
+    min-height: 300px;
+    margin-bottom: 46px;
+    margin-top: 40px;
+}
+
+/* multiple images same size*/
+.block {
+    width: 100%;
+    height: 300px;
+ }
+ .responsive-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+ }
+
+.current-menu-item span{
+    color: red!important;
+}
+
+div.content__box.col-sm-4{
+    width: calc(50% - 40px);
+    margin-left: 20px;
+    padding: 0px;
+}
+
+/*responsive*/
+@media screen and (min-width: 1000px) {
+    div.content__box.col-sm-4{
+        width: 100%;
+        margin-left: 0px;
+    } 
+    .block {
+        width: 240px;
+        height: 400px;
+     }
+     .responsive-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+     }
+     .content__box{
+        min-height: 600px;
+        margin-top: 0px;
+    }
+    .section_tax__description, .section_tax .section__titles {
+        padding-right: 200px;
+        padding-left: calc(141px - 15px); /* 141 px (layout margin) - 15 px added by row of bootstrap*/
+    }
+    .section_tax__description{
+        font-size: 18px;
+    }
+    .content__box__title{
+        font-size: 30px;
+        width:80%;
+    }
+    
+}
+/* fix bootstrap margins mobile */
+@media screen and (min-width: 375px) {
+
+    .section_tax .row{
+        margin-left: 0;
+    }
+}

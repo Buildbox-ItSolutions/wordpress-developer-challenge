@@ -1,0 +1,119 @@
+.swiper {
+    width: 100%;
+    height: 460px;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+.swiper-slide {
+    text-align: center;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    flex-direction: column;
+    height: 500px;
+    position: relative;
+}
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding-bottom: 180px;
+}
+/* styling of slider content*/
+.slider__description{
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    top: 60%;
+}
+.slider__box{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.slider__description h2 {
+    text-align: left;
+    font-style: normal;
+    font-variant-caps: normal;
+    font-weight: 900;
+    font-stretch: normal;
+    font-size: 17pt;
+    line-height: 30px;
+    font-family: Circular Spotify Tx T;
+    font-size-adjust: none;
+    font-kerning: auto;
+    font-optical-sizing: auto;
+    letter-spacing: -0.3px;
+    color: #FFFFFF;
+    opacity: 1;
+    margin-bottom: 0;
+}
+.slider__box{
+    border: 1pt solid #FFFFFF;
+    border-radius: 3px;
+    opacity: 1;
+}
+.slider__box p {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 16px;
+    line-height: 30px;
+    font-family: Circular Spotify Tx T;
+    letter-spacing: 0.54px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+.slider__box img {
+    max-width: 100%;
+    width:248px;
+    height: auto;
+}
+.swiper-slide { 
+    width: 40%;
+    height: auto;
+}
+.swiper-slide a {
+    display: contents;
+}
+.slider__description .slider__box{
+  width: 75%;
+}
+@media screen and (min-width: 1000px) {
+  .swiper {
+    width: 100%;
+    height: 600px;
+  }
+  .swiper-slide { 
+    width: 14%; 
+  }
+  .swiper-slide img {
+    padding-bottom: 200px;
+  }
+  .slider__description{
+    top: 70%;
+  }
+  .slider__description h2 {
+    font-size: 30px;
+  }
+  .slider__box p {
+    font-size: 18px;
+}
+.slider__description .slider__box{
+  width: 50%;
+}
+}

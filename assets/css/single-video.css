@@ -1,0 +1,70 @@
+.single_video{
+    min-height: 100vh;
+    padding-top: 170px;
+}
+.single_video h1 {
+    font-family: Circular Spotify Tx T;
+    font-size: 20pt;
+    line-height: 40px;
+    font-weight: 900;
+    margin-bottom: 40px;
+}
+.single_video__bg{
+    height: 250px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.single_video__bg__wrapper{
+   padding-left: 0px;
+   padding-right: 0px;
+   min-width: 370px;
+   height: 300px;
+   position:relative;
+}
+.single_video__sinopse{
+    width: 90%;
+    margin-top: 93px;
+    margin-bottom: 122px;
+}
+.single_video__sinopse p{
+    font-family:  Circular Spotify Tx T;
+    letter-spacing: 0.54px;
+    color: #FFFFFF;
+}
+.play_icon {
+    position:absolute;
+    bottom: 50%;
+    left: 45%;
+}
+
+@media screen and (min-width: 1000px) {
+    .single_video__bg{
+        height: 900px;
+    }
+    .single_video__bg__wrapper{
+        padding-left: 141px;
+        padding-right: 141px;
+        min-width: 500px;
+        height: unset;
+     }
+    .single_video__sinopse{
+        width: 50%;
+    }
+    .single_video h1{
+        font-family: Circular Spotify Tx T;
+        font-size: 70px;
+        line-height: 100px;
+        margin-bottom: 70px;
+    }
+    .play_icon{
+        left: 50%;
+    }
+}
+@media screen and (min-width: 375px) {
+    /* remove bootstrap margins to make cover full screen on mobile */
+    .single_video .container-fluid:nth-child(2){
+        padding: 0px;
+    }
+  
+}

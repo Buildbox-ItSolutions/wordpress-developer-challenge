@@ -1,0 +1,197 @@
+
+
+@font-face {
+    font-family: 'Circular Spotify Tx T';
+    src: url('../fonts/CircularSpotifyTxT-Black.woff2') format('woff2'),
+        url('../fonts/CircularSpotifyTxT-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Circular Spotify Tx T Black';
+    src: url('../fonts/CircularSpotifyTxT-Black.woff2') format('woff2'),
+        url('../fonts/CircularSpotifyTxT-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Circular Spotify Tx T Black';
+    src: url('../fonts/CircularSpotifyTxT-Black.woff2') format('woff2'),
+        url('../fonts/CircularSpotifyTxT-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Circular Spotify Tx T';
+    src: url('../fonts/CircularSpotifyTxT-Black.woff2') format('woff2'),
+        url('../fonts/CircularSpotifyTxT-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Circular Spotify Tx T';
+    src: url('../fonts/CircularSpotifyTxT-Bold.woff2') format('woff2'),
+        url('..//fonts/CircularSpotifyTxT-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Circular Spotify Tx T';
+    src: url('../fonts/CircularSpotifyTxT-Bold.woff2') format('woff2'),
+        url('../fonts/CircularSpotifyTxT-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Circular Spotify Tx T';
+    src: url('../fonts/CircularSpotifyTxT-Bold.woff2') format('woff2'),
+        url('../fonts/CircularSpotifyTxT-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Circular Spotify Tx T';
+    src: url('../fonts/CircularSpotifyTxT-Bold.woff2') format('woff2'),
+        url('../fonts/CircularSpotifyTxT-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Circular Spotify Tx T Book';
+    src: url('../fonts/CircularSpotifyTxT-Book.woff2') format('woff2'),
+        url('../fonts/CircularSpotifyTxT-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Circular Spotify Tx T Book';
+    src: url('../fonts/CircularSpotifyTxT-Book.woff2') format('woff2'),
+        url('../fonts/CircularSpotifyTxT-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Circular Spotify Tx T Book';
+    src: url('../fonts/CircularSpotifyTxT-Book.woff2') format('woff2'),
+        url('../fonts/CircularSpotifyTxT-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Circular Spotify Tx T Book';
+    src: url('../fonts/CircularSpotifyTxT-Book.woff2') format('woff2'),
+        url('../fonts/CircularSpotifyTxT-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Circular Spotify Tx T';
+    src: url('../fonts/CircularSpotifyTxT-Light.woff2') format('woff2'),
+        url('../fonts/CircularSpotifyTxT-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Circular Spotify Tx T';
+    src: url('../fonts/CircularSpotifyTxT-Light.woff2') format('woff2'),
+        url('../fonts/CircularSpotifyTxT-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Circular Spotify Tx T';
+    src: url('../fonts/CircularSpotifyTxT-Light.woff2') format('woff2'),
+        url('../fonts/CircularSpotifyTxT-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Circular Spotify Tx T';
+    src: url('../fonts/CircularSpotifyTxT-Light.woff2') format('woff2'),
+        url('../fonts/CircularSpotifyTxT-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Circular Spotify Tx T Med';
+    src: url('../fonts/CircularSpotifyTxT-Med.woff2') format('woff2'),
+        url('../fonts/CircularSpotifyTxT-Med.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Circular Spotify Tx T Med';
+    src: url('../fonts/CircularSpotifyTxT-Med.woff2') format('woff2'),
+        url('../fonts/CircularSpotifyTxT-Med.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Circular Spotify Tx T Med';
+    src: url('../fonts/CircularSpotifyTxT-Med.woff2') format('woff2'),
+        url('../fonts/CircularSpotifyTxT-Med.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Circular Spotify Tx T Med';
+    src: url('../fonts/CircularSpotifyTxT-Med.woff2') format('woff2'),
+        url('../fonts/CircularSpotifyTxT-Med.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+.section__titles{
+    text-align: left;
+    font-weight: 900;
+    font-family:  Circular Spotify Tx T;
+    letter-spacing: -1px;
+    color: #FF0000;
+    opacity: 1;
+    font-size: 30px;
+    margin-bottom: 22px;
+}
+@media screen and (min-width: 1000px) {
+    .section__titles{
+        font-size: 40px;
+    } 
+}

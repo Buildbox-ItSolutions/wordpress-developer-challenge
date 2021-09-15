@@ -1,0 +1,26 @@
+.navbar {
+    background: #000000E6 0% 0% no-repeat padding-box;
+    padding: 30px 40px;    
+}
+
+@media screen and (min-width: 1000px) {
+    .navbar {
+        background: #000000E6 0% 0% no-repeat padding-box;
+        padding: 30px 126px;   /* 141px of the lauout minus 15px generated from contrainer bootstrap    */  
+    }
+}
+.navbar ul li:nth-child(-n+2) {
+    margin-right: 27px;
+}
+.navbar a span {
+    text-align: center;
+    font-size: 19px;
+    font-family: 'Circular Spotify Tx T';
+    letter-spacing: 0.57px;
+    color: #FFFFFF;
+}
+.navbar-brand img {
+    max-width: 100%;
+    width: 104px;
+    height: auto;
+}
