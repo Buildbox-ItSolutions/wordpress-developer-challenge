@@ -1,0 +1,159 @@
+@media only screen and (max-device-width: 780px) {
+
+  /**
+ * Navbar and header
+ */
+  .navbar {
+    margin-top: 25px;
+    height: auto;
+  }
+
+  .nav-wrapper {
+
+    display: block !important;
+    text-align: center;
+  }
+
+  .nav-wrapper ul li {
+
+    display: inline;
+    margin-top: 25px;
+    width: 20vw;
+  }
+
+  .nav-wrapper ul li a {
+
+    font-size: 9px;
+  }
+
+  .icon-container img {
+    display: inline-block !important;
+    height: 20px;
+  }
+
+  .current-menu-item .icon-container path {
+    fill: #ff0000;
+  }
+
+  /**
+ * Carousel
+ */
+  .carousel-caption {
+
+    bottom: 2.25rem;
+  }
+
+  .carousel-item img {
+
+    height: 60vh;
+  }
+
+  .carousel-caption .small-media-details span {
+
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+
+  .carousel-caption .more-info-btn {
+
+    font-size: 12px;
+    padding: 10px 70px;
+
+  }
+
+  .carousel-caption h2 {
+
+    font-size: 40px;
+  }
+
+  .media-duration,
+  .media-type {
+
+    font-size: 12px;
+  }
+
+  /**
+ * Media rows
+ */
+  .media-row .card .custom-card-body .card-title {
+
+    font-size: 20px;
+  }
+
+  .media-row .card {
+
+    width: 148px;
+  }
+
+  .media-row .card img {
+
+    width: 148px;
+    height: 220px;
+  }
+
+  /**
+ * Player and embed
+ */
+
+  .plyr {
+
+    margin: 0;
+  }
+
+  /**
+ * Article
+ */
+
+  article {
+
+    margin-top: 20px;
+  }
+
+  article h1 {
+
+    font-size: 28px;
+    line-height: 40px;
+    margin-bottom: 30px;
+  }
+
+  article .media-synopsis {
+    font-size: 12px;
+    margin: 20px;
+
+  }
+
+  /**
+ * Pages
+ */
+  .archive_page,
+  .not_found_page {
+
+    margin-top: 40px;
+  }
+
+  .archive_page p {
+
+    font-size: 12px;
+
+  }
+
+  .archive-left-column {
+
+    padding: 0px 40px 0px 40px;
+  }
+
+  .media-header {
+
+    padding-left: 20px;
+  }
+
+  /**
+ * Footer
+ */
+  footer p {
+
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 12px;
+  }
+}

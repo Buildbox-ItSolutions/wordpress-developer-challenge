@@ -1,0 +1,9 @@
+[
+    {
+      "name": "Advanced Custom Fields",
+      "host": "wordpress",
+      "slug": "advanced-custom-fields/acf.php",
+      "uri": "https://br.wordpress.org/plugins/advanced-custom-fields/",
+      "required": true
+    }
+  ]

@@ -1,0 +1,279 @@
+/**
+ * Basic elements
+ */
+:root {
+
+    --plyr-control-icon-size: 40px;
+}
+
+body {
+
+    background-color: #000;
+    font-family: 'Outfit', sans-serif;
+    letter-spacing: 1px;
+}
+
+* {
+
+    color: #fff;
+}
+
+h2 {
+
+    color: #ff0000;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+/**
+ * Navbar and header
+ */
+
+.navbar {
+
+    z-index: 99999;
+    height: 92px;
+}
+
+.navbar-nav .current-menu-item a {
+
+    color: #ff0000 !important;
+}
+
+.navbar-nav li a {
+
+    font-size: 19px;
+}
+.navbar-dark .navbar-nav .nav-link {
+
+    color: #fff;
+    
+}
+/**
+ * Home logo
+ */
+
+.home-logo img {
+
+    transition-duration: 0.3s;
+}
+
+.home-logo img:hover {
+
+    width: 110px;
+
+}
+
+/**
+ * Player and embed
+ */
+
+.plyr {
+
+    margin-top: 74px;
+}
+
+.plyr .plyr__poster {
+
+    background-size: cover;
+}
+
+.embed-responsive {
+
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 */
+    height: 0;
+}
+
+.embed-responsive iframe {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/**
+ * Sections
+ */
+
+section {
+
+    margin-bottom: 48px;
+}
+
+section h2 {
+
+    margin-top: 34px;
+}
+
+/**
+ * Article
+ */
+
+article {
+
+    margin-top: 167px;
+    padding-bottom: 150px;
+}
+
+article h1 {
+    margin-top: 11px;
+    font-size: 70px;
+    font-weight: 900;
+    line-height: 87px;
+}
+
+article .media-synopsis {
+
+    max-width: 944px;
+    margin: 93px auto 0;
+    font-size: 18px;
+}
+
+/**
+ * Single video
+ */
+
+.single-video .media-header {
+
+    max-width: 1083px;
+    margin: 0 auto;
+}
+
+/**
+ * Pages
+ */
+
+.archive_page,
+.not_found_page {
+    margin-top: 172px;
+    margin-bottom: 90px;
+
+}
+
+.archive_page p {
+
+    font-size: 18px;
+}
+
+.archive_page h1 {
+
+    color: #ff0000;
+    font-size: 40px;
+
+}
+
+/**
+ * Carousel
+ */
+
+.carousel {
+
+    margin-bottom: 100px;
+}
+
+.carousel-item img {
+
+    max-height: 90vh;
+    object-fit: cover;
+    opacity: 0.5;
+}
+
+.carousel-caption {
+    text-align: left;
+    bottom: 9.25rem;
+
+}
+
+.carousel-caption h2 {
+    color: #fff;
+    font-size: 100px;
+    font-weight: 900;
+}
+
+.carousel-caption .more-info-btn {
+
+    background-color: #ff0000;
+    font-size: 18px;
+    padding: 19px 78px;
+}
+
+/**
+ * Media rows
+ */
+
+.media-row .swiper-button-next,
+.media-row .swiper-button-prev {
+
+    color: #fff;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+
+    font-size: 90px !important;
+}
+
+.more-info-btn {
+    margin-top: 13px;
+}
+
+.media-duration,
+.media-type {
+    padding: 3px 36px;
+    font-size: 18px;
+    letter-spacing: 0.54px;
+    margin-right: 10px;
+}
+
+.media-row .card {
+
+    width: 248px;
+    margin-right: 30px;
+    margin-bottom: 46px;
+    word-wrap: normal;
+}
+
+.media-row .card img {
+
+    width: 248px;
+    height: 387px;
+    object-fit: cover;
+    transition-duration: 0.3s;
+}
+
+.media-row .card img:hover {
+
+    opacity: 0.8;
+}
+
+.media-row .card .custom-card-body {
+
+    margin-top: 30px;
+}
+
+.media-row .card .custom-card-body .card-title {
+
+    margin-top: 6px;
+    font-size: 30px;
+}
+
+/**
+ * Footer
+ */
+
+footer {
+
+    background-color: #121212;
+    height: 30vh;
+}
+
+footer p {
+
+    margin-top: 33px;
+}
+
+
