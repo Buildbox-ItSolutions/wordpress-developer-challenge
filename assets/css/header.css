@@ -1,3 +1,26 @@
-.navbar{
-    background: #000;
+header{
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
+
+.nav{
+  background: #000;
+  padding: 1.7rem 0;
+}
+
+.menu{}
+
+  .menu .menu-link{
+    font-size: 19px;
+    color: #fff;
+    margin: 0 24px;
+  }
+    .menu .menu-link:last-child{
+      margin: 0;
+    }
+    .menu .menu-link:hover,
+    .menu .menu-link:active,
+    .menu .menu-link:focus{
+      color: #FF0000;
+    }

@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'CircularSpotifyMed';
+  src: url('../fonts/CircularSpotifyTxT-Med.woff2') format('woff2'),
+  url('../fonts/CircularSpotifyTxT-Med.woff') format('woff');
+  url('../fonts/CircularSpotifyTxT-Med.ttf') format('ttf');
+  url('../fonts/CircularSpotifyTxT-Med.eot') format('eot');
+  font-weight: normal;
+  font-style: normal;
+}

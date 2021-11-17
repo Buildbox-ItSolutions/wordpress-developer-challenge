@@ -19,33 +19,29 @@
   <?php wp_head(); ?>
 </head>
 <body>
-<header class="header w-100 sticky-top">
-  <nav class="navbar navbar-light navbar-expand-lg navbar-dark">
+<header>
+  <nav class="nav">
     <div class="container">
-      <a class="navbar-brand" href="<?php bloginfo("url") ?>">
+      <a href="<?php bloginfo("url") ?>">
         <?php
           $custom_logo_id = get_theme_mod('custom_logo');
           $logo = wp_get_attachment_image_src($custom_logo_id, 'full');
       
       
           if(has_custom_logo()) {
-            echo '<img src="'. esc_url($logo[0]). '" class="navbar-brand__img" alt="'. get_bloginfo('name'). '" title="'. get_bloginfo('name'). '">';
+            echo '<img src="'. esc_url($logo[0]). '" alt="'. get_bloginfo('name'). '" title="'. get_bloginfo('name'). '">';
           }else {
             echo '<p class="m-0 text-white">'. get_bloginfo('name'). '</p>';
           }
         ?>
       </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-        </ul>
-      </div>
+      <ul class="menu ml-auto">
+        <li class="menu-item">
+          <a class="menu-link" href="#">Home </a>
+          <a class="menu-link" href="#">Home </a>
+        </li>
+      </ul>
     </div>
   </nav>
 </header>
