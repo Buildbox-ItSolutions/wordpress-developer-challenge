@@ -1,6 +1,27 @@
 /**
  * Basic elements
  */
+@font-face {
+    font-family: 'CircularSpotifyTxT';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../fonts/CircularSpotifyTxT-Med.eot');
+    src: url('../fonts/CircularSpotifyTxT-Med.woff2') format('woff2'), url('../fonts/CircularSpotifyTxT-Med.svg') format('svg');
+
+}
+
+@font-face {
+    font-family: 'CircularSpotifyTxT';
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url('../fonts/CircularSpotifyTxT-Black.eot');
+    src: url('../fonts/CircularSpotifyTxT-Black.woff2') format('woff2'), url('../fonts/CircularSpotifyTxT-Black.svg') format('svg');
+
+
+}
+
 :root {
 
     --plyr-control-icon-size: 40px;
@@ -9,8 +30,9 @@
 body {
 
     background-color: #000;
-    font-family: 'Outfit', sans-serif;
+    font-family: 'CircularSpotifyTxT', sans-serif;
     letter-spacing: 1px;
+
 }
 
 * {
@@ -44,11 +66,13 @@ h2 {
 
     font-size: 19px;
 }
+
 .navbar-dark .navbar-nav .nav-link {
 
     color: #fff;
-    
+
 }
+
 /**
  * Home logo
  */
@@ -275,5 +299,3 @@ footer p {
 
     margin-top: 33px;
 }
-
-
