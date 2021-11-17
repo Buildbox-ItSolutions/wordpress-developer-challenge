@@ -18,3 +18,9 @@
     wp_enqueue_script('script-bootstrap',  'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js');
   }
   add_action('wp_enqueue_scripts', 'challenge_theme_scripts');
+  
+  //Remove admin bar
+  add_filter( 'show_admin_bar' , 'started_theme_admin_bar');
+  function started_theme_admin_bar(){
+    return false;
+  }
