@@ -20,7 +20,26 @@
   add_action('wp_enqueue_scripts', 'challenge_theme_scripts');
   
   //Remove admin bar
-  add_filter( 'show_admin_bar' , 'started_theme_admin_bar');
-  function started_theme_admin_bar(){
+  add_filter( 'show_admin_bar' , 'challenge_theme_admin_bar');
+  function challenge_theme_admin_bar(){
     return false;
   }
+  
+  //Custom logo
+  if (!function_exists('challenge_theme_setup')) {
+    function challenge_theme_setup()
+    {
+      
+      // Adds theme support to logo
+      add_theme_support(
+        'custom-logo',
+        array(
+          'height'      => 80,
+          'width'       => 220,
+          'flex-width'  => true,
+          'flex-height' => true,
+        )
+      );
+    }
+  }
+  add_action('after_setup_theme', 'challenge_theme_setup');
