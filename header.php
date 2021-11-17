@@ -35,12 +35,13 @@
           }
         ?>
       </a>
-
-      <ul class="menu ml-auto">
-        <li class="menu-item">
-          <a class="menu-link" href="#">Home </a>
-          <a class="menu-link" href="#">Home </a>
-        </li>
+  
+      <ul class="menu">
+        <?php wp_list_categories( array(
+          'title_li'           => __( '' ),
+          'orderby'    => 'name',
+          'taxonomy'   => 'films_taxonomy',
+        ) ); ?>
       </ul>
     </div>
   </nav>
