@@ -34,8 +34,8 @@
       add_theme_support(
         'custom-logo',
         array(
-          'height'      => 80,
-          'width'       => 220,
+          'height'      => 104,
+          'width'       => 34,
           'flex-width'  => true,
           'flex-height' => true,
         )

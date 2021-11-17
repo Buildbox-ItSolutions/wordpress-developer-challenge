@@ -20,7 +20,7 @@
 </head>
 <body>
 <header class="header w-100 sticky-top">
-  <nav class="navbar navbar-expand-lg navbar-dark">
+  <nav class="navbar navbar-light navbar-expand-lg navbar-dark">
     <div class="container">
       <a class="navbar-brand" href="<?php bloginfo("url") ?>">
         <?php
@@ -40,7 +40,7 @@
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
+        <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
