@@ -46,10 +46,10 @@
               )
             );
             ?>
-            <h2><?php echo $category->name; ?></h2>
-            <div class="films-card">
+            <h2 class="films-category"><?php echo $category->name; ?></h2>
+              <div class="films-card">
                 <?php while ($filmss->have_posts()) : $filmss->the_post(); ?>
-                  <div class="films-card__post">
+                  <div class="films-post">
                     <?php if(get_the_post_thumbnail_url()) { ?>
                       <img class="films-thumbnail"
                            src="<?php the_post_thumbnail_url(); ?>"
@@ -61,8 +61,13 @@
                            alt="<?php the_title(); ?>"
                       />
                     <?php } ?>
-                    <div class="content">
-                      <h6><?php the_title(); ?></h6>
+                    <div class="films-content">
+                      <div class="badges">
+                        <?php if (get_field('films-time')) { ?>
+                          <span><?php the_field('films-time'); ?></span>
+                        <?php } ?>
+                      </div>
+                      <h5 class="films-title"><?php the_title(); ?></h5>
                     </div>
                   </div>
                 <?php endwhile; ?>
