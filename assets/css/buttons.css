@@ -1,0 +1,19 @@
+.button{
+  font-size: 18px;
+  padding: 22px 80px;
+  transition: .3s;
+  border-radius: 3px;
+}
+
+.button:hover{
+  filter: saturate(0.8);
+}
+
+.button:active{
+  filter: saturate(0.7);
+}
+
+.button-primary{
+  background: var(--primarey-color);
+  color: var(--white-color);
+}
