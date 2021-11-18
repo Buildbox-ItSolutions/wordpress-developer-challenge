@@ -22,7 +22,7 @@ body{
 .showcase-title{
   font-size: 100px;
   line-height: 100px;
-  color: #fff;
+  color: var(--white-color);
   margin: 30px 0;
   letter-spacing: -4px;
 }
@@ -79,6 +79,6 @@ body{
     .films-post .films-thumbnail.img-none{
       object-fit: contain;
     filter: unset;
-    background: #141414;
+    background: var(--gray-color);
     padding: 25px;
   }
