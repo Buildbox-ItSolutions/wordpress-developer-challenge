@@ -26,7 +26,20 @@ body{
 
 .container {
     width: 100%;
-    padding: 0 15px;
+    padding: 0 30px;
     margin: 0 auto;
-    max-width: 1140px;
+    max-width: 1600px;
+}
+
+@media all and (max-width: 1600px) {
+    .container{
+        max-width: 1366px;
+    }
+}
+
+
+@media all and (max-width: 1366px) {
+    .container{
+        max-width: 1140px;
+    }
 }

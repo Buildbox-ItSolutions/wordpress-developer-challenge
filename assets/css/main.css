@@ -7,7 +7,7 @@ body{
 
 .showcase-item{
   width: 100%;
-  height: calc(100vh - 90px);
+  height: 100vh;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -54,8 +54,19 @@ body{
     margin-bottom: 34px;
   }
 
+  .films-card__post{
+    margin: 0 15px;
+  }
+
   .films-card .films-thumbnail{
     width: 100%;
     height: 387px;
     object-fit: cover;
+  }
+
+  .films-card .films-thumbnail.img-none{
+    object-fit: contain;
+    filter: unset;
+    background: #141414;
+    padding: 25px;
   }

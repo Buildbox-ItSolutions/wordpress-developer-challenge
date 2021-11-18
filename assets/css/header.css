@@ -1,11 +1,12 @@
 header{
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0;
   z-index: 10;
 }
 
 .nav{
-  background: #000;
+  background: rgba(0,0,0, .9);
   padding: 1.7rem 0;
 }
 

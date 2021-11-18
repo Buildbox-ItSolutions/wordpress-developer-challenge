@@ -56,7 +56,7 @@
                            alt="<?php the_title(); ?>"
                       />
                     <?php } else { ?>
-                      <img class="films-thumbnail img-off"
+                      <img class="films-thumbnail img-none"
                            src="<?php bloginfo('template_url'); ?>/assets/img/logo.png"
                            alt="<?php the_title(); ?>"
                       />
