@@ -26,6 +26,55 @@
         endif;
       ?>
     </section>
+    
+    <section class="films">
+      <div class="container">
+        <?php
+          $filmsCategories = get_terms( 'films_taxonomy' );
+          foreach ( $filmsCategories as $category ):
+            $filmss = new WP_Query(
+              array(
+                'post_type' => 'films',
+                'showposts' => -1,
+                'tax_query' => array(
+                  array(
+                    'taxonomy'  => 'films_taxonomy',
+                    'terms'     => array( $category->slug ),
+                    'field'     => 'slug'
+                  )
+                )
+              )
+            );
+            ?>
+
+            <div class="films-card">
+              <h2><?php echo $category->name; ?></h2>
+              <?php while ($filmss->have_posts()) : $filmss->the_post(); ?>
+                <div class="films-card__post">
+                  <?php if(get_the_post_thumbnail_url()) { ?>
+                    <img class="films-thumbnail"
+                         src="<?php the_post_thumbnail_url(); ?>"
+                         alt="<?php the_title(); ?>"
+                    />
+                  <?php } else { ?>
+                    <img class="films-thumbnail img-off"
+                         src="<?php bloginfo('template_url'); ?>/assets/img/logo.png"
+                         alt="<?php the_title(); ?>"
+                    />
+                  <?php } ?>
+                  <div class="content">
+                    <h6><?php the_title(); ?></h6>
+                  </div>
+                </div>
+              <?php endwhile; ?>
+            </div>
+            <?php
+            $filmss = null;
+            wp_reset_postdata();
+          endforeach;
+        ?>
+      </div>
+    </section>
   </main>
 
 <?php get_footer();

@@ -14,6 +14,6 @@
 }
 
 .button-primary{
-  background: var(--primarey-color);
+  background: var(--primary-color);
   color: var(--white-color);
 }
