@@ -1,0 +1,278 @@
+@font-face {
+    font-family: Circular Black;
+    src: url('../fonts/CircularSpotifyTxT-Black.eot') format('eot'),
+         url('../fonts/CircularSpotifyTxT-Black.svg') format('svg'),
+         url('../fonts/CircularSpotifyTxT-Black.woff') format('woff'),
+         url('../fonts/CircularSpotifyTxT-Black.woff2') format('woff2'),
+         url('../fonts/CircularSpotifyTxT-Black.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: Circular Bold;
+    src: url('../fonts/CircularSpotifyTxT-Bold.eot') format('eot'),
+         url('../fonts/CircularSpotifyTxT-Bold.svg') format('svg'),
+         url('../fonts/CircularSpotifyTxT-Bold.woff') format('woff'),
+         url('../fonts/CircularSpotifyTxT-Bold.woff2') format('woff2'),
+         url('../fonts/CircularSpotifyTxT-Bold.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: Circular Book;
+    src: url('../fonts/CircularSpotifyTxT-Book.eot') format('eot'),
+         url('../fonts/CircularSpotifyTxT-Book.svg') format('svg'),
+         url('../fonts/CircularSpotifyTxT-Book.woff') format('woff'),
+         url('../fonts/CircularSpotifyTxT-Book.woff2') format('woff2'),
+         url('../fonts/CircularSpotifyTxT-Book.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: Circular Light;
+    src: url('../fonts/CircularSpotifyTxT-Light.eot') format('eot'),
+         url('../fonts/CircularSpotifyTxT-Light.svg') format('svg'),
+         url('../fonts/CircularSpotifyTxT-Light.woff') format('woff'),
+         url('../fonts/CircularSpotifyTxT-Light.woff2') format('woff2'),
+         url('../fonts/CircularSpotifyTxT-Light.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: Circular Medium;
+    src: url('../fonts/CircularSpotifyTxT-Med.eot') format('eot'),
+         url('../fonts/CircularSpotifyTxT-Med.svg') format('svg'),
+         url('../fonts/CircularSpotifyTxT-Med.woff') format('woff'),
+         url('../fonts/CircularSpotifyTxT-Med.woff2') format('woff2'),
+         url('../fonts/CircularSpotifyTxT-Med.ttf') format('ttf');
+}
+
+body {
+    font-family: 'Circular Medium';
+}
+
+header {
+    background-color: #000000E6;
+    padding: 29px 0px;
+
+    @include breakpoint (medium down) {
+        h1 img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+    .menu {
+        
+        a {
+            font-size: 19px;
+            color: #FFF;
+            transition: color ease-in-out 500ms;
+
+            &:hover {
+                color: #FF0000;
+            }
+
+        }
+
+        .active {
+            color: #FF0000;
+        }
+
+    }
+
+}
+
+#hero {
+
+    padding: 200px 0px;
+
+    .hero-overlay {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+    }
+
+    .label {
+        background-color: #FFF;
+        color: #000;
+        border-radius: 3px;
+        margin-right: 5px;
+        border: solid 1px #FFF;
+
+        a {
+            padding: 6px 26px;
+            color: #000;
+        }
+    }
+
+    .label-alt {
+        background-color: transparent;
+        color: #FFF;
+        border: solid 1px #FFF;
+    }
+
+    h2 {
+        font-family: 'Circular Black';
+        font-size: 70px;
+        letter-spacing: -4px;
+        line-height: 1;
+        margin: 40px 0px;
+        color: #FFF;
+
+        @include breakpoint (medium down) {
+            font-size: 50px;
+        }
+
+    }
+
+    .button {
+        background-color: #FF0000;
+        padding: 20px 78px;
+        transition: all ease-in-out 500ms;
+        border-radius: 3px;
+
+        @include breakpoint (medium down) {
+            padding: 20px 40px;
+        }
+
+        &:hover {
+            background-color: #FFF;
+            color: #000;
+        }
+
+    }
+
+}
+
+#movies {
+    padding: 60px 0px 30px 0px;
+}
+
+#docs,
+#series {
+    padding: 30px 0px;
+}
+
+#movies,
+#docs,
+#series {
+    background-color: #000;
+
+    h3 {
+        color: #FF0000;
+        font-family: 'Circular Black';
+        font-size: 32px;
+        letter-spacing: -1px;
+    }
+
+    .slick-slide {
+        padding: 10px;
+
+        img {
+            padding-bottom: 20px;
+        }
+
+        .label {
+            background-color: transparent;
+            color: #FFF;
+            border-radius: 3px;
+            border: solid 1px #FFF;
+            margin-bottom: 20px;
+        }
+
+        h4 {
+            font-size: 16px;
+            color: #FFF;
+            font-family: 'Circular Black';
+        }
+
+    }
+
+}
+
+#mainContent {
+    background-color: #000000E6;
+    padding: 70px 0px;
+
+    h2 {
+        color: #FF0000;
+        font-family: 'Circular Black';
+        font-size: 32px;
+    }
+
+    p {
+        color: #FFF;
+        font-family: 'Circular Medium';
+        font-size: 16px;
+    }
+
+    .label {
+        background-color: transparent;
+        border: solid 1px #FFF;
+        border-radius: 3px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    h3 {
+        color: #FFF;
+        font-family: 'Circular Black';
+        font-size: 20px;
+    }
+
+}
+
+#footerMenu {
+    background-color: #121212;
+    display: block;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    padding: 20px 0px;
+
+    @include breakpoint(medium up) {
+        display: none;
+    }
+    
+    a {
+        color: #FFF;
+
+        &:hover {
+            color: #FF0000;
+        }
+
+    }
+
+    .active {
+        color: #FF0000;
+    }
+
+    img {
+        display: block;
+        margin: 0 auto 10px auto;
+        width: 24px;
+        height: 24px;
+    }
+
+}
+
+footer {
+    background-color: #121212;
+    padding: 110px 0px;
+    color: #FFF;
+
+    @include breakpoint(medium down) {
+        text-align: center;
+        font-size: 12px;
+    }
+
+    img {
+        padding-bottom: 20px;
+
+        @include breakpoint(medium down) {
+            display: block;
+            margin: 0 auto;
+        }
+
+    }
+
+}
