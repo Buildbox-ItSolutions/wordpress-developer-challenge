@@ -9,7 +9,7 @@
 
                     <h2><?php single_term_title(); ?></h2>
 
-                    <p><?php term_description(); ?></p>
+                    <p><?php echo term_description(); ?></p>
 
                 </div>
 

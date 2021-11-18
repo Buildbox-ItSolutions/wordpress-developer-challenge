@@ -1,0 +1,44 @@
+{
+    "footer": {
+        "page_title": "Rodapé",
+        "menu_slug": "footer",
+        "menu_title": "Rodapé",
+        "capability": "edit_posts",
+        "position": "",
+        "parent_slug": "play",
+        "icon_url": "",
+        "redirect": true,
+        "post_id": "options",
+        "autoload": false,
+        "update_button": "Update",
+        "updated_message": "Options Updated"
+    },
+    "header": {
+        "page_title": "Header",
+        "menu_slug": "header",
+        "menu_title": "Header",
+        "capability": "edit_posts",
+        "position": "",
+        "parent_slug": "play",
+        "icon_url": "",
+        "redirect": true,
+        "post_id": "options",
+        "autoload": false,
+        "update_button": "Update",
+        "updated_message": "Options Updated"
+    },
+    "play": {
+        "page_title": "Opções do Tema",
+        "menu_slug": "play",
+        "menu_title": "Opções do Tema",
+        "capability": "edit_posts",
+        "position": "",
+        "parent_slug": "",
+        "icon_url": "dashicons-art",
+        "redirect": true,
+        "post_id": "options",
+        "autoload": false,
+        "update_button": "Atualizar",
+        "updated_message": "Opções Atualizadas"
+    }
+}

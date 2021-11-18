@@ -27,7 +27,7 @@
 
           <h2><?php the_title(); ?></h2>
 
-          <a href="<?php the_permalink(); ?>" class="button">Mais informações</a>
+          <a href="<?php the_permalink(); ?>" class="button" title="Veja mais sobre <?php the_title(); ?>">Mais informações</a>
 
         </div>
 

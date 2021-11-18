@@ -1,0 +1,256 @@
+[
+    {
+        "key": "group_619684d819f32",
+        "title": "Header",
+        "fields": [
+            {
+                "key": "field_619684dcda230",
+                "label": "Logo",
+                "name": "logo",
+                "type": "image",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "uploader": "",
+                "acfe_thumbnail": 0,
+                "return_format": "url",
+                "preview_size": "medium",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": "svg,jpg,png,gif,jpeg,webp",
+                "library": "all"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "header"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "left",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "acfe_display_title": "",
+        "acfe_autosync": "",
+        "acfe_form": 0,
+        "acfe_meta": "",
+        "acfe_note": ""
+    },
+    {
+        "key": "group_6196851f05a7c",
+        "title": "Rodapé",
+        "fields": [
+            {
+                "key": "field_619685222727a",
+                "label": "Menu do Rodapé",
+                "name": "footer_menu",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "acfe_repeater_stylised_button": 1,
+                "collapsed": "",
+                "min": 0,
+                "max": 0,
+                "layout": "block",
+                "button_label": "",
+                "sub_fields": [
+                    {
+                        "key": "field_619685372727b",
+                        "label": "Ícone",
+                        "name": "icone",
+                        "type": "acfe_code_editor",
+                        "instructions": "Inline SVG",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "mode": "text\/html",
+                        "lines": 1,
+                        "indent_unit": 4,
+                        "maxlength": "",
+                        "rows": 4,
+                        "max_rows": "",
+                        "return_entities": 1
+                    },
+                    {
+                        "key": "field_6196855c2727c",
+                        "label": "Texto",
+                        "name": "texto",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_619685632727d",
+                        "label": "Link",
+                        "name": "link",
+                        "type": "url",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": ""
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "footer"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "left",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "acfe_display_title": "",
+        "acfe_autosync": "",
+        "acfe_form": 0,
+        "acfe_meta": "",
+        "acfe_note": ""
+    },
+    {
+        "key": "group_618fab41e7cd8",
+        "title": "Video",
+        "fields": [
+            {
+                "key": "field_618fab8bc7392",
+                "label": "Sinopse",
+                "name": "sinopse",
+                "type": "wysiwyg",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "tabs": "all",
+                "toolbar": "basic",
+                "media_upload": 0,
+                "delay": 0
+            },
+            {
+                "key": "field_618fab56c7391",
+                "label": "Tempo de Duração",
+                "name": "tempo_de_duracao",
+                "type": "number",
+                "instructions": "Em minutos",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_618fabdbc7393",
+                "label": "Vídeo",
+                "name": "video",
+                "type": "oembed",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "width": "",
+                "height": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "video"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "left",
+        "instruction_placement": "label",
+        "hide_on_screen": [
+            "block_editor",
+            "the_content",
+            "excerpt",
+            "discussion",
+            "comments",
+            "format",
+            "page_attributes"
+        ],
+        "active": true,
+        "description": "",
+        "acfe_display_title": "",
+        "acfe_autosync": "",
+        "acfe_form": 0,
+        "acfe_meta": "",
+        "acfe_note": ""
+    }
+]

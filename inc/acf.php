@@ -3,14 +3,14 @@
 if( function_exists('acf_add_local_field_group') ):
 
     acf_add_local_field_group(array(
-        'key' => 'group_618fab41e7cd8',
-        'title' => 'Video',
+        'key' => 'group_619684d819f32',
+        'title' => 'Header',
         'fields' => array(
             array(
-                'key' => 'field_618fad41c7394',
-                'label' => 'Descrição',
-                'name' => 'descricao',
-                'type' => 'wysiwyg',
+                'key' => 'field_619684dcda230',
+                'label' => 'Logo',
+                'name' => 'logo',
+                'type' => 'image',
                 'instructions' => '',
                 'required' => 1,
                 'conditional_logic' => 0,
@@ -19,12 +19,153 @@ if( function_exists('acf_add_local_field_group') ):
                     'class' => '',
                     'id' => '',
                 ),
-                'default_value' => '',
-                'tabs' => 'all',
-                'toolbar' => 'basic',
-                'media_upload' => 0,
-                'delay' => 0,
+                'uploader' => '',
+                'acfe_thumbnail' => 0,
+                'return_format' => 'url',
+                'preview_size' => 'medium',
+                'min_width' => '',
+                'min_height' => '',
+                'min_size' => '',
+                'max_width' => '',
+                'max_height' => '',
+                'max_size' => '',
+                'mime_types' => 'svg,jpg,png,gif,jpeg,webp',
+                'library' => 'all',
             ),
+        ),
+        'location' => array(
+            array(
+                array(
+                    'param' => 'options_page',
+                    'operator' => '==',
+                    'value' => 'header',
+                ),
+            ),
+        ),
+        'menu_order' => 0,
+        'position' => 'normal',
+        'style' => 'default',
+        'label_placement' => 'left',
+        'instruction_placement' => 'label',
+        'hide_on_screen' => '',
+        'active' => true,
+        'description' => '',
+        'acfe_display_title' => '',
+        'acfe_autosync' => '',
+        'acfe_form' => 0,
+        'acfe_meta' => '',
+        'acfe_note' => '',
+    ));
+    
+    acf_add_local_field_group(array(
+        'key' => 'group_6196851f05a7c',
+        'title' => 'Rodapé',
+        'fields' => array(
+            array(
+                'key' => 'field_619685222727a',
+                'label' => 'Menu do Rodapé',
+                'name' => 'footer_menu',
+                'type' => 'repeater',
+                'instructions' => '',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'acfe_repeater_stylised_button' => 1,
+                'collapsed' => '',
+                'min' => 0,
+                'max' => 0,
+                'layout' => 'block',
+                'button_label' => '',
+                'sub_fields' => array(
+                    array(
+                        'key' => 'field_619685372727b',
+                        'label' => 'Ícone',
+                        'name' => 'icone',
+                        'type' => 'wysiwyg',
+                        'instructions' => 'Inline SVG',
+                        'required' => 0,
+                        'conditional_logic' => 0,
+                        'wrapper' => array(
+                            'width' => '',
+                            'class' => '',
+                            'id' => '',
+                        ),
+                        'default_value' => '',
+                        'tabs' => 'text',
+                        'media_upload' => 0,
+                        'toolbar' => 'full',
+                        'delay' => 0,
+                    ),
+                    array(
+                        'key' => 'field_6196855c2727c',
+                        'label' => 'Texto',
+                        'name' => 'texto',
+                        'type' => 'text',
+                        'instructions' => '',
+                        'required' => 0,
+                        'conditional_logic' => 0,
+                        'wrapper' => array(
+                            'width' => '',
+                            'class' => '',
+                            'id' => '',
+                        ),
+                        'default_value' => '',
+                        'placeholder' => '',
+                        'prepend' => '',
+                        'append' => '',
+                        'maxlength' => '',
+                    ),
+                    array(
+                        'key' => 'field_619685632727d',
+                        'label' => 'Link',
+                        'name' => 'link',
+                        'type' => 'url',
+                        'instructions' => '',
+                        'required' => 0,
+                        'conditional_logic' => 0,
+                        'wrapper' => array(
+                            'width' => '',
+                            'class' => '',
+                            'id' => '',
+                        ),
+                        'default_value' => '',
+                        'placeholder' => '',
+                    ),
+                ),
+            ),
+        ),
+        'location' => array(
+            array(
+                array(
+                    'param' => 'options_page',
+                    'operator' => '==',
+                    'value' => 'footer',
+                ),
+            ),
+        ),
+        'menu_order' => 0,
+        'position' => 'normal',
+        'style' => 'default',
+        'label_placement' => 'left',
+        'instruction_placement' => 'label',
+        'hide_on_screen' => '',
+        'active' => true,
+        'description' => '',
+        'acfe_display_title' => '',
+        'acfe_autosync' => '',
+        'acfe_form' => 0,
+        'acfe_meta' => '',
+        'acfe_note' => '',
+    ));
+    
+    acf_add_local_field_group(array(
+        'key' => 'group_618fab41e7cd8',
+        'title' => 'Video',
+        'fields' => array(
             array(
                 'key' => 'field_618fab8bc7392',
                 'label' => 'Sinopse',
@@ -114,4 +255,53 @@ if( function_exists('acf_add_local_field_group') ):
         'acfe_note' => '',
     ));
     
-    endif;		
+    endif;			
+
+    if( function_exists('acf_add_options_page') ):
+
+        acf_add_options_page(array(
+            'page_title' => 'Rodapé',
+            'menu_slug' => 'footer',
+            'menu_title' => 'Rodapé',
+            'capability' => 'edit_posts',
+            'position' => '',
+            'parent_slug' => 'play',
+            'icon_url' => '',
+            'redirect' => true,
+            'post_id' => 'options',
+            'autoload' => false,
+            'update_button' => 'Update',
+            'updated_message' => 'Options Updated',
+        ));
+        
+        acf_add_options_page(array(
+            'page_title' => 'Header',
+            'menu_slug' => 'header',
+            'menu_title' => 'Header',
+            'capability' => 'edit_posts',
+            'position' => '',
+            'parent_slug' => 'play',
+            'icon_url' => '',
+            'redirect' => true,
+            'post_id' => 'options',
+            'autoload' => false,
+            'update_button' => 'Update',
+            'updated_message' => 'Options Updated',
+        ));
+        
+        acf_add_options_page(array(
+            'page_title' => 'Opções do Tema',
+            'menu_slug' => 'play',
+            'menu_title' => 'Opções do Tema',
+            'capability' => 'edit_posts',
+            'position' => '',
+            'parent_slug' => '',
+            'icon_url' => 'dashicons-art',
+            'redirect' => true,
+            'post_id' => 'options',
+            'autoload' => false,
+            'update_button' => 'Atualizar',
+            'updated_message' => 'Opções Atualizadas',
+        ));
+        
+        endif;

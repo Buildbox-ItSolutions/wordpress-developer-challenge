@@ -5,6 +5,7 @@
          url('../fonts/CircularSpotifyTxT-Black.woff') format('woff'),
          url('../fonts/CircularSpotifyTxT-Black.woff2') format('woff2'),
          url('../fonts/CircularSpotifyTxT-Black.ttf') format('ttf');
+    font-display: swap;
 }
 
 @font-face {
@@ -14,6 +15,7 @@
          url('../fonts/CircularSpotifyTxT-Bold.woff') format('woff'),
          url('../fonts/CircularSpotifyTxT-Bold.woff2') format('woff2'),
          url('../fonts/CircularSpotifyTxT-Bold.ttf') format('ttf');
+    font-display: swap;
 }
 
 @font-face {
@@ -23,6 +25,7 @@
          url('../fonts/CircularSpotifyTxT-Book.woff') format('woff'),
          url('../fonts/CircularSpotifyTxT-Book.woff2') format('woff2'),
          url('../fonts/CircularSpotifyTxT-Book.ttf') format('ttf');
+    font-display: swap;
 }
 
 @font-face {
@@ -32,6 +35,7 @@
          url('../fonts/CircularSpotifyTxT-Light.woff') format('woff'),
          url('../fonts/CircularSpotifyTxT-Light.woff2') format('woff2'),
          url('../fonts/CircularSpotifyTxT-Light.ttf') format('ttf');
+    font-display: swap;
 }
 
 @font-face {
@@ -41,14 +45,16 @@
          url('../fonts/CircularSpotifyTxT-Med.woff') format('woff'),
          url('../fonts/CircularSpotifyTxT-Med.woff2') format('woff2'),
          url('../fonts/CircularSpotifyTxT-Med.ttf') format('ttf');
+    font-display: swap;
 }
 
 body {
     font-family: 'Circular Medium';
+    background: #000;
 }
 
 header {
-    background-color: #000000E6;
+    background-color: #000000;
     padding: 29px 0px;
 
     @include breakpoint (medium down) {
@@ -71,7 +77,8 @@ header {
 
         }
 
-        .active {
+        .active,
+        .current-menu-item a {
             color: #FF0000;
         }
 
@@ -220,6 +227,47 @@ header {
 
 }
 
+#mainSingle {
+    background-color: #000;
+    padding: 70px 0px;
+
+    .label {
+        background-color: #FFF;
+        color: #000;
+        border-radius: 3px;
+        margin-right: 5px;
+        border: solid 1px #FFF;
+
+        a {
+            padding: 6px 26px;
+            color: #000;
+        }
+    }
+
+    .label.alt {
+        background-color: transparent;
+        color: #FFF;
+        border: solid 1px #FFF;
+        padding: 6px 26px;
+    }
+
+    h2 {
+        color: #FFF;
+        font-family: 'Circular Black';
+        font-size: 50px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    p {
+        color: #FFF;
+        font-family: 'Circular Medium';
+        font-size: 16px;
+        margin-top: 40px;
+    }
+
+}
+
 #footerMenu {
     background-color: #121212;
     display: block;
@@ -246,11 +294,17 @@ header {
         color: #FF0000;
     }
 
-    img {
+    svg {
         display: block;
         margin: 0 auto 10px auto;
         width: 24px;
         height: 24px;
+        fill: #FFF;
+
+        &:hover {
+            fill: #FF0000 !important;
+        }
+
     }
 
 }

@@ -4,31 +4,22 @@
 
             <div class="grid-x">
 
-                <div class="cell small-4">
+                <?php if( have_rows('footer_menu', 'option') ): ?>
+                    <?php while( have_rows('footer_menu', 'option') ) : the_row(); ?>
+                        <?php
+                            $icone = get_sub_field('icone');
+                            $link = get_sub_field('link');
+                            $texto = get_sub_field('texto');
+                        ?>
+                        <div class="cell small-4">
 
-                    <a href="" class="icon">
-                        <img src="<?php echo get_template_directory_uri() ?>/img/movies.svg" alt="">
-                        Filmes
-                    </a>
+                            <a href="<?php echo $link; ?>" class="icon">
+                                <?php echo $icone; ?>
+                                <?php echo $texto; ?>
+                            </a>
 
-                </div>
-
-                <div class="cell small-4">
-
-                    <a href="" class="icon">
-                        <img src="<?php echo get_template_directory_uri() ?>/img/docs.svg" alt="">
-                        Documentários
-                    </a>
-
-                </div>
-                <div class="cell small-4">
-
-                    <a href="" class="icon">
-                        <img src="<?php echo get_template_directory_uri() ?>/img/series.svg" alt="">
-                        Séries
-                    </a>
-
-                </div>
+                        </div>
+                        <?php endwhile; endif; ?>
 
             </div>
 
@@ -43,7 +34,7 @@
                 <div class="cell auto">
 
                     <img src="<?php echo get_template_directory_uri() ?>/img/logo.svg" alt="" width="104">
-                    <p>© 2020 — Play — Todos os direitos reservados.</p>
+                    <p>&copy; <?php echo date('Y'); ?> — Play — Todos os direitos reservados.</p>
 
                 </div>
             </div>

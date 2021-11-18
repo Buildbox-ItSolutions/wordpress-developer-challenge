@@ -2,58 +2,61 @@
 
     <section id="mainSingle">
 
+        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
         <!-- title -->
         <div class="grid-container">
 
             <div class="grid-x grid-margin-x">
 
-                <div class="cell small-12">
+                <div class="cell small-12 large-8 large-offset-2">
 
-                    <span class="label">Filmes</span> <span class="label alt">130m</span>
+                    <span class="label"><?php echo get_the_term_list( $post->ID, 'tipo', '', '', '' ) ?></span> <span class="label alt"><?php the_field('tempo_de_duracao'); ?>m</span>
 
-                    <h2>Aenean convallis tortor</h2>
+                    <h2><?php the_title(); ?></h2>
 
+                </div>
+
+                <div class="cell small-12 large-12">
+                    <div class="responsive-embed">
+                        <?php
+                        // Load value.
+                        $iframe = get_field('video');
+
+                        // Use preg_match to find iframe src.
+                        preg_match('/src="(.+?)"/', $iframe, $matches);
+                        $src = $matches[1];
+
+                        // Add extra parameters to src and replcae HTML.
+                        $params = array(
+                            'controls'  => 0,
+                            'hd'        => 1,
+                            'autohide'  => 1
+                        );
+                        $new_src = add_query_arg($params, $src);
+                        $iframe = str_replace($src, $new_src, $iframe);
+
+                        // Add extra attributes to iframe HTML.
+                        $attributes = 'frameborder="0"';
+                        $iframe = str_replace('></iframe>', ' ' . $attributes . '></iframe>', $iframe);
+
+                        // Display customized HTML.
+                        echo $iframe;
+                        ?>
+                    </div>
+                </div>
+
+                <div class="cell small-12 large-8 large-offset-2">
+                    <?php the_field('sinopse'); ?>
                 </div>
 
             </div>
 
         </div>
 
-        <!-- video -->
-        <div class="grid-container-fluid">
+        <?php endwhile; else : ?>
+            <p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
+        <?php endif; ?>
 
-            <div class="grid-x grid-margin-x">
-
-                <div class="cell small-12">
-
-                    <a href="">
-
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/pexels-maxime-francis-2246476.jpg" alt="">
-
-                        <div class="overlay"></div>
-
-                    </a>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- content -->
-        <div class="grid-container">
-
-            <div class="grid-x grid-margin-x">
-
-                <div class="cell small-12">
-
-                    <p>Praesent et risus est. Nullam nec euismod arcu. Integer massa sem, iaculis sit amet ante et, fermentum sollicitudin est. Proin egestas felis arcu, eget egestas nisi accumsan non. Donec tincidunt et ipsum nec consectetur. Fusce dapibus, urna id cursus accumsan, lacus diam sagittis enim, in facilisis lorem purus in magna. Aenean sed augue commodo, auctor purus ac, varius purus. Etiam vel congue ligula, id porttitor dui. Aenean interdum mi ante, in volutpat quam laoreet quis. Donec aliquam convallis tempus.</p>
-
-                </div>
-
-            </div>
-
-        </div>
 
     </section>
 

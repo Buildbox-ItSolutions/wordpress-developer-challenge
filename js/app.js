@@ -2,6 +2,8 @@ jQuery(document).foundation();
 
 jQuery(document).ready(function(){
     jQuery('.movielist').slick({
+      autoplay: true,
+      autoplaySpeed: 2000,
       slidesToShow: 7,
       slidesToScroll: 1,
       responsive: [
