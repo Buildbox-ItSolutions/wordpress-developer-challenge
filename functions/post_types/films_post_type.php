@@ -33,7 +33,7 @@
       'has_archive'        => true,
       'hierarchical'       => true,
       'menu_position'      => null,
-      'supports'           => array( 'title', 'editor', 'thumbnail')
+      'supports'           => array( 'title')
     );
     
     register_post_type( 'films', $args );

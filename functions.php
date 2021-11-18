@@ -46,3 +46,6 @@
     
   //remove editor gutenberg enable editor classic
   add_filter('use_block_editor_for_post', '__return_false');
+
+  // AcfFields
+  require dirname(__FILE__) . '/functions/advanced-custom-fields.php';
