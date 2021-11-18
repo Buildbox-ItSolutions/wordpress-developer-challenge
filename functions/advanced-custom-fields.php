@@ -5,26 +5,6 @@
     'title' => 'Informações',
     'fields' => array(
       array(
-        'key' => 'field_53355607954',
-        'label' => 'Imagem de Capa',
-        'name' => 'films-thumbnail',
-        'type' => 'image',
-        'return_format' => 'url',
-      ),
-      array(
-        'key' => 'field_53355607955',
-        'label' => 'Imagem de Vitrine',
-        'name' => 'films-showcase',
-        'type' => 'image',
-        'return_format' => 'url',
-      ),
-      array(
-        'key' => 'field_53355607956',
-        'label' => 'Descrição',
-        'name' => 'films-content',
-        'type' => 'wysiwyg',
-      ),
-      array(
         'key' => 'field_53355607957',
         'label' => 'Tempo de Duração',
         'name' => 'films-time',
@@ -34,7 +14,10 @@
         'key' => 'field_53355607958',
         'label' => 'Sinopse',
         'name' => 'films-description',
-        'type' => 'textarea',
+        'type' => 'wysiwyg',
+        'tabs' => 'visual',
+        'toolbar' => 'basic',
+        'media_upload' => 0,
       ),
       array(
         'key' => 'field_53355607959',

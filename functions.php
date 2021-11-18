@@ -49,3 +49,7 @@
 
   // AcfFields
   require dirname(__FILE__) . '/functions/advanced-custom-fields.php';
+  
+  //Add post thumbnails and title tag
+  add_theme_support( 'post-thumbnails' );
+  add_theme_support( 'title-tag' );
