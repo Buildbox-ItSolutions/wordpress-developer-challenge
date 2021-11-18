@@ -1,0 +1,37 @@
+.showcase-item{
+  width: 100%;
+  height: calc(100vh - 90px);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.showcase-item .content{
+  max-width: 800px;
+  width: 100%;
+}
+
+.showcase-title{
+  font-size: 100px;
+  line-height: 100px;
+  color: #fff;
+  margin: 30px 0;
+  letter-spacing: -4px;
+}
+
+.showcase-item .badges a,
+.showcase-item .badges span{
+  font-size: 18px;
+  border-radius: 3px;
+  padding: 5px 30px;
+}
+  .showcase-item .badges a{
+    background: var(--white-color);
+    color: var(--gray-color);
+    margin-right: 5px;
+  }
+  .showcase-item .badges span{
+    border: solid var(--white-color) 1px;
+    color: var(--white-color);
+  }
