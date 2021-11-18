@@ -1,0 +1,32 @@
+/* main */
+
+/* Variables */
+:root {
+    --primary-color: #FF0000;
+    --secondary-color: #000;
+    --white-color: #fff;
+    --gray-color: #5A5A5A;
+}
+
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-size: 100%;
+    list-style-type: none;
+    font-family: CircularSpotifyMed, sans-serif;
+    background: var(--secondary-color);
+}
+
+.container {
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+    max-width: 1140px;
+}
