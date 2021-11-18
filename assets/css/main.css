@@ -1,0 +1,107 @@
+@font-face {
+  font-family: SpotifyH1;
+  src: url(../fonts/CircularSpotifyTxT-Black.ttf); }
+@font-face {
+  font-family: SpotifyBody;
+  src: url(../fonts/CircularSpotifyTxT-Med.ttf); }
+.btn, a {
+  transition: 0.6s; }
+
+.btn-white {
+  background-color: #FFFFFF;
+  color: grey;
+  padding: .375rem 2rem; }
+  .btn-white a {
+    color: #5A5A5A;
+    text-decoration: none; }
+  .btn-white:hover {
+    background-color: #FFFFFF;
+    color: grey; }
+
+.btn-white-outline {
+  background-color: transparent;
+  border: 1px solid #FFFFFF;
+  color: white;
+  padding: .375rem 2rem; }
+  .btn-white-outline:hover {
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    color: white; }
+
+.btn-red {
+  background-color: #FF0000;
+  color: white;
+  padding: .575rem 2rem; }
+  .btn-red:hover {
+    background-color: #FFFFFF;
+    color: grey; }
+
+html, body {
+  height: 100%;
+  position: relative; }
+
+body {
+  font-family: SpotifyBody;
+  font-size: 18px !important; }
+
+#header {
+  background-color: #000000E6; }
+  #header #menu-menu-principal li {
+    padding: 0 15px; }
+    #header #menu-menu-principal li a {
+      color: #FFFFFF;
+      text-decoration: none; }
+      #header #menu-menu-principal li a:hover {
+        color: #FF0000; }
+
+#hero .card {
+  border: 0; }
+  #hero .card .card-img {
+    border-radius: 0; }
+  #hero .card .card-img-overlay {
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3); }
+    #hero .card .card-img-overlay .card-title {
+      font-size: 58px;
+      font-family: SpotifyH1;
+      margin: 30px 0; }
+
+#filmes, #documentarios, #series {
+  background-color: #000000;
+  padding: 60px 0;
+  position: relative; }
+  #filmes .sec-title, #documentarios .sec-title, #series .sec-title {
+    font-size: 28px;
+    font-family: SpotifyH1;
+    color: #FF0000;
+    margin: 0 0 30px 0; }
+  #filmes .swiper-container, #documentarios .swiper-container, #series .swiper-container {
+    width: 100%;
+    height: 100%;
+    transition: 3s ease all; }
+  #filmes .swiper-slide, #documentarios .swiper-slide, #series .swiper-slide {
+    text-align: center;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    transform: scale(1.1); }
+  #filmes .card, #documentarios .card, #series .card {
+    width: 12rem; }
+    #filmes .card img, #documentarios .card img, #series .card img {
+      height: 18rem;
+      width: 12rem;
+      object-fit: cover; }
+
+#footer {
+  background-color: #121212;
+  color: #FFFFFF;
+  padding: 50px 0; }
+
+/*# sourceMappingURL=main.css.map */
