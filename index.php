@@ -46,28 +46,27 @@
               )
             );
             ?>
-
+            <h2><?php echo $category->name; ?></h2>
             <div class="films-card">
-              <h2><?php echo $category->name; ?></h2>
-              <?php while ($filmss->have_posts()) : $filmss->the_post(); ?>
-                <div class="films-card__post">
-                  <?php if(get_the_post_thumbnail_url()) { ?>
-                    <img class="films-thumbnail"
-                         src="<?php the_post_thumbnail_url(); ?>"
-                         alt="<?php the_title(); ?>"
-                    />
-                  <?php } else { ?>
-                    <img class="films-thumbnail img-off"
-                         src="<?php bloginfo('template_url'); ?>/assets/img/logo.png"
-                         alt="<?php the_title(); ?>"
-                    />
-                  <?php } ?>
-                  <div class="content">
-                    <h6><?php the_title(); ?></h6>
+                <?php while ($filmss->have_posts()) : $filmss->the_post(); ?>
+                  <div class="films-card__post">
+                    <?php if(get_the_post_thumbnail_url()) { ?>
+                      <img class="films-thumbnail"
+                           src="<?php the_post_thumbnail_url(); ?>"
+                           alt="<?php the_title(); ?>"
+                      />
+                    <?php } else { ?>
+                      <img class="films-thumbnail img-off"
+                           src="<?php bloginfo('template_url'); ?>/assets/img/logo.png"
+                           alt="<?php the_title(); ?>"
+                      />
+                    <?php } ?>
+                    <div class="content">
+                      <h6><?php the_title(); ?></h6>
+                    </div>
                   </div>
-                </div>
-              <?php endwhile; ?>
-            </div>
+                <?php endwhile; ?>
+              </div>
             <?php
             $filmss = null;
             wp_reset_postdata();

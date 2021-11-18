@@ -1,4 +1,4 @@
-<div class="showcase-item" style="background-image: url('<?php the_field('films-thumbnail'); ?>')">
+<div class="showcase-item" style="background-image: url('<?php the_post_thumbnail_url(); ?>')">
   <div class="container">
     <div class="content">
       <div class="badges">
