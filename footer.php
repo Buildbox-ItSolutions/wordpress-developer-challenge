@@ -10,8 +10,12 @@
    */
 
 ?>
-<footer>
-  footer
+<footer class="footer">
+  <div class="container">
+    <!-- Custom logo -->
+    <?php get_template_part( 'template-parts/custom', 'logo'); ?>
+    <span>© 2020 — Play — Todos os direitos reservados.</span>
+  </div>
 </footer>
 <?php wp_footer(); ?>
 

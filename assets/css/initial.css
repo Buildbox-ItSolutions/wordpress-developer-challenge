@@ -1,5 +1,10 @@
-@import "general.css";
-@import "header.css";
-@import "fonts.css";
+/* Sections */
 @import "main.css";
+@import "header.css";
+@import "footer.css";
+
+/* Components */
 @import "buttons.css";
+
+@import "general.css";
+@import "fonts.css";

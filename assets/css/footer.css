@@ -1,0 +1,14 @@
+.footer{
+  padding: 150px;
+  color: var(--white-color);
+  background: var(--dark-color);
+}
+  .footer img{
+    margin-bottom: 30px;
+  }
+
+  .footer span{
+    display: block;
+    font-size: 18px;
+    letter-spacing: .54px;
+  }
