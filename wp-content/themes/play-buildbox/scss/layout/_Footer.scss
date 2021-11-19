@@ -1,11 +1,79 @@
 footer {
   padding: 3em 0em;
   background-color: $dark;
-  p{
+  p {
     @media (max-width: 768px) {
-      font-size:10pt;
-      text-align:center;
+      font-size: 10pt;
+      text-align: center;
     }
-   
+  }
+  .menu-mobile {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 0em 1.5em;
+    background: #000;
+    z-index: 3;
+    ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+      li {
+        display: block;
+        a {
+          padding: 1em;
+          font-family: "CircularSpotifyTxT-Med";
+          letter-spacing: 0.55px;
+          color: $light;
+          position: relative;
+          @include transition(0.3s);
+        }
+        .icon-filmes{
+          font-size:12px;
+          text-align:center;
+          display:block;
+          &:before{
+            content: "";
+            width:24px;
+            height:24px;
+            margin:0 auto;
+            margin-bottom: 5px;
+            display:block;
+            background: url('../icons/ico-filmes.svg')no-repeat center center;
+          }
+        }
+        .icon-documentarios{
+          font-size:12px;
+          text-align:center;
+          display:block;
+          &:before{
+            content: "";
+            width:24px;
+            height:24px;
+            margin:0 auto;
+            margin-bottom: 5px;
+            display:block;
+            background: url('../icons/ico-documentarios.svg')no-repeat center center;
+          }
+        }
+        .icon-series{
+          font-size:12px;
+          text-align:center;
+          display:block;
+          &:before{
+            content: "";
+            width:24px;
+            height:24px;
+            margin:0 auto;
+            margin-bottom: 5px;
+            display:block;
+            background: url('../icons/ico-series.svg')no-repeat center center;
+          }
+        }
+      }
+    }
+    @media (min-width: 768px) {
+      display: none;
+    }
   }
 }
