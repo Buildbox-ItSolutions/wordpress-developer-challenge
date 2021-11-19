@@ -3,6 +3,14 @@
 ### Developer
 Allan da Cruz Dantas
 
+### Link Demo
+[Link demo](https://wordpress-developer-challenge.allancruz.com.br/).
+
+### Required plugins
+*Advanced Custom Fields - (https://www.advancedcustomfields.com/)*
+
+--------------
+
 Olá! Seja bem vindo ao desafio Wordpress Buildbox.
 
 Nosso objetivo é validar seus conhecimentos avançados em desenvolvimento WordPress, além de habilidades com front-end.
