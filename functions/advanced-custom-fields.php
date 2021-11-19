@@ -1,5 +1,6 @@
 <?php
   
+  //Custom fields for films post type
   acf_add_local_field_group(array(
     'key' => 'group_5dcdd01e7c3f6',
     'title' => 'Informações',

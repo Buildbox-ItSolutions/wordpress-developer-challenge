@@ -58,6 +58,7 @@
         color: var(--primary-color);
       }
 
+/* Media query */
 @media all and (max-width: 768px) {
   .header{
     position: absolute;

@@ -12,6 +12,7 @@
     letter-spacing: .54px;
   }
 
+/* Media query */
 @media all and (max-width: 768px) {
   .footer{
     text-align: center;

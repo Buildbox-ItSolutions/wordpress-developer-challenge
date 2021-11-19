@@ -41,36 +41,37 @@
   justify-content: center;
 }
 
-  @media all and (max-width: 1600px) {
+/* Media query */
+@media all and (max-width: 1600px) {
 
-    .page aside .films-card{
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
+  .page aside .films-card{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
+}
 
-  @media all and (max-width: 1368px) {
-    .single .embed-thumbnail{
-      height: 500px;
-    }
+@media all and (max-width: 1368px) {
+  .single .embed-thumbnail{
+    height: 500px;
   }
+}
 
 @media all and (max-width: 768px) {
-    .page{
-      margin-top: 140px;
-    }
-    .page .content{
-      flex-direction: column;
-    }
-
-    .single .title{
-      font-size: 28pt;
-    }
-
-    .single .embed-thumbnail{
-      height: 210px;
-      margin-bottom: 30px;
-      margin-left: -20px;
-      width: calc(100% - -40px);
-    }
+  .page{
+    margin-top: 140px;
   }
+  .page .content{
+    flex-direction: column;
+  }
+
+  .single .title{
+    font-size: 28pt;
+  }
+
+  .single .embed-thumbnail{
+    height: 210px;
+    margin-bottom: 30px;
+    margin-left: -20px;
+    width: calc(100% - -40px);
+  }
+}

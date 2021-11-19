@@ -78,7 +78,7 @@ body{
       padding: 25px;
   }
 
-
+/* Media query */
 @media all and (max-width: 768px) {
   .showcase-title{
     font-size: 40px;
