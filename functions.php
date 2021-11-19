@@ -54,7 +54,10 @@
   add_filter('use_block_editor_for_post', '__return_false');
 
   // AcfFields
-  require dirname(__FILE__) . '/functions/advanced-custom-fields.php';
+  require dirname(__FILE__) . '/functions/advanced-custom-fields.php';;
+
+  // Custom login page
+  require dirname(__FILE__) . '/functions/custom-login-page.php';
   
   //Add post thumbnails and title tag
   add_theme_support( 'post-thumbnails' );
