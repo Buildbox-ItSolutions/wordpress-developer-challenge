@@ -1,0 +1,227 @@
+@charset "UTF-8";
+
+/* configurações gerais */
+
+*{
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration:none;
+}
+
+@font-face {font-family: "Circular Spotify Tx T Black"; src: url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.eot"); src: url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.woff") format("woff"), url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.svg#Circular Spotify Tx T Black") format("svg"); }
+
+@font-face {font-family: "Circular Spotify Tx T Med"; src: url("//db.onlinewebfonts.com/t/1bc2daddba36ba331fc4fa67828eabdc.eot"); src: url("//db.onlinewebfonts.com/t/1bc2daddba36ba331fc4fa67828eabdc.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/1bc2daddba36ba331fc4fa67828eabdc.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/1bc2daddba36ba331fc4fa67828eabdc.woff") format("woff"), url("//db.onlinewebfonts.com/t/1bc2daddba36ba331fc4fa67828eabdc.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/1bc2daddba36ba331fc4fa67828eabdc.svg#Circular Spotify Tx T Med") format("svg"); }
+
+p, a, span, small{
+	
+	font-family: Circular Spotify Tx T Med;
+}
+
+#header a, #categoria a, #categorias p{
+	font-family: Circular Spotify Tx T Black;
+}
+
+#categoria a:hover, #categoria a:focus{
+	color:#B50000;
+}
+
+.vermelho{
+	color: #FF0000;
+}
+.vermelho_fundo{
+	background-color: #FF0000;
+}
+.preto{
+	color: #000000;
+}
+
+.menu-mobile, .menu-mobile-static{
+	display: none;
+}
+
+/* Header */
+
+#header{
+	background: #000000;
+}
+#header .header-externo{
+	justify-content: space-between;
+}
+#header .menu_items:hover, #header .menu_items:focus{
+	color: #FF0000!important;
+}
+
+/* Front-page */
+#banner{
+	height: 90vh;
+	position: relative;
+	z-index: 30;
+}
+#banner .banner_info{
+	position:absolute;
+	bottom: 20%;
+}
+#banner .fundo_branco{
+	background: #FFF;
+}
+#banner .fundo_branco:hover, #interna .fundo_branco:focus{
+	background-color: #F2F2F2;
+	color: #000000;
+} 	
+#banner .vermelho_fundo:hover, #interna .vermelho_fundo:focus{
+	background-color: #B50000;
+	color: #FFFFFF;
+}
+#categoria{
+	background: #000000;
+}
+#categoria .conteudo{
+	margin-left: 6%;
+}
+#categoria .item .thumb{
+	object-fit: cover;
+}
+#categoria .item .titulo{
+	height: 110px;
+}
+
+
+/* Page Category */
+
+#categorias{
+	background: #000000;
+}
+#categorias .categoria-externa{
+	flex-direction: row;
+}
+#categorias .item{
+	width:calc(100%/3 - 30px);
+	margin-left: 30px;
+}
+#categorias .item .thumb{
+	object-fit: cover;
+}
+#categorias .item .titulo{
+	height: 110px;
+}
+#categorias .info{
+	line-height: 2em;
+}
+
+
+/* Page Single */
+
+#interna{
+	background: #000000;
+}
+#interna .esquerda{
+	margin-left: 20%;
+}
+#interna .topo_interna{
+	padding-top:130px;
+}
+#interna .interna_img{
+	object-fit: cover;
+}
+#interna .info{
+	line-height: 2em;
+}
+#interna a span{
+	color: #000;
+}
+#interna .fundo_branco{
+	background: #FFF;
+}
+#interna .fundo_branco:hover, #interna .fundo_branco:focus{
+	background-color: #F2F2F2;
+}
+
+/* Footer */
+
+#footer{
+	background: #121212;
+	height: 385px;
+	align-items: center;
+	z-index: 30;
+	position: relative;
+}
+#footer .info_externo{
+	align-items: flex-start;	
+}
+
+/* responsivo */
+
+@media (max-width: 990px){
+	
+	/* configurações gerais */
+	
+	.menu-mobile{
+		display: block;
+		position: fixed;
+		bottom:5%;
+		z-index: 10;
+		background-color: rgba(0,0,0,0.8);
+		width: 100vw;
+	}
+	.menu-mobile-static{
+		display: block;
+		background-color: #000000;
+	}
+	.menu-mobile a:hover, .menu-mobile a:focus, .menu-mobile-static a:hover, .menu-mobile-static a:focus{
+		opacity: 0.3;
+      	filter: alpha(opacity=30)
+		}
+	
+	/* header */
+	
+	#header .header-externo{
+		justify-content: center;
+	}
+	#header .menu_items{
+		display: none;
+	}
+	#banner{
+		height: 100vh;
+	}
+	#banner .banner_info{
+		bottom: 33%;
+		margin-left: 6%;
+		padding-left: 0;
+	}
+	
+	/* Page Single */
+	
+	#interna .esquerda{
+	margin-left: 6%;
+	}
+	
+	/* Page Category */
+	
+	#categorias .categoria-externa{
+		flex-direction: column;
+	}
+	#categorias .item{
+		width:calc(100%/2 - 30px);
+		margin-left: 0;
+		margin: 0 15px; 
+	}
+	#categorias .categoria-videos{
+		margin-top: 50px;
+	}
+	#categorias .categoria-info{
+		padding: 0 15px;
+	}
+	
+	/* Footer */
+	
+	#footer{
+		align-items: flex-start;
+		padding-top: 50px!important;
+	}
+	
+	#footer .info-externo{
+		align-items: center;	
+	}
+}
