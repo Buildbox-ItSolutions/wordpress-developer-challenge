@@ -10,10 +10,14 @@
         </div>
         <h1 class="title"><?php the_title(); ?></h1>
       </div>
-      
-      <div class="page-embed">
-        <?php the_field('films-embed'); ?>
-      </div>
+
+      <?php if (get_field('films-embed')) { ?>
+        <a data-fancybox href="<?php the_field('films-embed'); ?>">
+          <div class="embed-thumbnail" style="background-image: url('<?php the_post_thumbnail_url(); ?>')">
+            <i class="icon-play"></i>
+          </div>
+        </a>
+      <?php } ?>
 
       <div class="content-sm">
         <article class="page-description">

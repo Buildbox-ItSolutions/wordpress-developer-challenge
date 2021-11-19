@@ -30,10 +30,15 @@
   margin-top: 30px;
 }
 
-.single .page-embed iframe{
+.single .embed-thumbnail{
   width: 100%;
   height: 920px;
   margin-bottom: 100px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
   @media all and (max-width: 1600px) {
@@ -44,8 +49,13 @@
     }
   }
 
+  @media all and (max-width: 1368px) {
+    .single .embed-thumbnail{
+      height: 500px;
+    }
+  }
 
-  @media all and (max-width: 768px) {
+@media all and (max-width: 768px) {
     .page{
       margin-top: 140px;
     }
@@ -57,9 +67,10 @@
       font-size: 28pt;
     }
 
-    .single .page-embed iframe{
+    .single .embed-thumbnail{
       height: 210px;
       margin-bottom: 30px;
+      margin-left: -20px;
+      width: calc(100% - -40px);
     }
-
   }

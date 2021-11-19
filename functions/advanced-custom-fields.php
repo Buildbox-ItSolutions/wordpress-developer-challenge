@@ -21,9 +21,9 @@
       ),
       array(
         'key' => 'field_53355607959',
-        'label' => 'Embed de Vídeo',
+        'label' => 'Url do Vídeo',
         'name' => 'films-embed',
-        'type' => 'textarea',
+        'type' => 'text',
       ),
     ),
     'location' => array(

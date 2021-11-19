@@ -1,0 +1,7 @@
+.icons{
+  display: inline-block;
+  line-height: 1;
+}
+  .icon-play:before{
+    content: url("../img/play-light.png");
+  }

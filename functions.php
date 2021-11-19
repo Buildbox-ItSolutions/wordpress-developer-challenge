@@ -13,10 +13,12 @@
   {
     wp_enqueue_style('styles-header', get_template_directory_uri() . '/assets/css/initial.css');
     wp_enqueue_style('styles-slick', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css');
+    wp_enqueue_style('styles-fancybox',  'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css');
     wp_enqueue_script('script-jquery',  'https://code.jquery.com/jquery-1.11.0.min.js');
     wp_enqueue_script('script-jquery-migrate',  'https://code.jquery.com/jquery-migrate-1.2.1.min.js');
     wp_enqueue_script('script-slick',  'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js');
     wp_enqueue_script('script-main', get_template_directory_uri() . '/assets/js/main.js');
+    wp_enqueue_script('scripts-fancybox', 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js');
   }
   add_action('wp_enqueue_scripts', 'challenge_theme_scripts');
   
