@@ -1,0 +1,51 @@
+@import 'variables';
+
+@font-face {
+	font-family: SpotifyH1;
+	src: url(../fonts/CircularSpotifyTxT-Black.ttf)
+}
+
+@font-face {
+	font-family: SpotifyBody;
+	src: url(../fonts/CircularSpotifyTxT-Med.ttf)
+}
+
+.btn, a{
+    transition: 0.6s;
+}
+
+.btn-white{
+    background-color: $white;
+    color: grey;
+    padding: .375rem 2rem;
+    a{
+        color: $grey;
+        text-decoration: none;
+    }
+    &:hover{
+        background-color: $white;
+        color: grey;
+    }
+}
+
+.btn-white-outline{
+    background-color: transparent;
+    border: 1px solid $white;
+    color: white;
+    padding: .375rem 2rem;
+    &:hover{
+        background-color: transparent;
+        border: 1px solid $white;
+        color: white;
+    }
+}
+
+.btn-red{
+    background-color: $red;
+    color: white;
+    padding: .575rem 2rem;
+    &:hover{
+        background-color: $white;
+        color: grey;
+    }
+}

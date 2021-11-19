@@ -1,0 +1,125 @@
+@import 'variables';
+@import 'customizes';
+
+html, body{
+    height: 100%;
+    position: relative;
+}
+
+body{
+    font-family: SpotifyBody;
+    font-size: 18px!important;
+}
+
+#main{
+    height: auto;
+    .filmes, .documentarios, .series{
+        background-color: $black;
+        padding: 60px 0 0 0;
+        .archive-list{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+#header{
+    background-color: $grey_other;
+    #menu-menu-principal{
+        li{
+            padding: 0 15px;
+            a{
+                color: $white;
+                text-decoration: none;
+                &:hover{
+                    color: $red;
+                }
+            }
+        }
+    }
+}
+
+#hero{
+    .card{
+        border: 0;
+        .card-img{
+            border-radius:0;
+        }
+        .card-img-overlay{
+            display: flex;
+            align-items: center;
+            background-color: rgba(0, 0, 0, .3);
+            .card-title{
+                font-size: 58px;
+                font-family: SpotifyH1;
+                margin: 30px 0;
+            }
+        }
+    }
+}
+
+#filmes, #documentarios, #series{
+    background-color: $black;
+    padding: 60px 0;
+    position: relative;
+
+    .sec-title{
+        font-size: 28px;
+        font-family: SpotifyH1;
+        color: $red;
+        margin: 0 0 30px 0;
+    }
+    
+    .swiper-container{
+        width: 100%;
+        height: 100%;
+        transition: 3s ease all;
+    }
+
+    .swiper-slide{
+        text-align: center;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        transform: scale(1.1);
+    }
+
+    .card{
+        width: 12rem;
+        img{
+            height: 18rem;
+            width: 12rem;
+            object-fit: cover;
+        }
+    }
+}
+
+#footer{
+    background-color: $grey_dark;
+    color: $white;
+    padding: 50px 0;
+}
+
+.single-video #main{
+    padding: 60px 0 0 0;
+    .card{
+        border: none;
+    }
+    .card-img-overlay{
+        img{
+            height: auto;
+            width: 10rem;
+            cursor: pointer;
+        }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
