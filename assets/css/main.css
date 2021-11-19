@@ -44,6 +44,16 @@ body {
   font-family: SpotifyBody;
   font-size: 18px !important; }
 
+#main {
+  height: auto; }
+  #main .filmes, #main .documentarios, #main .series {
+    background-color: #000000;
+    padding: 60px 0 0 0; }
+    #main .filmes .archive-list, #main .documentarios .archive-list, #main .series .archive-list {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap; }
+
 #header {
   background-color: #000000E6; }
   #header #menu-menu-principal li {
@@ -103,5 +113,18 @@ body {
   background-color: #121212;
   color: #FFFFFF;
   padding: 50px 0; }
+
+.single-video #main {
+  padding: 60px 0 0 0; }
+  .single-video #main .card {
+    border: none; }
+  .single-video #main .card-img-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .single-video #main .card-img-overlay img {
+      height: auto;
+      width: 10rem;
+      cursor: pointer; }
 
 /*# sourceMappingURL=main.css.map */

@@ -11,6 +11,19 @@ body{
     font-size: 18px!important;
 }
 
+#main{
+    height: auto;
+    .filmes, .documentarios, .series{
+        background-color: $black;
+        padding: 60px 0 0 0;
+        .archive-list{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+    }
+}
+
 #header{
     background-color: $grey_other;
     #menu-menu-principal{
@@ -92,4 +105,21 @@ body{
     background-color: $grey_dark;
     color: $white;
     padding: 50px 0;
+}
+
+.single-video #main{
+    padding: 60px 0 0 0;
+    .card{
+        border: none;
+    }
+    .card-img-overlay{
+        img{
+            height: auto;
+            width: 10rem;
+            cursor: pointer;
+        }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
