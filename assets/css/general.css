@@ -32,6 +32,12 @@ body{
     max-width: 1600px;
 }
 
+.content-sm{
+    max-width: 1000px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
 /* Text elements */
 
 
