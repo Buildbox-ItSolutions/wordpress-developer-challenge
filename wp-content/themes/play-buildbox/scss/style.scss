@@ -1,0 +1,13 @@
+// Make sure you have Sass installed glabaly
+// Run ==> sass --watch scss/main.scss css/style.css
+// Import base
+@import "./base/colors", "./base/default", "./base/fonts", "./base/buttons",
+  "./base/typograph";
+// Import Layout
+@import "./layout/Header", "./layout/Footer", "./layout/Movielist",
+  "./layout/Card","./layout/Single","./layout/Taxonomy";
+
+body {
+  background-color: $darker;
+  color: $light;
+}

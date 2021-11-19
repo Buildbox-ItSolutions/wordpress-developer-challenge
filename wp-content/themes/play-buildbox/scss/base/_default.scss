@@ -1,0 +1,108 @@
+//Reset
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0
+}
+
+::before,
+::after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit
+}
+
+input,
+select,
+textarea,
+button {
+    font-family: inherit;
+    color: currentColor
+}
+
+button {
+    border: 0;
+    background: transparent;
+    -webkit-appearance: none
+}
+
+button:focus {
+    outline: 0
+}
+
+a {
+    color: inherit;
+    text-decoration: none
+}
+
+img {
+    max-width: 100%;
+    height: auto
+}
+
+svg {
+    fill: currentcolor
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    width: 100%;
+    display: block
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.showup {
+    opacity: 1;
+    transition: opacity .3s ease-out;
+}
+
+.wrapper{
+    width:100%;
+    max-width:90%;
+    margin:0 auto;
+}
+
+
+@mixin transition($x){
+    -webkit-transition:  all $x ease;
+    -moz-transition:  all $x ease;
+    -ms-transition:  all $x ease;
+    -o-transition:  all $x ease;
+    transition:  all $x ease;
+  }
+
+
+  @mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, white,  50%)) {
+    // For Google Chrome
+    &::-webkit-scrollbar {
+      width:  $size;
+      height: $size;
+    }
+  
+    &::-webkit-scrollbar-thumb {
+      background: $foreground-color;
+    }
+  
+    &::-webkit-scrollbar-track {
+      background: $background-color;
+    }
+  
+    // For Internet Explorer
+    & {
+      scrollbar-face-color: $foreground-color;
+      scrollbar-track-color: $background-color;
+    }
+  }
+
+  body{
+    font-size:16px;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    opacity: 0;
+    @include scrollbars(3px, $red, $dark);
+}

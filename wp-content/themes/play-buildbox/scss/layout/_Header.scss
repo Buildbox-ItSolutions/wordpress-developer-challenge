@@ -1,0 +1,120 @@
+header {
+  background-color: $darker;
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 92px;
+  }
+}
+.logo-header{
+  @media (max-width: 768px) {
+    width:100%;
+  }
+}
+.logo-header__img--pattern {
+  width: 100px;
+  height: 75px;
+  a {
+    background: url(../images/logo.svg) no-repeat center center;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  @media (max-width: 768px) {
+    width:100%;
+  }
+}
+
+nav {
+  ul {
+    list-style: none;
+    display: flex;
+    li {
+      display: block;
+      a {
+        padding: 1em;
+        font-family: "CircularSpotifyTxT-Med";
+        font-size: 19px;
+        letter-spacing: 0.55px;
+        color: $light;
+        position:relative;
+        @include transition(.3s);
+        &:before {
+          content: '';
+            display: inline-block;
+            @include transition(.5s);
+        }
+        &:hover{
+          &:before {
+            height: 2px;
+            background: red;
+            position: absolute;
+            width: 50%;
+            bottom: 10px;
+            left: 0;
+            right: 0;
+            margin: auto;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    display:none
+  }
+}
+
+.heroBanner {
+  width: 100%;
+  height: 1000px;
+  position: relative;
+  @media (max-width: 768px) {
+    height:80vh;
+  }
+
+  .heroBanner__Background {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .heroBanner__Content {
+    position: absolute;
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    h1 {
+      max-width: 900px;
+      color: $light;
+      
+    }
+    @media (max-width: 768px) {
+      top:10%;
+    }
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #0000004d;
+  }
+}

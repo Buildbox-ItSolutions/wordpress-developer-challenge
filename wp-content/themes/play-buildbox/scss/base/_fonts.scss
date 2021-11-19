@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "CircularSpotifyTxT-Med";
+  src: url("../fonts/CircularSpotifyTxT-Med/1bc2daddba36ba331fc4fa67828eabdc.eot"); /* IE9*/
+  src: url("../fonts/CircularSpotifyTxT-Med/1bc2daddba36ba331fc4fa67828eabdc.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/CircularSpotifyTxT-Med/1bc2daddba36ba331fc4fa67828eabdc.woff2")
+      format("woff2"),
+    url("../fonts/CircularSpotifyTxT-Med/1bc2daddba36ba331fc4fa67828eabdc.woff")
+      format("woff"),
+    url("../fonts/CircularSpotifyTxT-Med/1bc2daddba36ba331fc4fa67828eabdc.ttf")
+      format("truetype"),
+    url("../fonts/CircularSpotifyTxT-Med/1bc2daddba36ba331fc4fa67828eabdc.svg#CircularSpotifyTxT-Med")
+      format("svg"); /* iOS 4.1- */
+}
+@font-face {
+  font-family: "CircularSpotifyTxT-Black";
+  src: url("../fonts/CircularSpotifyTxT-Black/01173b246d9d9ea808ea75a26b3b61bb.eot"); /* IE9*/
+  src: url("../fonts/CircularSpotifyTxT-Black/01173b246d9d9ea808ea75a26b3b61bb.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/CircularSpotifyTxT-Black/01173b246d9d9ea808ea75a26b3b61bb.woff2")
+      format("woff2"),
+    url("../fonts/CircularSpotifyTxT-Black/01173b246d9d9ea808ea75a26b3b61bb.woff")
+      format("woff"),
+    url("../fonts/CircularSpotifyTxT-Black/01173b246d9d9ea808ea75a26b3b61bb.ttf")
+      format("truetype"),
+    url("../fonts/CircularSpotifyTxT-Black/01173b246d9d9ea808ea75a26b3b61bb.svg#CircularSpotifyTxT-Black")
+      format("svg"); /* iOS 4.1- */
+}
+
+body {
+  font-family: "CircularSpotifyTxT-Black" !important;
+}

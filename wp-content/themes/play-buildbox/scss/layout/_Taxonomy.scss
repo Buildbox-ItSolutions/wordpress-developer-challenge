@@ -1,0 +1,29 @@
+.taxonomy{
+    .wrapper{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .taxonomy--infos,.card--list__taxonomy{
+        width:50%;
+        padding:5em 0em;
+        @media (max-width: 768px) {
+            width:100%;
+            padding:1em 0em;
+        }
+        .wrapper--load{
+            width: 100%;
+            text-align: center;
+        }
+    }
+    .taxonomy--infos{
+        p{
+            line-height:35px;
+            @media (max-width: 768px) {
+                line-height:20px;
+            }
+        }
+    }
+}

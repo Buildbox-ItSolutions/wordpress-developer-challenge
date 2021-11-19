@@ -1,0 +1,69 @@
+$btn_color: #5a5a5a;
+
+.Content__Buttons {
+  padding-bottom: 2em;
+  padding-top: 2em;
+}
+.btn {
+  font-family: "CircularSpotifyTxT-Med";
+  text-align: center;
+  border: 1px solid $light;
+  border-radius: 3px;
+  font-size: 18px;
+  letter-spacing: 0.54px;
+  min-width: 128px;
+  padding: 0em 1em;
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  min-height: 32px;
+  margin-right: 0.5em;
+  color:$light;
+  @include transition(.5s);
+  @media (max-width: 768px) {
+    font-size:12pt;
+  }
+  &:hover{
+    @include transition(.5s);
+    text-decoration: underline;
+  }
+}
+
+.btn--light {
+  background-color: $light;
+  color: $btn_color;
+}
+
+.btn--red {
+  border: 1px solid $red;
+  background-color: $red;
+  color: $light;
+  @include transition(.5s);
+  &:hover{
+    @include transition(.5s);
+    background-color:$red;
+    border:1px solid $light;
+    color:$light;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+.btn--transparent {
+  color: $light;
+  @include transition(.5s);
+  &:hover{
+    @include transition(.5s);
+    text-decoration: none;
+  }
+}
+
+.btn-large {
+  max-width: 300px;
+  width: 100%;
+  padding: 1em;
+}
+
+.load--posts{
+  margin: 0 auto;
+}

@@ -1,0 +1,32 @@
+p {
+  font-family: "CircularSpotifyTxT-Med";
+  font-size: 1em;
+  letter-spacing: 0.54px;
+  @media (max-width: 768px) {
+    font-size:12px;
+    line-height: 22px;
+    letter-spacing: .36px;
+  }
+}
+
+h1 {
+  font-size: 100px;
+  font-family: "CircularSpotifyTxT-Black";
+  line-height: 100px;
+  letter-spacing: -4px;
+  @media (max-width: 768px) {
+    font-size:30pt;
+    line-height: 30pt;
+    letter-spacing: -1.6px;
+  }
+}
+
+h2 {
+  font-size: 40px;
+  font-family: "CircularSpotifyTxT-Black";
+  line-height: 100px;
+  letter-spacing: -1px;
+  @media (max-width: 768px) {
+    font-size: 23pt;
+  }
+}

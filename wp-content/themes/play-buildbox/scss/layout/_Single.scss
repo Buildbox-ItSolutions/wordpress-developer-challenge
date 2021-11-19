@@ -1,0 +1,40 @@
+.single{
+    .wrapper{
+        @media (max-width: 768px) {
+            max-width:100%;
+         }
+
+    }
+    .Content__Buttons,.Sinopse--content{
+        max-width: 1000px;
+        width: 100%;
+        margin: 0 auto;
+        @media (max-width: 768px) {
+            max-width:90%;
+        }
+
+    }
+    .Sinopse--content{
+        padding:5em 0em;
+        p{
+            line-height: 25px;
+        }
+    }
+    h1{
+        padding-top:.2em;
+        font-size: 70px;
+        @media (max-width: 768px) {
+            padding-top:.5em;
+           font-size: 28pt;
+           line-height:30px;
+        }
+    }
+}
+.wide-video {
+    max-width: 75vw;
+    margin: 0 auto;
+    @media (max-width: 768px) {
+        max-width:100%;
+        line-height:30px;
+       }
+}
