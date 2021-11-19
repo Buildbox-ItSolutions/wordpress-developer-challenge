@@ -1,4 +1,4 @@
-header{
+.header{
   position: fixed;
   width: 100%;
   top: 0;
@@ -17,24 +17,36 @@ header{
   align-items: center;
 }
 
-  .menu{
+  .nav .menu{
     display: flex;
   }
 
-  .menu ul li{
+  .nav .menu ul li{
     list-style: none;
   }
-    .menu ul li:last-child{
+    .nav .menu ul li:last-child{
       margin: 0;
     }
 
-    .menu a{
+    .nav .menu a{
       font-size: 19px;
       color: var(--white-color);
       margin: 0 24px;
     }
-      .menu a:hover,
-      .menu a:active,
-      .menu a:focus{
+      .nav .menu a:hover,
+      .nav .menu a:active,
+      .nav .menu a:focus{
         color: var(--primary-color);
       }
+
+@media all and (max-width: 768px) {
+  .header{
+    position: absolute;
+  }
+  .nav .menu{
+    display: none;
+  }
+  .nav .container{
+    justify-content: center;
+  }
+}

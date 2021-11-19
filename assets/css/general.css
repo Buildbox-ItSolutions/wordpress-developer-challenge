@@ -34,7 +34,6 @@ body{
 
 .content-sm{
     max-width: 1000px;
-    padding: 0 30px;
     margin: 0 auto;
 }
 
@@ -63,5 +62,14 @@ p{
 @media all and (max-width: 1366px) {
     .container{
         max-width: 1140px;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .container{
+        padding: 0 20px;
+    }
+    .title{
+        font-size: 23px;
     }
 }

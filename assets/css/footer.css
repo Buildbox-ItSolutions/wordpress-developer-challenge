@@ -11,3 +11,9 @@
     display: block;
     letter-spacing: .54px;
   }
+
+@media all and (max-width: 768px) {
+  .footer{
+    text-align: center;
+  }
+}

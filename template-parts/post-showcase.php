@@ -6,7 +6,7 @@
         <span><?php the_field('films-time'); ?></span>
       </div>
       <h2 class="showcase-title"><?php the_title(); ?></h2>
-      <a class="button button-primary" href="">Mais informações</a>
+      <a class="button button-primary" href="<?php the_permalink(); ?>">Mais informações</a>
     </div>
   </div>
 </div>

@@ -10,7 +10,7 @@
   .page article,
   .page aside{
     width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
   }
 
   .page aside .films-card{
@@ -33,7 +33,7 @@
 .single .page-embed iframe{
   width: 100%;
   height: 920px;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 
   @media all and (max-width: 1600px) {
@@ -42,4 +42,24 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
     }
+  }
+
+
+  @media all and (max-width: 768px) {
+    .page{
+      margin-top: 140px;
+    }
+    .page .content{
+      flex-direction: column;
+    }
+
+    .single .title{
+      font-size: 28pt;
+    }
+
+    .single .page-embed iframe{
+      height: 210px;
+      margin-bottom: 30px;
+    }
+
   }
