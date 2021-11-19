@@ -18,7 +18,7 @@
   
   <main>
     <section class="showcase">
-      <?php query_posts("post_type=films&posts_per_page=1");
+      <?php query_posts("post_type=films");
         if(have_posts()):
           while(have_posts()):the_post();
             get_template_part( 'template-parts/post', 'showcase');

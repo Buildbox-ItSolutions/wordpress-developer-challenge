@@ -36,6 +36,15 @@ $(document).ready(function(){
     ]
   });
 
+  $('.showcase').slick({
+    dots: false,
+    prevArrow: false,
+    nextArrow: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1
+  });
+
   //Set lightbox for embed films
   $('[data-fancybox]').fancybox({
     toolbar  : false,
