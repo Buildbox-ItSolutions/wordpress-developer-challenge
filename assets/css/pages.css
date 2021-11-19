@@ -1,0 +1,29 @@
+.page{
+  margin-top: 200px;
+  color: var(--white-color);
+}
+  .page .content{
+    display: flex;
+  }
+
+  .page article,
+  .page aside{
+    width: 100%;
+  }
+
+  .page aside .films-card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+    .page aside .films-post{
+      margin-bottom: 50px;
+    }
+
+  @media all and (max-width: 1600px) {
+
+    .page aside .films-card{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }

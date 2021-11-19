@@ -2,6 +2,7 @@
 @import "main.css";
 @import "header.css";
 @import "footer.css";
+@import "pages.css";
 
 /* Components */
 @import "buttons.css";

@@ -46,7 +46,7 @@
               )
             );
             ?>
-            <h2 class="films-category"><?php echo $category->name; ?></h2>
+            <h2 class="films-category title"><?php echo $category->name; ?></h2>
               <div class="films-card">
                 <?php while ($filmss->have_posts()) : $filmss->the_post(); ?>
                   <div class="films-post">

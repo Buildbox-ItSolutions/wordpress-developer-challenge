@@ -29,7 +29,6 @@ body{
 
 .badges a,
 .badges span{
-  font-size: 18px;
   border-radius: 3px;
   padding: 5px 30px;
 }
@@ -52,9 +51,6 @@ body{
   }
 
     .films-category{
-      color: var(--primary-color);
-      letter-spacing: -1px;
-      font-size: 40px;
       margin: 60px 0 35px 0;
     }
 

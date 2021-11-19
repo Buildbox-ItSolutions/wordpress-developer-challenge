@@ -19,10 +19,10 @@
 }
 
 body{
-    font-size: 100%;
     list-style-type: none;
     font-family: CircularSpotifyMed, sans-serif;
     background: var(--secondary-color);
+    font-size: 18px;
 }
 
 .container {
@@ -30,6 +30,21 @@ body{
     padding: 0 30px;
     margin: 0 auto;
     max-width: 1600px;
+}
+
+/* Text elements */
+
+
+p{
+    letter-spacing: 0.54px;
+    line-height: 35px;
+}
+
+.title{
+    color: var(--primary-color);
+    letter-spacing: -1px;
+    font-size: 40px;
+    margin-bottom: 35px;
 }
 
 @media all and (max-width: 1600px) {
