@@ -53,7 +53,8 @@
     }
       .nav .menu a:hover,
       .nav .menu a:active,
-      .nav .menu a:focus{
+      .nav .menu a:focus,
+      .cat-item.current-cat a{
         color: var(--primary-color);
       }
 
