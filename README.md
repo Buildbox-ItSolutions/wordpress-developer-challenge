@@ -1,10 +1,14 @@
 # wordpress-developer-challenge
 
-### Developer
+### Candidato
 Allan da Cruz Dantas
 
 ### Link Demo
 [Link demo](https://wordpress-developer-challenge.allancruz.com.br/).
+
+### Acesso Admin
+Usuário: filmes
+Senha: 123456
 
 ### Required plugins
 *Advanced Custom Fields - (https://www.advancedcustomfields.com/)*
