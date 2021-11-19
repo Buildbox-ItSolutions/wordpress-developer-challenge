@@ -34,4 +34,15 @@
       </ul>
     </div>
   </nav>
+  <nav class="nav nav-mobile">
+    <div class="container">
+      <ul class="menu">
+        <?php wp_list_categories( array(
+          'title_li'           => __( '' ),
+          'orderby'    => 'name',
+          'taxonomy'   => 'films_taxonomy',
+        ) ); ?>
+      </ul>
+    </div>
+  </nav>
 </header>

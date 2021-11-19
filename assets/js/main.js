@@ -1,4 +1,6 @@
 $(document).ready(function(){
+
+  //Implement slide in films list
   $('.films .container .films-card').slick({
     dots: false,
     prevArrow: false,
@@ -34,6 +36,7 @@ $(document).ready(function(){
     ]
   });
 
+  //Set lightbox for embed films
   $('[data-fancybox]').fancybox({
     toolbar  : false,
     smallBtn : true,
@@ -41,4 +44,14 @@ $(document).ready(function(){
       preload : false
     }
   })
+
+  //Scroll navbar in mobile version
+  $(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    if (scroll >= 100) {
+      $(".nav-mobile").addClass("nav-transform");
+    } else {
+      $(".nav-mobile").removeClass("nav-transform");
+    }
+  }); //missing );
 });

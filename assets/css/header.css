@@ -5,10 +5,28 @@
   z-index: 10;
 }
 
-.nav{
+.nav,
+.nav-mobile{
   background: rgba(0,0,0, .9);
   padding: 1.7rem 0;
 }
+.nav-mobile{
+  display: none;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  transform: translateY(-78px);
+  transition: .3s;
+}
+.nav-mobile.nav-transform{
+  transform: translateY(0);
+}
+  .nav.nav-mobile .menu{
+    display: flex;
+  }
+  .nav.nav-mobile .menu a{
+    font-size: 12px;
+  }
 
 .nav > .container{
   justify-content: space-between;
@@ -42,6 +60,9 @@
 @media all and (max-width: 768px) {
   .header{
     position: absolute;
+  }
+  .nav-mobile{
+    display: block;
   }
   .nav .menu{
     display: none;
