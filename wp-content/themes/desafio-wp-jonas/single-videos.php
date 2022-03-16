@@ -5,6 +5,7 @@
    <?php
    if (have_posts()) :
       while (have_posts()) : the_post();
+
          $term = get_the_terms(get_the_ID(), 'videos-category');
          $termLink = get_term_link($term[0]->name, 'videos-category');
    ?>
@@ -12,7 +13,10 @@
          <article class="article-container">
             <div class="container d-grid">
                <div class="details-container">
-                  <a href="<?php echo $termLink; ?>"><?php echo $term[0]->name; ?></a>
+                  <?php if ($term) : ?>
+                     <a href="<?php echo !isset($termLink->errors) ? $termLink : ""; ?>"><?php echo $term[0]->name; ?></a>
+                  <?php endif; ?>
+
                   <?php if (!empty(get_post_meta(get_the_ID(), 'video-duration', true))) : ?>
                      <span><?php echo get_post_meta(get_the_ID(), 'video-duration', true) . 'm'; ?></span>
                   <?php endif; ?>

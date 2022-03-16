@@ -53,9 +53,22 @@ wp_reset_postdata();
 <section id="movies" class="videos">
    <div class="container">
       <div class="heading-container">
-         <a href="<?php echo get_term_link('filmes', 'videos-category') ?>">
-            <h2><?php _e('Filmes', 'desafio-wp') ?></h2>
-         </a>
+
+         <?php
+
+         $termLink = get_term_link('filmes', 'videos-category');
+
+         if (!isset($termLink->errors)) :
+         ?>
+
+            <a href="<?php echo $termLink; ?>">
+               <h2><?php _e('Filmes', 'desafio-wp') ?></h2>
+            </a>
+
+         <?php
+         endif;
+         ?>
+
       </div>
 
       <div class="articles-container movies-container owl-carousel">
@@ -115,9 +128,24 @@ wp_reset_postdata();
 <section id="documentaries" class="videos">
    <div class="container">
       <div class="heading-container">
-         <a href="<?php echo get_term_link('documentarios', 'videos-category') ?>">
-            <h2><?php _e('Documentários', 'desafio-wp') ?></h2>
-         </a>
+         <div class="heading-container">
+
+            <?php
+
+            $termLink = get_term_link('documentarios', 'videos-category');
+
+            if (!isset($termLink->errors)) :
+            ?>
+
+               <a href="<?php echo $termLink; ?>">
+                  <h2><?php _e('Documentários', 'desafio-wp') ?></h2>
+               </a>
+
+            <?php
+            endif;
+            ?>
+
+         </div>
       </div>
 
       <div class="documentary-container">
@@ -179,9 +207,22 @@ wp_reset_postdata();
 <section id="series" class="videos">
    <div class="container">
       <div class="heading-container">
-         <a href="<?php echo get_term_link('series', 'videos-category') ?>">
-            <h2><?php _e('Séries', 'desafio-wp') ?></h2>
-         </a>
+
+         <?php
+
+         $termLink = get_term_link('series', 'videos-category');
+
+         if (!isset($termLink->errors)) :
+         ?>
+
+            <a href="<?php echo $termLink; ?>">
+               <h2><?php _e('Séries', 'desafio-wp') ?></h2>
+            </a>
+
+         <?php
+         endif;
+         ?>
+
       </div>
 
       <div class="serie-container">
