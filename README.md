@@ -1,7 +1,8 @@
 # Desafio Wordpress Buildbox
 
 Olá! Sou o candidato Jonas Cardoso
-[LinkedIn:](https://www.linkedin.com/in/jonascds)
+
+[LinkedIn](https://www.linkedin.com/in/jonascds)
 
 ## Algumas instruções
 
