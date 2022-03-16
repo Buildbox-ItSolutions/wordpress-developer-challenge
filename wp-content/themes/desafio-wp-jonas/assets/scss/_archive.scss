@@ -1,0 +1,181 @@
+#archive {
+   background-color: #000;
+   .container {
+      padding-top: 235px;
+      padding-bottom: 86px;
+      &.d-grid {
+         grid-template-columns: repeat(2, 1fr);
+      }
+      .info-container {
+         .heading-container {
+            margin-bottom: 25px;
+            h1 {
+               font-size: 40px;
+               font-weight: 900;
+
+               color: #ff0000;
+            }
+         }
+         .text-container {
+            p {
+               font-size: 18px;
+
+               color: #fff;
+
+               line-height: 35px;
+            }
+         }
+      }
+      .articles-container {
+         &.d-grid {
+            row-gap: 46px;
+            column-gap: 30px;
+            justify-content: flex-end;
+            grid-template-columns: repeat(2, 248px);
+         }
+         .article-container {
+            &:hover {
+               .heading-container {
+                  h2 {
+                     color: #ff0000;
+                  }
+               }
+            }
+            .heading-container {
+               h2 {
+                  font-size: 30px;
+
+                  color: #fff;
+               }
+            }
+            .duration-container {
+               margin-top: 30px;
+               margin-bottom: 6px;
+               p {
+                  min-width: 128px;
+                  height: 32px;
+
+                  padding: 0.5rem 1rem;
+
+                  display: inline-flex;
+                  justify-content: center;
+                  align-items: center;
+
+                  color: #fff;
+
+                  border-radius: 3px;
+                  border: 1px solid #fff;
+               }
+            }
+            .thumbnail-container {
+               img {
+                  width: 248px;
+                  height: 387px;
+
+                  object-fit: cover;
+                  object-position: center;
+               }
+            }
+         }
+      }
+   }
+}
+
+@media (max-width: 768px) {
+   #archive {
+      .container {
+         &.d-grid {
+            grid-template-columns: 1fr;
+         }
+         .info-container {
+            margin-bottom: 38px;
+            .heading-container {
+               margin-bottom: 12px;
+               h1 {
+                  font-size: 23px;
+               }
+            }
+            .text-container {
+               p {
+                  font-size: 14px;
+
+                  line-height: 24px;
+               }
+            }
+         }
+         .articles-container {
+            &.d-grid {
+               grid-template-columns: repeat(2, 1fr);
+            }
+            .article-container {
+               .thumbnail-container {
+                  img {
+                     width: 100%;
+                     height: 232px;
+                  }
+               }
+               .duration-container {
+                  margin-top: 22px;
+                  margin-bottom: 10px;
+                  p {
+                     height: 28px;
+                     min-width: 111px;
+
+                     font-size: 12px;
+                  }
+               }
+               .heading-container {
+                  h2 {
+                     font-size: 20px;
+
+                     line-height: 20px;
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+   #archive {
+      .container {
+         &.d-grid {
+            grid-template-columns: 1fr;
+         }
+         .info-container {
+            margin-bottom: 38px;
+         }
+         .articles-container {
+            &.d-grid {
+               grid-template-columns: repeat(3, 1fr);
+            }
+         }
+      }
+   }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+   #archive {
+      .container {
+         &.d-grid {
+            column-gap: 30px;
+         }
+      }
+   }
+}
+
+@media (min-width: 1664px) {
+   #archive {
+      .container {
+         &.d-grid {
+            grid-template-columns: 40% 60%;
+         }
+         .articles-container {
+            &.d-grid {
+               grid-template-columns: repeat(3, 248px);
+            }
+         }
+      }
+   }
+}

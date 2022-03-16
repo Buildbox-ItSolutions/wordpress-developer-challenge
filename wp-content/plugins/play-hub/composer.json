@@ -1,0 +1,16 @@
+{
+   "name": "jonas/play-hub",
+   "description": "Plugin para gerenciar as fun\u0000\u0000es do Play Theme",
+   "authors": [
+      {
+         "name": "Jonas C Santos",
+         "email": "jonas.cdss@hotmail.com"
+      }
+   ],
+   "require": {},
+   "autoload": {
+      "psr-4": {
+         "Src\\": "src/"
+      }
+   }
+}

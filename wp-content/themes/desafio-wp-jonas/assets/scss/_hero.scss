@@ -1,0 +1,95 @@
+#hero {
+   background-size: cover;
+   background-color: #000;
+   background-repeat: no-repeat;
+   background-position: center center;
+   .container {
+      min-height: calc(100vh + 92px);
+      .article-container {
+         width: 70%;
+         .details-container {
+            a,
+            span {
+               height: 32px;
+               min-width: 128px;
+
+               display: inline-flex;
+               align-items: center;
+               justify-content: center;
+
+               border-radius: 3px;
+            }
+            a {
+               margin-right: 10px;
+
+               color: #5a5a5a;
+               background-color: #fff;
+            }
+            span {
+               color: #fff;
+               border: 1px solid #fff;
+            }
+         }
+         .heading-container {
+            margin-top: 12px;
+            h1 {
+               font-size: 84px;
+               font-weight: 900;
+
+               color: #fff;
+
+               line-height: 84px;
+            }
+         }
+         .button-container {
+            margin-top: 12px;
+            a {
+               height: 64px;
+               min-width: 310px;
+
+               color: #fff;
+
+               font-weight: 500;
+
+               display: inline-flex;
+               align-items: center;
+               justify-content: center;
+
+               background-color: #ff0000;
+
+               -webkit-transition: background 400ms linear;
+               -moz-transition: background 400ms linear;
+               -o-transition: background 400ms linear;
+               transition: background 400ms linear;
+
+               &:hover {
+                  background-color: #e40808;
+               }
+            }
+         }
+      }
+   }
+}
+
+
+@media (max-width: 768px) {
+   #hero {
+      .container {
+         .article-container {
+            width: 90%;
+            .heading-container {
+               h1 {
+                  font-size: 40px;
+
+                  line-height: 40px;
+               }
+            }
+            .button-container {
+               a {
+                  height: 48px;
+               }
+            }
+         }
+      }
+   }
+}
