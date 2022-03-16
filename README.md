@@ -52,4 +52,4 @@ Nele você colocará suas informações de identificação.
 Após isto, nós vamos instalar e avaliar seu tema.
 
 Obrigado.  
-Mãos à obra e boa sorte!
+
