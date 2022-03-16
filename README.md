@@ -4,13 +4,14 @@ Olá! Seja bem-vindo(a) ao desafio WordPress da Buildbox.
 
 Nosso objetivo é validar seus conhecimentos avançados em desenvolvimento com WordPress, além de habilidades com front-end.
 
-Estamos à procura de alguém que vá além de customizar temas prontos. Nossos projetos são 100% customizados de acordo com as necessidades de cada cliente, então o desafio é **criar um tema WordPress do zero**.
+Estamos à procura de alguém que vá além de customizar temas prontos. Nossos projetos são criados de acordo com as necessidades de cada cliente, então o desafio é **criar um tema WordPress do zero**.
 
 Você tem 7 (sete) dias até a entrega final. Use todo este tempo para mostrar o seu melhor.
 
 ## Descrição do tema
 
-Você irá construir um tema WordPress para uma plataforma fictícia de vídeos chamada “Play”. Você precisa criar front-end e back-end com fidelidade ao design e às funcionalidades propostas e que seja responsivo e performático.
+Você irá construir um tema WordPress para uma plataforma fictícia de vídeos chamada “Play”.  
+Você precisa criar front-end e back-end com fidelidade ao design e às funcionalidades propostas e que seja responsivo e performático.
 
 O tema deve ter no mínimo 3 templates diferentes:
 
@@ -24,7 +25,7 @@ Nestes links você encontra o protótipo com mais detalhes, na versão [Desktop]
 
 -  Criar um custom post type para os vídeos;
 -  Criar uma taxonomia customizada para segmentar os vídeos em 3 diferentes termos: Filmes, Documentários e Séries;
--  Todo o conteúdo deve ser carregado dinamicamente, como Título, Imagem de Capa, Descrição, Tempo de Duração, Sinopse, Status das avaliações, e Embed de Vídeo.
+-  Todo o conteúdo deve ser carregado dinamicamente, como Título, Imagem de Capa, Descrição, Tempo de Duração, Sinopse e Embed de Vídeo.
    -  Todas essas informações devem ser editáveis na edição do post do vídeo no painel administrativo;
    -  Conteúdo estático (hard coded) será desconsiderado.
 
@@ -45,6 +46,10 @@ Não vamos considerar nenhuma configuração que venha do painel do WordPress.
 
 ## Como enviar
 
-Para submeter o resultado deste desafio, você deve fazer um fork deste repositório e solicitar um pull request do seu tema (`wp-content/themes/desafio-wp-(seunome)`), com seu nome completo na descrição, para nossa avaliação. Nós vamos instalar e avaliar seu tema.
+Para submeter a resposta deste desafio, você deve fazer um fork deste repositório.  
+Com seu tema concluído e submetido (`wp-content/themes/desafio-wp-[seunome]`), preencha e envie [este formulário](https://forms.clickup.com/f/xf5uw-4783/9X2E01YKFQB8UXNM03).  
+Nele você colocará suas informações de identificação.  
+Após isto, nós vamos instalar e avaliar seu tema.
 
+Obrigado.  
 Mãos à obra e boa sorte!
