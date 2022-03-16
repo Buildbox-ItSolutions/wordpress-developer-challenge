@@ -1,0 +1,123 @@
+.videos {
+   overflow: hidden;
+
+   background-color: #000;
+   &#movies {
+      .container {
+         padding-top: 100px;
+      }
+   }
+   &#documentaries,
+   &#series {
+      padding-top: 48px;
+   }
+   &#series {
+      padding-bottom: 86px;
+   }
+   .container {
+      .heading-container {
+         margin-bottom: 34px;
+         a {
+            display: inline-flex;
+            h2 {
+               color: #ff0000;
+
+               font-size: 40px;
+            }
+         }
+      }
+      .articles-container {
+         .owl-stage-outer {
+            overflow: visible;
+            .owl-stage {
+               .owl-item {
+                  a {
+                     .article-container {
+                        width: 248px;
+                        .heading-container {
+                           h3 {
+                              font-size: 30px;
+
+                              color: #fff;
+                           }
+                        }
+                        .duration-container {
+                           margin-top: 27px;
+                           margin-bottom: 6px;
+                           p {
+                              height: 32px;
+                              min-width: 128px;
+
+                              padding: 0.5rem 1rem;
+
+                              display: inline-flex;
+                              justify-content: center;
+                              align-items: center;
+
+                              color: #fff;
+
+                              border-radius: 3px;
+                              border: 1px solid #fff;
+                           }
+                        }
+                        .thumbnail-container {
+                           display: inline-flex;
+                           img {
+                              width: 248px;
+                              height: 387px;
+
+                              object-fit: cover;
+                              object-position: center;
+
+                              border-radius: 3px;
+                           }
+                        }
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+
+@media (max-width: 768px) {
+   .videos {
+      .container {
+         .heading-container {
+            a {
+               h2 {
+                  font-size: 23px;
+               }
+            }
+         }
+         .articles-container {
+            .owl-stage-outer {
+               .owl-stage {
+                  .owl-item {
+                     a {
+                        .article-container {
+                           width: 149px;
+                           .heading-container {
+                              h3 {
+                                 font-size: 20px;
+
+                                 line-height: 20px;
+                              }
+                           }
+                           .thumbnail-container {
+                              img {
+                                 width: 149px;
+                                 height: 232px;
+                              }
+                           }
+                        }
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+

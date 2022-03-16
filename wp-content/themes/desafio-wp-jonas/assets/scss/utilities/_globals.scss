@@ -1,0 +1,96 @@
+* {
+   margin: 0;
+   padding: 0;
+
+   box-sizing: border-box;
+}
+
+body,
+textarea,
+input {
+   font-family: "Circular Spotify Tx T", sans-serif;
+}
+
+body {
+   font-size: 18px;
+}
+
+a {
+   text-decoration: none;
+}
+
+img,
+video {
+   max-width: 100%;
+   height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-family: "Circular Spotify Tx T", sans-serif;
+}
+
+.container {
+   width: 1140px;
+   max-width: 100%;
+
+   margin-left: auto;
+   margin-right: auto;
+}
+
+@media (max-width: 575.98px) {
+   .container {
+      width: 100%;
+
+      padding-left: 16px;
+      padding-right: 16px;
+   }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+   .container {
+      width: 540px;
+      padding-left: 16px;
+      padding-right: 16px;
+   }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+   .container {
+      width: 720px;
+
+      padding-left: 16px;
+      padding-right: 16px;
+   }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+   .container {
+      width: 960px;
+
+      padding-left: 16px;
+      padding-right: 16px;
+   }
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+   .container {
+      width: 1140px;
+   }
+}
+
+@media (min-width: 1400px) and (max-width: 1663.98px) {
+   .container {
+      width: 1320px;
+   }
+}
+
+@media (min-width: 1664px) {
+   .container {
+      width: 1564px;
+   }
+}
