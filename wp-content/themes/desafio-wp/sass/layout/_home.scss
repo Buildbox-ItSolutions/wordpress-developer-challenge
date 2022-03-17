@@ -1,0 +1,42 @@
+.featured {
+  display: grid;
+  img {
+    height: 80rem !important;
+    grid-area: 1/1;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    filter: contrast(75%) brightness(75%);
+    z-index: -10;
+  }
+  .featured__text {
+    grid-area: 1/1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    h1 {
+      max-width: 75rem;
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+      word-wrap: break-word;
+    }
+  }
+}
+@include breackpoints(med) {
+  .featured img {
+    height: 70rem !important;
+  }
+  .featured__text h1 {
+    font-size: 5rem;
+  }
+}
+
+.carousel {
+  margin-top: 10rem;
+  h2 {
+    color: $color-primary;
+    margin-bottom: 4rem;
+    margin-left: 1rem;
+  }
+}

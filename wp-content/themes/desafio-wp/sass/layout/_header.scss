@@ -1,0 +1,67 @@
+.header-bg {
+  background-color: #000e;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.header {
+  min-height: 9.2rem;
+  display: flex;
+  padding: 1.5rem 3rem;
+  gap: 4rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  .header__menu {
+    display: flex;
+    gap: 3rem;
+    li a {
+      display: inline-block;
+      padding: 1rem;
+      transition: 0.2s;
+      &:hover {
+        color: $color-primary;
+      }
+    }
+  }
+}
+@include breackpoints(sml) {
+  .header .header__menu {
+    position: fixed;
+    z-index: 1000;
+    bottom: 0;
+    left: 0;
+    background-color: #000e;
+    min-height: 9rem;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    li {
+      padding: 1rem;
+      a {
+        font-size: 1.1rem;
+      }
+      &::before {
+        content: '';
+        display: block;
+        text-align: center;
+        margin: auto;
+        visibility: visible;
+        background: url('assets/filmes.svg') no-repeat center;
+        width: 24px;
+        height: 24px;
+      }
+      &:nth-child(2)::before {
+        background: url('assets/doc.svg') no-repeat center;
+      }
+      &:nth-child(3)::before {
+        background: url('assets/series.svg') no-repeat center;
+      }
+    }
+  }
+  .header .logo {
+    margin: auto;
+  }
+}

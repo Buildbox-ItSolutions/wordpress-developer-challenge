@@ -1,0 +1,31 @@
+// ============================================
+// Colors
+
+$color-primary    : #FF0000;
+$color-secondary  : #000000;
+
+// =============================================
+// webfatorial
+
+$success  : #3cc368;
+$warning  : #f5a600;
+$error    : #ec5840;
+$gray-1   : #363636;
+$gray-2   : #4f4f4f;
+$gray-3   : #828282;
+$gray-4   : #bdbdbd;
+$gray-5   : #e0e0e0;
+$white    : #fcfcfc;
+
+
+// =================================================
+// Others
+
+$z-indexes: (
+  'above'   : 500,
+  'modal'   : 400,
+  'overlay' : 300,
+  'dropdown': 200,
+  'default' : 1,
+  'below'   : -1,
+);

@@ -1,0 +1,34 @@
+.page-cat {
+  margin-top: 15rem;
+  display: flex;
+  gap: 6rem;
+  .page-cat__text {
+    flex: 4;
+    .sticky {
+      position: sticky;
+      top: 15rem;
+    }
+  }
+  h1 {
+    font-size: 3.6rem;
+    color: $color-primary;
+    margin-bottom: 2rem;
+  }
+  .page-cat__list {
+    flex: 6;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 6rem;
+  }
+}
+
+@include breackpoints(lge) {
+  .page-cat .page-cat__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@include breackpoints(med) {
+  .page-cat {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,25 @@
+// Breackpoints
+
+@mixin breackpoints($point) {
+  @if $point == xlg {
+    @media only screen and (max-width: 1024px) {
+      @content;
+    }
+  } @else if $point == lge {
+    @media only screen and (max-width: 900px) {
+      @content;
+    }
+  } @else if $point == med {
+    @media only screen and (max-width: 770px) {
+      @content;
+    }
+  } @else if $point == sml {
+    @media only screen and (max-width: 600px) {
+      @content;
+    }
+  } @else if $point == xsm {
+    @media only screen and (max-width: 425px) {
+      @content;
+    }
+  }
+}

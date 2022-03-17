@@ -1,0 +1,14 @@
+.c-categorie a {
+  display: inline-block;
+  margin-right: .7rem;
+  background-color: white;
+  padding: 0.3rem 3rem;
+  color: black;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: .2s;
+  &:hover {
+    background-color: $color-primary;
+    color: white;
+  }
+}

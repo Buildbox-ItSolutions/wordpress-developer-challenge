@@ -1,0 +1,12 @@
+.c-button {
+  display: inline-block;
+  background-color: $color-primary;
+  width: 30rem;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 3px;
+  transition: .2s;
+  &:hover {
+    background-color: darken($color-primary, 10%);
+  }
+}

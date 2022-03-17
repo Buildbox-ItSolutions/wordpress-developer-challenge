@@ -1,0 +1,14 @@
+.footer {
+  margin-top: 15rem;
+  min-height: 38rem;
+  background-color: #121212;
+  display: flex;
+  align-items: center;
+  > div {
+    width: 100%;
+  }
+  p {
+    margin-top: 3rem;
+    color: #fffb;
+  }
+}

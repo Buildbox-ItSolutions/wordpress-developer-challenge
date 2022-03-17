@@ -1,0 +1,16 @@
+.single-post {
+  margin-top: 15rem;
+  .conatiner-content {
+    max-width: 108rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .single-post__title {
+    margin-bottom: 7rem;
+  }
+  .single-post__content > p {
+    max-width: 108rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
