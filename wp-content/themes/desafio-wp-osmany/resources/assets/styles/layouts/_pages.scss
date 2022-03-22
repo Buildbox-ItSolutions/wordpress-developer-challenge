@@ -1,0 +1,157 @@
+.slick-vitrine {
+  height: 100vh;
+
+  .slick-list,
+  .slick-track {
+    height: 100%;
+  }
+
+  .item-slick {
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      background: rgba($black, 0.5);
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  .description {
+    position: absolute;
+    top: 70%;
+    left: 0;
+    z-index: 100;
+    transform: translateY(-70%);
+
+    @include media-breakpoint-down(sm) {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+  }
+}
+
+.hentry {
+  .tag {
+    border: 1px solid $white;
+    color: $white;
+    border-radius: 3px;
+    display: inline-block;
+    padding: 5px 40px;
+    margin-right: 10px;
+    margin-bottom: 0;
+    font-family: $f-medium;
+
+    &.active {
+      background-color: $white;
+      color: $c-gray-light;
+    }
+
+    @include media-breakpoint-down(md) {
+      font-size: 16px;
+      padding: 5px 30px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      font-size: 14px;
+      padding: 5px 25px;
+    }
+  }
+
+  .entry-title {
+    font-size: 70px;
+    font-weight: 900;
+    line-height: 75px;
+    letter-spacing: -2.8px;
+
+    @include media-breakpoint-down(lg) {
+      font-size: 55px;
+      line-height: 60px;
+    }
+
+    @include media-breakpoint-down(md) {
+      font-size: 40px;
+      line-height: 45px;
+      letter-spacing: -1.5px;
+    }
+  }
+
+  .thumb-video {
+    display: block;
+    border-radius: 3px;
+    overflow: hidden;
+    position: relative;
+
+    .ico-play {
+      @extend .transition;
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &::before {
+      @extend .transition;
+
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: rgba($black, 0.3);
+      opacity: 0;
+    }
+
+    &:hover {
+      .ico-play {
+        transform: translate(-50%, -50%) scale(1.05);
+      }
+
+      &::before {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.entry-content {
+  padding-top: 90px;
+  padding-bottom: 120px;
+
+  p {
+    letter-spacing: 0.54px;
+  }
+
+  @include media-breakpoint-down(md) {
+    padding-top: 45px;
+    padding-bottom: 45px;
+
+    p {
+      font-size: 16px;
+    }
+  }
+}
+
+.slick-movies {
+  .slick-list {
+    padding-right: 80px;
+  }
+
+  .slick-slide {
+    margin-right: 30px;
+  }
+}

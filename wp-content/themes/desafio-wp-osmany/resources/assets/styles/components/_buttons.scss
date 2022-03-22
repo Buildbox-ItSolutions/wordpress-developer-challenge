@@ -1,0 +1,21 @@
+.btn-red {
+  @extend .transition;
+
+  color: $white;
+  background-color: $c-secondary;
+  border-radius: 3px;
+  padding: 15px 40px;
+  display: inline-block;
+  font-family: $f-medium;
+  border: none;
+  outline: none;
+
+  &:hover {
+    color: $white;
+    background-color: darken($c-secondary, 10%);
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding: 15px 30px;
+  }
+}

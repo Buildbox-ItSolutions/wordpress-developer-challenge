@@ -1,0 +1,49 @@
+.banner .nav a {
+  @extend .nav-link;
+  @extend .transition;
+
+  color: $white;
+  font-size: 19px;
+  line-height: 27px;
+  letter-spacing: 0.57px;
+  font-family: $f-medium;
+  margin: 0 25px;
+  padding: 0;
+
+  &:hover,
+  &[aria-current="page"] {
+    color: $c-secondary;
+
+    path {
+      fill: $c-secondary;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    svg,
+    img {
+      display: none;
+    }
+  }
+}
+
+.banner .nav li {
+  @extend .nav-item;
+
+  &:last-child a {
+    margin-right: 0;
+  }
+}
+
+.banner {
+  padding: 30px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  background: rgba($black, 0.9);
+
+  @include media-breakpoint-down(sm) {
+    padding: 20px 0;
+  }
+}

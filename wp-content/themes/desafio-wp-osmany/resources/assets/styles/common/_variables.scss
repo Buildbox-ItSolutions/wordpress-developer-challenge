@@ -1,0 +1,22 @@
+/** Import Bootstrap functions */
+@import "~bootstrap/scss/functions";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;900&display=swap");
+@import "../components/_fonts.scss";
+
+$font: "Open Sans", sans-serif;
+
+$f-normal: "Circular Spotify Tx T", sans-serif;
+$f-medium: "Circular Spotify Tx T Med", sans-serif;
+$f-book: "Circular Spotify Tx T Book", sans-serif;
+
+$c-gray: #121212;
+$c-secondary: #f00;
+$c-gray-light: #5a5a5a;
+
+.transition {
+  transition: 0.3s ease all;
+}
+
+/** Bootstrap navbar fix (https://git.io/fADqW) */
+$navbar-dark-toggler-icon-bg: none;
+$navbar-light-toggler-icon-bg: none;

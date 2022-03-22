@@ -1,0 +1,57 @@
+@include media-breakpoint-down(sm) {
+  .nav-primary {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba($black, 0.9);
+    z-index: 1000;
+    padding: 15px 10px;
+
+    .nav li a {
+      transition: 0.3s ease all;
+      flex-direction: column-reverse !important;
+      display: flex;
+      text-align: center;
+      margin: 0 auto;
+      line-height: 1;
+
+      svg,
+      img {
+        margin: 0 auto 10px;
+        height: 25px;
+      }
+
+      span {
+        display: block;
+        color: $white;
+      }
+    }
+  }
+}
+
+body {
+  &.single-filmes .nav li.menu-item-object-filmes a {
+    color: $c-secondary;
+
+    path {
+      fill: $c-secondary;
+    }
+  }
+
+  &.single-documentarios .nav li.menu-item-object-documentarios a {
+    color: $c-secondary;
+
+    path {
+      fill: $c-secondary;
+    }
+  }
+
+  &.single-series .nav li.menu-item-object-series a {
+    color: $c-secondary;
+
+    path {
+      fill: $c-secondary;
+    }
+  }
+}
