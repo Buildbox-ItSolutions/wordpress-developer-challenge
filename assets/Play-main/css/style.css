@@ -1,0 +1,475 @@
+/* RESET */
+*,
+html {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #000000;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+header .container__grid{
+    display: flex;
+}
+
+/* ESTILOS GERAIS */
+.container__grid {
+    max-width: 1640px;
+    width: 100%;
+    padding: 0 28px;
+    margin: 0 auto;
+}
+
+.titulo {
+    font-size: 40px;
+    color: #FF0000;
+    top: 1101px;
+    width: 118px;
+    height: 56px;
+}
+
+.descricao {
+    font-size: 18px;
+    line-height: 27px;
+    color: #FFF;
+    margin-top: 25px;
+}
+
+.informacoes__video {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 264px;
+}
+
+.categoria__video,
+.duracao__video {
+    flex: 1 1 128px;
+    max-width: 128px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.categoria__video {
+    color: #5A5A5A;
+    background-color: #FFF;
+}
+
+.duracao__video {
+    color: #FFF;
+    border: 1px solid #FFF;
+}
+
+.titulo__video {
+    font-size: 30px;
+    color: #FFF;
+    top: 273px;
+}
+
+/* HEADER */
+.cabecalho__principal {
+    left: 0;
+    right: 0;
+    padding-top: 31px;
+    padding-bottom: 34px;
+    background-color: #000000E6;
+    z-index: 999;
+}
+
+.cabecalho__principal .container__grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cabecalho__principal .cabecalho__logo svg:hover path {
+    fill: #FF0000;
+}
+
+.cabecalho__principal .cabecalho__menu ul {
+    display: flex;
+    align-items: center;
+}
+
+.cabecalho__principal .cabecalho__menu li + li {
+    margin-left: 50px;
+}
+
+.cabecalho__principal .cabecalho__menu a {
+    color: #FFFFFF;
+}
+
+.cabecalho__principal .cabecalho__menu a:hover,
+.cabecalho__principal .cabecalho__menu a.ativo {
+    color: #FF0000;
+}
+
+.cabecalho__principal .cabecalho__menuMobile {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000000E6;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    z-index: 999;
+}
+
+.cabecalho__principal .cabecalho__menuMobile a:hover svg path,
+.cabecalho__principal .cabecalho__menuMobile a.ativo svg path {
+    fill: #FF0000;
+}
+
+.cabecalho__principal .cabecalho__menuMobile a svg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+}
+
+/* BANNER */
+.section__banner {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 1000px;
+    position: relative;
+    background-color: #000000;
+    background-image: url('../imagens/imagem-de-fundo-do-banner.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.section__banner::after {
+    content:'';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: #0008;
+    z-index: 1;
+}
+
+.section__banner .container__grid {
+    position: relative;
+    z-index: 2;;
+}
+
+.section__banner ul {
+    display: flex;
+
+}
+
+.section__banner .banner__filmes {
+    color: #5A5A5A;
+    background-color: #FFF; 
+}
+
+.section__banner .banner__minutos {
+    color: #FFF;
+    border: 1px solid #FFF;
+}
+
+.section__banner h1 {
+    max-width: 812px;
+    font-size: 100px;
+    line-height: 100px;
+    color: #FFF;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.section__banner button {
+    width: 310px;
+    height: 64px;
+    position: relative;
+    font-size: 18px;
+    line-height: 64px;
+    color: #fff;
+    background-color: #FF0000;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.section__banner button::before {
+    content:'';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform: translateX(-310px);
+    background: #e40707;
+    z-index: -1;
+    transition: 0.8s ease-in-out;
+}
+
+.section__banner button:hover::before {
+    transform: translateX(0px);
+}
+
+/* SEÇÃO FILMES, DOCUMENTÁRIOS E SÉRIES */
+.padding {
+    padding-top: 101px;
+}
+
+.section__videos:nth-of-type(even) {
+    padding: 88px 0;
+}
+
+.section__videos .filmes__carrossel {
+    overflow: hidden;
+}
+
+.section__videos ul {
+    display: flex;
+    margin-top: 35px;
+}
+
+.section__videos ul li {
+    flex: 1 1 auto;
+    min-width: 248px;
+}
+
+.section__videos ul li + li {
+    margin-left: 30px;
+}
+
+/* RODAPÉ */
+.secao__rodape {
+    padding: 105px 0 180px 0;
+    margin-top: 110px;
+    background-color: #121212;
+}
+
+.secao__rodape svg:hover path {
+    fill: #FF0000;
+}
+
+.secao__rodape p {
+    font-size: 18px;
+    color: #FFF;
+    margin-top: 35px;
+}
+
+/* MODELO DE PÁGINA ÚNICA */
+.section__conteudo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 110px;
+}
+
+.section__conteudo .conteudo__coluna1 {
+    max-width: 667px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.section__conteudo .conteudo__coluna2 {
+    max-width: 781px;
+    width: 100%;
+}
+
+.section__conteudo .conteudo__coluna2 ul {
+    display: grid;
+    gap: 0 18px;
+    grid-template-columns: repeat(auto-fit, minmax(248px, 1fr));
+}
+
+.section__conteudo .conteudo__coluna2 ul li {
+    margin-bottom: 80px;
+}
+
+/* PÁGINA DE VÍDEO ÚNICO */
+.section__videoUnico {
+    display: flex;
+    flex-direction: column;
+}
+
+.section__videoUnico h1 {
+    font-size: 70px;
+    margin-bottom: 74px;
+}
+
+.section__videoUnico img {
+    grid-column: 1 / 3;
+}
+
+.section__videoUnico .descricao__video {
+    max-width: 944px;
+    margin-top: 93px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 550px) {
+    /* ESTILOS GERAIS */
+    .titulo {
+        font-size: 23px;
+        line-height: 58px;
+    }
+    .section__videos ul {
+        margin-top: 21px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }    
+
+    .section__videos ul li {
+        min-width: 149px;
+    }
+    
+    .section__videos .duracao__video {
+        margin-top: 22px;
+        margin-bottom: 10px;
+    }
+
+    .titulo__video {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .descricao {
+        font-size: 12px;
+        line-height: 22px;
+        margin-top: 0;
+    }
+
+    /* HEADER */
+    .cabecalho__principal {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .cabecalho__principal .cabecalho__logo {
+        margin: 0 auto;
+    }
+    .cabecalho__principal .cabecalho__logo svg {
+        width: 71px;
+        height: 22px;
+    }
+
+    .cabecalho__principal .cabecalho__menu.cabecalho__menuDesktop {
+        display: none;
+    }
+
+    .cabecalho__principal .cabecalho__menu ul {
+        justify-content: center;
+    }
+
+    .cabecalho__principal .cabecalho__menu.cabecalho__menuMobile {
+        display: block;
+    }
+
+    .cabecalho__principal .cabecalho__menu a {
+        font-size: 9px;
+    }
+
+    /* BANNER */
+    .section__banner {
+        height: 579px;
+    }
+
+    .categoria__video, 
+    .duracao__video {
+        font-size: 12px;
+    }
+
+    .section__banner h1 {
+        font-size: 40px;
+        line-height: 40px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .section__banner button {
+        width: 182px;
+        height: 38px;
+        font-size: 12px;
+        line-height: 38px;
+    }
+
+    /* RODAPÉ */
+    .secao__rodape {
+        padding-top: 71px;
+        padding-bottom: 147px;
+    }
+    
+    .secao__rodape .container__grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .secao__rodape svg {
+        width: 71px;
+        height: 22px;
+    }
+
+    .secao__rodape p {
+        font-size: 12px;
+        line-height: 61px;
+        text-align: center;
+        margin: 0;
+    }
+
+    /* MODELO DE PÁGINA ÚNICA */
+    .section__conteudo .conteudo__coluna2 ul {
+        grid-template-columns: repeat(2, 149px);
+        gap: 80px 19px;
+    }
+
+    .section__conteudo .conteudo__coluna2 ul li {
+        margin-bottom: 0;
+    }
+
+    /* PÁGINA DE VÍDEO ÚNICO */
+    .section__videoUnico.container__grid {
+        padding: 67px 0 0 0;
+    }
+
+    .section__videoUnico {
+        grid-template-columns: 20px 1fr;
+    }
+
+    .section__videoUnico h1 {
+        font-size: 28px;
+        line-height: 30px;
+        margin-bottom: 50px;
+    }
+
+    .section__videoUnico .descricao__video {
+        margin-top: 44px;
+    }
+}
+
