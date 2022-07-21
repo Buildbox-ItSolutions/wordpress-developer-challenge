@@ -1,0 +1,166 @@
+/*
+Theme Name: Play - Michel
+Theme URI: http://example.com
+Author: Your name
+Author URI: http://pinegrow.com/
+Description: This theme was created with Pinegrow Web Editor
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: play_michel
+*/
+:root {
+    font: 1em/1.5 var(--bs-font-sans-serif);
+}
+
+nav {
+    bottom: 0;
+}
+
+.navbar-brand {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#hero {
+    height: 80vh;
+    background-position: center center;
+    background-size: cover;
+}
+
+#content p {
+    padding: 0% 7%;
+}
+
+/* VIDEO IN */
+.wp-block-embed-youtube {
+    overflow: hidden;
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    padding-bottom: 56.25%;
+}
+
+.wp-block-embed__wrapper,
+.wp-block-embed-youtube iframe,
+.wp-block-embed-youtube object,
+.wp-block-embed-youtube embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+#video {
+    position: relative;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+}
+
+#video iframe,
+#video object,
+#video embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.modal.fade .modal-dialog {
+    -webkit-transform: translate(0, -25%);
+    -ms-transform: translate(0, -25%);
+    transform: translate(0, -25%);
+    -webkit-transition: -webkit-transform 0.3s ease-out;
+    -moz-transition: -moz-transform 0.3s ease-out;
+    -o-transition: -o-transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+}
+
+.imagem-capa {
+    object-fit: cover;
+}
+
+/* VIDEO OUT */
+@media (min-width:576px) {
+    /* SM */
+    :root {
+        font: .7rem/1.5 var(--bs-font-sans-serif);
+    }
+
+    #hero {
+        height: 100vh;
+    }
+
+    nav {
+        top: 0;
+        bottom: auto!important;
+    }
+
+    .navbar-brand {
+        position: relative;
+        width: auto;
+        top: auto;
+        left: auto;
+        right: auto;
+    }
+
+    #content p {
+        padding: 0% 14%;
+    }
+}
+
+@media (min-width:768px) {
+    /* MD */
+    :root {
+        font: .8rem/1.5 var(--bs-font-sans-serif);
+    }
+
+    #hero {
+        height: 70vh;
+    }
+}
+
+@media (min-width:992px) {
+    /* LG */
+    :root {
+        font: 0.8rem/1.5 var(--bs-font-sans-serif);
+    }
+
+    #hero {
+        height: 80vh;
+    }
+
+    #content p {
+        padding: 0% 21%;
+    }
+}
+
+@media (min-width:1200px) {
+    /* XL */
+    :root {
+        font: 1rem/1.5 var(--bs-font-sans-serif);
+    }
+
+    #hero {
+        height: 80vh;
+    }
+}
+
+@media (min-width:1400px) {
+    /* XXL */
+    :root {
+        font: 1.25rem/1.5 var(--bs-font-sans-serif);
+    }
+
+    #hero {
+        height: 80vh;
+    }
+}

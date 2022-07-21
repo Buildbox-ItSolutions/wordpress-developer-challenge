@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'CircularSpotifyTxT-Black';
+    src: url('/wp-content/themes/playmichel/bootstrap_theme/assets/fonts/CircularSpotifyTxT-Black.eot');
+    src: url('/wp-content/themes/playmichel/bootstrap_theme/assets/fonts/CircularSpotifyTxT-Black.eot?#iefix') format('embedded-opentype'),
+       url('/wp-content/themes/playmichel/bootstrap_theme/assets/fonts/CircularSpotifyTxT-Black.svg#CircularSpotifyTxT-Black') format('svg'),
+       url('/wp-content/themes/playmichel/bootstrap_theme/assets/fonts/CircularSpotifyTxT-Black.ttf') format('truetype'),
+       url('/wp-content/themes/playmichel/bootstrap_theme/assets/fonts/CircularSpotifyTxT-Black.woff') format('woff'),
+       url('/wp-content/themes/playmichel/bootstrap_theme/assets/fonts/CircularSpotifyTxT-Black.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CircularSpotifyTxT-Med';
+    src: url('/wp-content/themes/playmichel/bootstrap_theme/assets/fonts/CircularSpotifyTxT-Med.eot');
+    src: url('/wp-content/themes/playmichel/bootstrap_theme/assets/fonts/CircularSpotifyTxT-Med.eot?#iefix') format('embedded-opentype'),
+       url('/wp-content/themes/playmichel/bootstrap_theme/assets/fonts/CircularSpotifyTxT-Med.svg#CircularSpotifyTxT-Med') format('svg'),
+       url('/wp-content/themes/playmichel/bootstrap_theme/assets/fonts/CircularSpotifyTxT-Med.ttf') format('truetype'),
+       url('/wp-content/themes/playmichel/bootstrap_theme/assets/fonts/CircularSpotifyTxT-Med.woff') format('woff'),
+       url('/wp-content/themes/playmichel/bootstrap_theme/assets/fonts/CircularSpotifyTxT-Med.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$primary: #ff0000;
+$gray-900: #212529;
+$dark: $gray-900;
+$white: #fff;
+$gray-900: #212529;
+$body-bg: $dark;
+$body-color: $white;
+$link-color: $primary;
+$container-max-widths: (  sm: 540px,  md: 720px,  lg: 960px,  xl: 1140px,  xxl: 1640px);
+$font-family-sans-serif: CircularSpotifyTxT-Med, Arial;
+$headings-font-family: CircularSpotifyTxT-Black, Arial;
+$headings-color: $white;
+$nav-link-color: $primary;
+
+@import "bootstrap/bootstrap";
