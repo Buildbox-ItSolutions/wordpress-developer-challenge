@@ -1,0 +1,35 @@
+.custom-fields{
+    display: flex;
+    flex-direction: column;
+}
+
+.small_input {
+    width: 40%;
+    height: 40px;
+    border: solid 3px rgb(177, 175, 175);
+}
+
+.input_all {
+    width: 80%;
+    height: 100px;
+    border: solid 3px rgb(177, 175, 175);
+}
+
+.form-butt{
+    width: 60px;
+}
+.send-cover{
+    display: flex;
+    flex-direction: row;
+}
+
+.input-video {
+    border:none;
+    align-content: flex-start;
+    outline: none;
+}
+
+ #button-hidden {display:hiden;}
+
+
+  
