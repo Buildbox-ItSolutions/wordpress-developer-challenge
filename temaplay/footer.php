@@ -1,22 +1,10 @@
-<footer class="footer-play">
-            <div class="container-footer">
-                <div class="logo-footer">
-                    <?php 
-                        if( has_custom_logo() ){
-                            the_custom_logo();
-                        }else
-                        {  ?>
-                            <a href="<?php echo esc_html(home_url( '/' )); ?>"><span><?php bloginfo( 'name' ); ?></span></a>
-                            <?php
-                        }  ?>
-                    </div>
-                    <div class="copyright">
-                    <p><?php echo esc_html(get_theme_mod( 'set_copyright', __( 'Copyright X - All Rights Reserved', 'tarotheme' ) )); ?></p>
+<footer>
+         
+    <div class="footer-play">
+                <a href="<?php home_url();?>"> <img class= "image-footer" src="http://desafioplay.local/wp-content/uploads/2022/11/Untitled-design-11.jpg"> </a>
+                <p>Copyright 2022 - All Rights Reserved</p>
                 </div>
 
-            </div>
-        </footer>
-    </div>
     <?php wp_footer(); ?>
 </body>
 </html>

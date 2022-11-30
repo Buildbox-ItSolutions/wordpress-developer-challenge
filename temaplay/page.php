@@ -17,6 +17,7 @@
                 wp_reset_postdata();?>
 
         </main>
+        </div>
 </div> 
 <div class="category-lists">
 <!-- categoria Filmes-->
@@ -88,7 +89,32 @@ wp_reset_postdata();?>
 </div> 
 </div>
 
-
+<!--categorias mobile-->
+<div class="category-mobile">
+          
+          <div class="icons-car1"><a href="/index.php?cat=1">
+            <img class="icon-carousel1" src="http://desafioplay.local/wp-content/uploads/2022/11/Caminho-8@2x.png">
+            <p>Filmes</p></a>
+          </div>
+  
+         
+          <div class="icons-car2"><a href="/index.php?cat=4">
+            <img class="icon-carousel" src="http://desafioplay.local/wp-content/uploads/2022/11/Caminho-7@2x.png">
+            <p>Documentários</p></a>
+          </div>
+  
+         
+          <div class="icons-car3"><a href="/index.php?cat=3">
+            <img class="icon-carousel" src="http://desafioplay.local/wp-content/uploads/2022/11/Grupo-62@2x.png">
+            <p>Séries</p></a>
+          </div>
+</div>
+  
+<div>
 <?php 
 
 get_footer();?>
+
+
+</div>
+

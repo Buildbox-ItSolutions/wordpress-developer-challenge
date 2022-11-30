@@ -12,7 +12,7 @@
         </div>
         <div class="title-area">
             <h1 class= "title-videos"><a href="<?php the_permalink();?>"><?php the_title(); ?></a> </h1>
-            <a href="<?php the_permalink();?>"><button class="red-button">Mais Informações </button></a>
+            <a href=<?php the_permalink();?>><button class="red-button">Mais Informações </button></a>
         </div>
     </div>
     </div>
