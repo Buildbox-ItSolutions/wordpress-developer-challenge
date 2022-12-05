@@ -17,11 +17,10 @@
                 wp_reset_postdata();?>
 
         </main>
-        </div>
 </div> 
 <div class="category-lists">
 <!-- categoria Filmes-->
-<div><h2 class="category-subtitle"><a href="/index.php?cat=1">Filmes</a></h2></div>
+<div><h2 class="category-subtitle"> Filmes </h2></div>
  <div class="thumb-carousel">
        <?php      $argument = array(
             'post_type'      => 'videos',
@@ -44,7 +43,7 @@ wp_reset_postdata();?>
 
 <!-- categoria Séries-->
 
-<div class="subtitle-div" ><h2 class="category-subtitle"><a href="/index.php?cat=3">Séries</a></h2>
+<div class="subtitle-div" ><h2 class="category-subtitle"> Séries </h2></div>
 <div class="thumb-carousel">
  <?php      $argument1 = array(
             'post_type'      => 'videos',
@@ -67,7 +66,7 @@ wp_reset_postdata();?>
 
 <!-- categoria Documentários-->
 
-<div><h2 class="category-subtitle"><a href="/index.php?cat=4">Documentários</a></h2>
+<div><h2 class="category-subtitle"> Documentários </h2></div>
 <div class="thumb-carousel"> 
  <?php      $argument2 = array(
       'post_type'      => 'videos',
@@ -89,32 +88,4 @@ wp_reset_postdata();?>
 </div> 
 </div>
 
-<!--categorias mobile-->
-<div class="category-mobile">
-          
-          <div class="icons-car1"><a href="/index.php?cat=1">
-            <img class="icon-carousel1" src="http://desafioplay.local/wp-content/uploads/2022/11/Caminho-8@2x.png">
-            <p>Filmes</p></a>
-          </div>
-  
-         
-          <div class="icons-car2"><a href="/index.php?cat=4">
-            <img class="icon-carousel" src="http://desafioplay.local/wp-content/uploads/2022/11/Caminho-7@2x.png">
-            <p>Documentários</p></a>
-          </div>
-  
-         
-          <div class="icons-car3"><a href="/index.php?cat=3">
-            <img class="icon-carousel" src="http://desafioplay.local/wp-content/uploads/2022/11/Grupo-62@2x.png">
-            <p>Séries</p></a>
-          </div>
-</div>
-  
-<div>
-<?php 
-
-get_footer();?>
-
-
-</div>
-
+<?php get_footer();?>

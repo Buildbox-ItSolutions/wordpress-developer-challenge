@@ -1,6 +1,7 @@
+
 /*
 Theme Name: Play
-Author: Ana Maria Rangel
+Author: (seu nome)
 Version: 1.0
 Text Domain: bx-desafio
 Global Prefix: bx_desafio_
@@ -9,408 +10,366 @@ Global Prefix: bx_desafio_
   
   
   
-:root{
+  :root{
   
-  /* Colors */
-  --playtheme-white: #ffffff;
-  --playtheme-black: #000000;
-  --playtheme-red: #ff0000;
-  --playtheme-gray1: #121212;
-  --playtheme-gray2: #5a5a5a;
-  --playtheme-gray3: #000000E6;
+    /* Colors */
+    --playtheme-white: #ffffff;
+    --playtheme-black: #000000;
+    --playtheme-red: #ff0000;
+    --playtheme-gray1: #121212;
+    --playtheme-gray2: #5a5a5a;
+    --playtheme-gray3: #000000E6;
 
 }
 
 @font-face {
-font-family: "Spotifyblack";
-src: url("/themes/play/assets/fonts/CircularSpotifyTxT-Black.woff2")format(".woff2");
-src: url("/themes/play/assets/fonts/CircularSpotifyTxT-Black.woff")format(".woff");
-src: url("/themes/play/assets/fonts/CircularSpotifyTxT-Black.eot")format(".eot");
-src: url("/themes/play/assets/fonts/CircularSpotifyTxT-Black.ttf")format(".ttf");
-src: url("/themes/play/assets/fonts/CircularSpotifyTxT-Black.svg")format(".svg");
-font-family: "Spotifybold";
-src: url("/themes/play/assets/fonts/CircularSpotifyTxT-Bold.woff2")format(".woff2");
-src: url("/themes/play/assets/fonts/CircularSpotifyTxT-Bold.woff")format(".woff");  
-src: url("/themes/play/assets/fonts/CircularSpotifyTxT-Bold.eot")format(".eot");
-src: url("/themes/play/assets/fonts/CircularSpotifyTxT-Bold.ttf")format(".ttf");
-src: url("/themes/play/assets/fonts/CircularSpotifyTxT-Bold.svg")format(".svg");
-font-family: "Spotifybook";
-src: url("/themes/play/assets/fonts/CircularSpotifyTxT-Book.woff2")format(".woff2");
-src: url("/themes/play/assets/fonts/CircularSpotifyTxT-Book.woff")format(".woff");  
-src: url("/themes/play/assets/fonts/CircularSpotifyTxT-Book.eot")format(".eot");
-src: url("/themes/play/assets/fonts/CircularSpotifyTxT-Book.ttf")format(".ttf");
-src: url("/themes/play/assets/fonts/CircularSpotifyTxT-Book.svg")format(".svg");
-font-family: "Spotifylight";
-src: url("/themes/play/assets/fonts/CircularSpotifyTxT-Light.woff2")format(".woff2");
-src: url("/themes/play/assets/fonts/CircularSpotifyTxT-Light.woff")format(".woff");  
-src: url("/themes/play/assets/fonts/CircularSpotifyTxT-Light.eot")format(".eot");
-src: url("/themes/play/assets/fonts/CircularSpotifyTxT-Light.ttf")format(".ttf");
-src: url("/themes/play/assets/fonts/CircularSpotifyTxT-Light.svg")format(".svg");
-font-family: "Spotifymed";
-src: url("/themes/play/assets/fonts/CircularSpotifyTxT-Med.woff2")format(".woff2");
-src: url("/themes/play/assets/fonts/CircularSpotifyTxT-Med.woff")format(".woff");  
-src: url("/themes/play/assets/fonts/CircularSpotifyTxT-Med.eot")format(".eot");
-src: url("/themes/play/assets/fonts/CircularSpotifyTxT-Med.ttf")format(".ttf");
-src: url("/themes/play/assets/fonts/CircularSpotifyTxT-Med.svg")format(".svg");
+  font-family: "Spotifyblack";
+  src: url("/themes/play/assets/fonts/CircularSpotifyTxT-Black.woff2")format(".woff2");
+  src: url("/themes/play/assets/fonts/CircularSpotifyTxT-Black.woff")format(".woff");
+  src: url("/themes/play/assets/fonts/CircularSpotifyTxT-Black.eot")format(".eot");
+  src: url("/themes/play/assets/fonts/CircularSpotifyTxT-Black.ttf")format(".ttf");
+  src: url("/themes/play/assets/fonts/CircularSpotifyTxT-Black.svg")format(".svg");
+  font-family: "Spotifybold";
+  src: url("/themes/play/assets/fonts/CircularSpotifyTxT-Bold.woff2")format(".woff2");
+  src: url("/themes/play/assets/fonts/CircularSpotifyTxT-Bold.woff")format(".woff");  
+  src: url("/themes/play/assets/fonts/CircularSpotifyTxT-Bold.eot")format(".eot");
+  src: url("/themes/play/assets/fonts/CircularSpotifyTxT-Bold.ttf")format(".ttf");
+  src: url("/themes/play/assets/fonts/CircularSpotifyTxT-Bold.svg")format(".svg");
+  font-family: "Spotifybook";
+  src: url("/themes/play/assets/fonts/CircularSpotifyTxT-Book.woff2")format(".woff2");
+  src: url("/themes/play/assets/fonts/CircularSpotifyTxT-Book.woff")format(".woff");  
+  src: url("/themes/play/assets/fonts/CircularSpotifyTxT-Book.eot")format(".eot");
+  src: url("/themes/play/assets/fonts/CircularSpotifyTxT-Book.ttf")format(".ttf");
+  src: url("/themes/play/assets/fonts/CircularSpotifyTxT-Book.svg")format(".svg");
+  font-family: "Spotifylight";
+  src: url("/themes/play/assets/fonts/CircularSpotifyTxT-Light.woff2")format(".woff2");
+  src: url("/themes/play/assets/fonts/CircularSpotifyTxT-Light.woff")format(".woff");  
+  src: url("/themes/play/assets/fonts/CircularSpotifyTxT-Light.eot")format(".eot");
+  src: url("/themes/play/assets/fonts/CircularSpotifyTxT-Light.ttf")format(".ttf");
+  src: url("/themes/play/assets/fonts/CircularSpotifyTxT-Light.svg")format(".svg");
+  font-family: "Spotifymed";
+  src: url("/themes/play/assets/fonts/CircularSpotifyTxT-Med.woff2")format(".woff2");
+  src: url("/themes/play/assets/fonts/CircularSpotifyTxT-Med.woff")format(".woff");  
+  src: url("/themes/play/assets/fonts/CircularSpotifyTxT-Med.eot")format(".eot");
+  src: url("/themes/play/assets/fonts/CircularSpotifyTxT-Med.ttf")format(".ttf");
+  src: url("/themes/play/assets/fonts/CircularSpotifyTxT-Med.svg")format(".svg");
 }
 
 
 
 body {
-background-color: var(--playtheme-black);
-
-  }
+ background-color: var(--playtheme-black);
+  
+    }
 
 text {
-color: var(--playtheme-white);
+  color: var(--playtheme-white);
 }
 
-p {
-  color: var(--playtheme-white);
-  text-align: left;
-  font-family: 'Spotifymed', arial,sans-serif;
-  letter-spacing: 0.54px;
-  opacity: 1;
+  p {
+    color: var(--playtheme-white);
+    text-align: left;
+    font-family: 'Spotifymed', arial,sans-serif;
+    letter-spacing: 0.54px;
+    opacity: 1;
+    }
+
+  h1 {
+    font-family: 'Spotifyblack', arial, sans-serif;
+    color: var(--playtheme-white);
   }
-
-h1 {
-  font-family: 'Spotifyblack', arial, sans-serif;
-  color: var(--playtheme-white);
-}
-h2 {
-  font-family: 'Spotifyblack', arial, sans-serif;
-  color: var(--playtheme-white);
-}
-h3 {font-family: 'Spotifyblack', arial, sans-serif;
-  color: var(--playtheme-white);
-}
+  h2 {
+    font-family: 'Spotifyblack', arial, sans-serif;
+    color: var(--playtheme-white);
+  }
+  h3 {font-family: 'Spotifyblack', arial, sans-serif;
+    color: var(--playtheme-white);
+  }
 
 /*header*/
 
-  .top-bar {
-  width: 1920px;
-  height: 92px;
-  display:grid;
-  top:0px;
-  left:0px;
-  grid-template-columns: 60% 40%;
-  grid-template-rows: auto;
-  grid-template-areas: 
-  "logo-area menu-area";
-  justify-content: space-between;
-  align-items: center;
-  background-color: var(--playtheme-black);
-  position: relative;
-  z-index: 100;
-  background-color: var(--playtheme-black);
-  padding-left: 140px;
-        }
-
-  .logo-area {
-display: flex;
-flex-direction: row;
-align-items: top;
-        }
-
-  .custom-logo {
-    width: 104px;
-    height: 33px;
-           }
-
- .menu-area {
-display: flex;
-flex-direction: row;
-align-items: top;
-justify-items: flex-end;
-padding-right: 196;
-        }
-
-  .menu {
-    display: flex;
-    flex-direction: row;
-    width: 500px;
+    .top-bar {
+    width: 1920px;
+    height: 97px;
+    display:grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "logo-area menu-area";
     justify-content: space-between;
-    font-size: 27px;
-    font-family: 'Spotifymed', arial, sans-serif;
-    top: 31px;
-    letter-spacing: 0.57px;
+    align-items: center;
+    background-color: var(--playtheme-black);
+    position: relative;
+    background-color: var(--playtheme-black);
+    padding-left: 140px;
           }
 
-  .menu a {
-    color: var(--playtheme-white);
-    text-decoration: none;
+    .logo-area {
+  display: flex;
+  flex-direction: row;
+  align-items: top;
+          }
+
+    .custom-logo {
+      width: 104px;
+      height: 33px;
+             }
+
+   .menu-area {
+  display: flex;
+  flex-direction: row;
+  align-items: top;
+  justify-items: flex-end;
+  padding-right: 196;
+          }
+
+    .menu {
+      display: flex;
+      flex-direction: row;
+      width: 500px;
+      justify-content: space-between;
+      font-size: 27px;
+      font-family: 'Spotifymed', arial, sans-serif;
+      top: 31px;
+      letter-spacing: 0.57px;
+            }
+
+    .menu a {
+      color: var(--playtheme-white);
+      text-decoration: none;
+    }
+ 
+  /*footer*/
+
+  .container-footer {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: center;
+    width: 1920px;
+    height: 385px;
+     }
+
+     .logo-footer {
+     margin-left: 140px;
+     }
+
+     .copyright {
+      margin-left: 140px;
+     }
+
+     
+/*single*/
+
+
+.post-videos-article{ 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+}
+.content-single-video {
+padding-left: 140px;
+          }
+
+
+.title-single {
+  font-size: 70;
+  font-weight: bold;
+  color: var(--playtheme-white);
+  padding-left: 418px;
   }
 
-
-/*Home*/
-
-.dynamic-cover {
-position: 0;  
-margin: 0;
-width:100%;
-height: 100%;
-object-fit: cover;
-opacity: 0.6;
-}
-.dynamic-area {
-border-radius: 3px;
-opacity: 1;
-background-color: var(--playtheme-black);
-width: 1920px;
-height: 1000px;
-top: 0px;
-left: 0px;
-}
-
-
-.video-data { 
-display: flex;
-flex-direction: row;
-position: absolute;
-z-index: 100;
-top: 470px;
-left: 140px;
-width: 276;
-height: 32px;
+.video-data-single{
+margin-top: 120px;
+padding-left: 210px;
+margin-bottom: 0;
+width: 270px;
+height: 28px;
+justify-content: space-between;
 }
 
 .button-category {
-  width: 128px;
-  height: 32px;
-  background: #FFFFFF;
-  border-radius: 3px;
-  border: 3px solid #FFFFFF;
-  border-radius: 3px;
-  opacity: 1;
-  font-family: 'Spotifymed', arial, sans-serif;
-  font-size: 18px;
-  letter-spacing: 0.54px;
-  margin-right: 10px;
+width: 60%
+height: 100%;
+background: #FFFFFF;
+border-radius: 3px;
+border: 3px solid #FFFFFF;
+border-radius: 3px;
+opacity: 1;
+font-family: 'Spotifymed', arial, sans-serif;
+font-size: 18px;
+
+}
+
+.button-category a{
+color: #000000;
+text-decoration: none;
+
   }
 
-  .button-category a{
-    color: #000000;
-    text-decoration: none;
+
+.button-lenght {
+width: 40%;
+height: 100%;
+font-family: 'Spotifymed', arial, sans-serif;
+font-size: 18px;
+padding-right:  2px;
+border: 1px solid #FFFFFF;
+border-radius: 3px;
+opacity: 1;
+color: #FFFFFF;
+background-color: #000000;
+letter-spacing: 0.54px;
+}
+
+.title-area-single{
+width: 1083px;
+height: 87px;
+margin-bottom: 40px;
+
+}
+.title-videos-single {
+font-family: 'Spotifyblack', arial, sans-serif;
+padding-left: 210px;
+width: 100%;
+height: 100%;
+text-align: left;
+letter-spacing: -2.8px;
+color: #FFFFFF;
+opacity: 1;
+font-size: 70px;
+text-justify: left;
+}
+
+.title-videos-single a {
+  color: var(--playtheme-white);
+  text-decoration: none;
+}
+
+.video-embed-area-single {
+  width: 1638px;
+  height: 920px;
+  border-radius: 3px;
+  opacity: 1;
+  }
+
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.sinopse-text{
+padding-bottom: 122px;
+padding-left: 418px;
+padding-top: 90px;
+width: 944px;
+height: 180px;
+text-align: left;
+letter-spacing: 0.54px;
+color: #FFFFFF;
+opacity: 1;
+font-size: 18px;
+font-family: 'Spotifymed', sans-serif;
+letter-spacing: 0.54;
+}
+
+/*Home*/
+
+.embed-space {
+  width: 1920px;
+  height: 1000px;
+  opacity: 1;
+  top: 0px;
+  left: 0px;
+     }
+
+
+.video-embed-area {
+  position: absolute;
+  width: 100%;
+  height: 1000px;
+  border-radius: 3px;
+  opacity: 1;
+  margin:0;
+  }
+
+ .overlay{
+    top: 0px;
+    left: 0px;
+    position: relative;
+    padding-top: 500px;
+  }
+
+ .video-data { 
+  margin-top: 120px;
+  padding-left: 210px;
+  margin-bottom: 0;
+  width: 270px;
+  height: 28px;
+  justify-content: space-between;
+  }
+
+iframe{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+  .title-area{
+    width: 1083px;
+    height: 87px;
+    margin-bottom: 40px;
     
     }
-
-  .button-lenght {
-    width: 128px;
-    height: 32px;
-    font-family: 'Spotifymed', arial, sans-serif;
-    font-size: 18px;
-    padding-right:  2px;
-    border: 1px solid #FFFFFF;
-    border-radius: 3px;
-    opacity: 1;
+    .title-videos {
+    font-family: 'Spotifyblack', arial, sans-serif;
+    padding-left: 210px;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    letter-spacing: -2.8px;
     color: #FFFFFF;
-    background-color: #000000;
-    letter-spacing: 0.54px;
+    opacity: 1;
+    font-size: 70px;
+    text-justify: left;
     }
-
-
-.title-area{
-  width: 1083px;
-  height: 87px;
-  margin-bottom: 40px;
-  
-  }
-  .title-videos {
-  top: 470px;
-  padding-left: 134px;
-  width: 812px;
-  height: 241px;
-  text-align: left;
-  font-family: 'Spotifyblack', Arial, sans-serif;
-  letter-spacing: -4px;
-  color: var(--playtheme-white);
-  opacity: 1;
-  font-size: 100px;
-  position: absolute;
-  z-index: 100;
-  }
-
- 
-  .title-videos a {
-    color: var(--playtheme-white);
-    text-decoration: none;
-  }
+    
+    .title-videos a {
+      color: var(--playtheme-white);
+      text-decoration: none;
+    }
 
 .red-button {
-top: 824px;
-left: 140px;
 width: 310px;
 height: 64px;
-background: var(--playtheme-red);
 border-radius: 3px;
-border:none;
 opacity: 1;
-position: absolute;
-z-index: 100;
-font-family: 'Spotifymed', arial, sans-serif;
+margin-left: 210px;
+background-color: var(--playtheme-red);
 color: var(--playtheme-white);
-font-size: 18px;
-  }
+font-size: larger;
+    }
 
-  @media only screen 
-  and (min-device-width: 375px)
-  and (max-device-width: 1000px)  {
-           
-          
-        .dynamic-area {
-        width: 100%;
-        height: 579px;
-         }
-
-        .dynamic-cover{
-          width: 100%;
-        }
-      
-      
-       .video-data { 
-      top: 278px;
-      left: 28px;
-      width: 276;
-      height: 28px;
-        }
-      
-      
-        .button-category {
-          width: 110px;
-          height: 28px;
-          font-size: 12px;
-            }
-      
-                 
-          .button-lenght {
-            width: 111px;
-            height: 28px;
-            font-size: 12px;
-            padding-right:  2px;
-            
-            }
-      
-                     
-          .title-videos {
-          top: 297px;
-          padding-left: 20px;
-          width: 326px;
-          margin: o;
-          font-size: 40px;
-           }
-      
-          
-          .title-videos a {
-            color: var(--playtheme-white);
-            text-decoration: none;
-          }
-      
-      .red-button {
-        top: 436px;
-        left: 28px;
-        width: 182px;
-        height: 38px;
-        font-size: 12px;
-          }
-}
-
-/*carrosséis mobile*/
-
-.category-mobile{
-  display: none;
-}
-
-@media only screen 
-and (min-device-width: 375px)
-and (max-device-width: 1000px) {
-     
-   .icon-carousel{
-  width: 22px;
-  height: 22px;
- }
-
-
- .icon-carousel1{
-  width: 24px;
-  height: 16px;
-   }
-
-  .category-mobile {
-    display: flex;
-    flex-direction: row;
-    top:729px;
-    position:absolute;
-    width: 100%;
-    height:83px ;
-    padding-top: 20PX;
-    background-color: var(--playtheme-black);
-      }
-
-      .category-mobile div {
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        text-align: center;
-        width: 30%;
-      }
-
-      .category-mobile p {
-        font-size: 9px;
-        text-align: center;
-        font-family: 'Spotifymed', Arial, sans-serif;
-      }
-
-      .category-mobile a {
-        accent-color: var(--playtheme-red);
-      }
-
-      #filmes1 {
-        color: var(--playtheme-red);
-      }
-
-
-      #series1 {
-        color: var(--playtheme-red);
-      }
-
-      #doc1 {
-        color: var(--playtheme-red);
-      }
-      
-    
-
-    
- 
- 
-
-
-}
-
-
-/*carrosséis desktop*/
+/*carrosséis*/
 
 .category-subtitle{
-display: block;
-left: 139px;
-text-align: left;
-font-family: 'Spotifyblack', arial,sans-serif;
-letter-spacing: -1px;
-color: var(--playtheme-red);
-opacity: 1;
-font-size: 40px;  
-}
-
-.category-subtitle a{
-color: var(--playtheme-red);
-text-decoration: none;
+  display: block;
+  left: 139px;
+  text-align: left;
+  font-family: 'Spotifyblack', arial,sans-serif;
+  letter-spacing: -1px;
+  color: #FF0000;
+  opacity: 1;
+  font-size: 40px;  
 }
 
 .attachment-post-thumbnail {
-width: 248px;
-height: 387px;
-margin: 0;
-padding: 0;
-object-fit: cover;
+  width: 248px;
+  height: 387px;
+  margin: 0;
+  padding: 0;
 }
 
 .button-lenght-carousel{
@@ -427,14 +386,14 @@ font-family: 'Spotifyblack', Arial, Helvetica, sans-serif;
 }
 
 .title-videos-carousel{
-width: 248px;
-height: 140px;
-text-align: left;
-font-family: 'Spotifyblack', Arial, Helvetica, sans-serif;
-letter-spacing: -0.3px;
-color: var(--playtheme-white);
-opacity: 1; 
-font-size: 30px; 
+  width: 248px;
+  height: 140px;
+  text-align: left;
+  font-family: 'Spotifyblack', Arial, Helvetica, sans-serif;
+  letter-spacing: -0.3px;
+  color: var(--playtheme-white);
+  opacity: 1; 
+  font-size: 30px; 
 }
 
 .title-videos-carousel a{
@@ -443,310 +402,21 @@ text-decoration: none;
 }
 
 .listing-single-video{
-display: flex;
-flex-direction: column;
-align-content: flex-start;
-margin-right:30px;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  margin-right:30px;
 }
 
 .thumb-carousel{
-display: flex;
-flex-direction: row;
- }
-
-.category-lists{
-padding-left: 140px;
-padding-top: 60px;
-}
-
-@media only screen 
-    and (min-device-width: 375px)
-    and (max-device-width: 1000px) {
-
-      .thumb-carousel{
-        width: 189px;
-        height: 360px;
-        display: flex;
-        flex-direction: row;
-       }
-         
-      
-      .category-subtitle{
-        left: 28px;
-        font-size: 23px; 
-        }      
-         
-      .attachment-post-thumbnail {
-        width: 149px;
-        height: 232px;
-        margin: 0;
-        padding: 0;
-        object-fit: cover;
-      }
-      
-      .button-lenght-carousel{
-      width: 111px;
-      height: 28px;
-      margin-top: 25px;
-      font-size: 12px;
-      font-family: 'Spotifyblack', Arial, Helvetica, sans-serif;
-      }
-      
-      .title-videos-carousel{
-        width: 149px;
-        height: 84px;
-        margin-right: 28px;
-        font-size: 20px; 
-      }
-      
-    
-      .listing-single-video{
-        display: flex;
-        flex-direction: column;
-        align-content: flex-start;
-        margin-right: 0;
-        margin-left: 0px;
-        width: 120%;
-             
-
-      }
-            
-          .category-lists{
-        padding-left:28px;
-        padding-top: 0px;
-      }
-
-    }
-
-
-
-
-/*Single*/
-
-.single-cover{
-  width: 100%;
-  height: 100%;
-  margin: 0;
-}
-
-.site-content{
-  padding-left: 141px;
-  display: flex;
-  flex-direction: column;
-}
-
-.wrap-video{
-  width: 1638;
-  height: 920;
-  display:none;
-
-}
-
-#player{
-  width: 100%;
-  height: 100%;
-  margin: 0;
-}
-
-.video-data-single{
   display: flex;
   flex-direction: row;
-  padding-top: 136px;
-  padding-left: 309px;
-  }
+   }
 
-.button-category-single{
-top: 230px;
-left: 424px;
-width: 184px;
-height: 32px;
-background: #FFFFFF 0% 0% no-repeat padding-box;
-border-radius: 3px;
-opacity: 1;
-font-family: 'Spotifymed', arial, sans-serif;
-font-size: 18px;
-letter-spacing: 0.54px;
-margin-right: 10px;
-color: var(--playtheme-black);
+.category-lists{
+  padding-left: 140px;
+  padding-top: 60px;
 }
-.button-category-single a{
-  color: var(--playtheme-black);
-  text-decoration: none;
-}
-
-.button-lenght-single {
-top: 230px;
-left: 618px;
-width: 128px;
-height: 32px;
-border: 1px solid #FFFFFF;
-border-radius: 3px;
-opacity:1;
-font-family: 'Spotifymed', arial, sans-serif;
-font-size: 18px;
-letter-spacing: 0.54px;
-margin-right: 10px;
-background-color: var(--playtheme-black);
-color: var(--playtheme-white);
-}
-
-.title-videos-single{
-  top: 273px;
-  padding-left: 278px;
-  width: 1083px;
-  height: 87px;
-  text-align: left;
-  font-family: 'Spotifyblack', Arial, Helvetica, sans-serif;
-  letter-spacing: -2.8px;
-  font-size: 70px;
-  color: #FFFFFF;
-  opacity: 1;
-  
-}
-
-.button-play{
-display: flex;
-width: 90px;
-height: 90px;
-opacity: 1;
-z-index: 100;
-background-color: rgba(0, 0, 0, 0);
-position: absolute;
-padding-top: 415px;
-padding-left: 774px;
-border: none;
-box-shadow: none;
-
-}
-
-.embed-space-single{
-width: 1638px;
-height: 920px;
-border-radius: 3px;
-opacity: 1;
-position: relative;
-
-}
-
-.show-video{
-  width: 1638px;
-  height: 920px;
-  margin: 0;
-  border-radius: 3px;
-  opacity: 1;
-    }
-
-
-
-.sinopse-span{
-font-family: 'spotify', Arial,sans-serif;
-font-size: 18px;
-top: 1447px;
-left: 418px;
-width: 944px;
-height: 180px;
-text-align: left;
-letter-spacing: 0.54px;
-color: var(--playtheme-white);
-opacity:1;
-}
-
-
-@media only screen 
-and (min-device-width: 375px)
-and (max-device-width: 1000px)  {
-
-  .embed-space-single{
-     width: 100%;
-    height: 210px;
-    position: relative;
-    
-    }
-
-    
-  .site-content{
-    padding-left: 0;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .wrap-video{
-    width: 375px;
-    height: 210px;
-    display:none;
-  
-  }
-  
-  
-  .video-data-single{
-    display: flex;
-    flex-direction: row;
-    padding-top: 54px;
-    padding-left: 28px;
-    }
-  
-  .button-category-single{
-   width: 110px;
-  height: 28px;
-  font-size: 12px;
-    }
-    
-  .button-lenght-single {
-  width: 111px;
-  height: 28px;
-  font-size: 12px;
-    }
-  
-  .title-videos-single{
-    top: 143px;
-    padding-left: 28px;
-    width: 326px;
-    height: 98px;
-    font-size: 28px;
-   
-  }
-  
-  .button-play{
-   
-      display: flex;
-      width: 54px;
-      height: 54px;
-      z-index: 100;
-      position: absolute;
-      padding-top: 78px;
-      padding-left: 160px;
-      border: none;
-      box-shadow: none;
-      
-      }
-   
-    
-  .show-video{
-    width: 375px;
-    height: 210px;
-    margin: 0;
-    border-radius: 3px;
-    opacity: 1;
-      }
-  
-  
-  .sinopse-span{
-  font-size: 12px;
-  top: 507px;
-  left:30px;
-  width: 326px;
-  height: 216px;
-  text-align: left;
-  letter-spacing: 0.54px;
-    }
-
-    #mobile-single {
-      top: 769px;;
-    }
-}
-
-
-
 
 
 
@@ -760,144 +430,50 @@ color: var(--playtheme-red);
 }
 
 .archive-title a {
- color: var(--playtheme-red);
- text-decoration: none;
- justify-content: space-between;
- 
-   }
+   color: var(--playtheme-red);
+   text-decoration: none;
+   justify-content: space-between;
+   
+     }
 
 .archive-desc{
-font-family: 'Spotifymed', arial, sans-serif;
-font-size: 18px;
-text-align: left;
-letter-spacing: 0.54px;
-color:var(--playtheme-white);
-opacity: 1;
-}
+  font-family: 'Spotifymed', arial, sans-serif;
+  font-size: 18px;
+  text-align: left;
+  letter-spacing: 0.54px;
+  color:var(--playtheme-white);
+  opacity: 1;
+  }
 
 .container-archive{
-width: 1920px;
-display:flex;
-justify-content: space-around;
-flex-direction: row;
-padding-left: 139px;
-}
+  width: 1920px;
+  display:flex;
+  justify-content: space-around;
+  flex-direction: row;
+  padding-left: 139px;
+  }
 
 .aside-archive{
-width: 667px;
-display: flex;
-flex-direction: column;
-justify-content: top;
-padding-top: 219px;;
+  width: 667px;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  padding-top: 219px;;
 }
 
 .itens-archive{
-width: 975px;
-padding-left: 139;
-padding-top: 159px;
-display: flex;
-flex-direction: row;
-}
-
-.wrap-listing{
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-}
-
-@media only screen 
-and (min-device-width: 375px)
-and (max-device-width: 1000px)  {
-.container-archive {
+  width: 975px;
+  padding-left: 139;
+  padding-top: 159px;
   display: flex;
-  flex-direction: column;
-  padding-left: 29px;
-  
+  flex-direction: row;
 }
-
-.aside-archive {
-  padding: 0;
-  margin: 0;
-}
-
-.archive-title {
-  font-size: 23px;
-}
-
-.archive-desc {
-  font-size: 12px;
-  width:316px;
-  height: 196;
-}
-
-.itens-archive {
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  position: relative;
-}
-
 
 .wrap-listing{
-  padding-top: 30px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 375px;
-
-}
-
-.listing-single-video {
-  width: 169px;
-}
-
-}
+  }
 
 
-/*footer*/
-
-.image-footer{
-  width: 104px;
-  height: 33px; 
- }
- 
- .footer-play{
-   height: 385px;
-   width: 100%;
-   padding-top: 105px;
-   padding-left: 140;
- }
- 
- @media only screen 
- and (min-device-width: 375px)
- and (max-device-width: 1000px)  {
- 
-   .image-footer{
-     width: 71px;
-     height: 23px;
-   
-    }
- 
-    .footer-play{
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     height: 301px;
-     width: 100%;
-     padding-top: 72px;
-     padding-left: 0;
-     
-   }
- 
- 
- 
- 
- .custom-logo {
-  width: 71px;
-  height: 23px;
-         }
-
-.menu-area { 
-display: none;
-}
- }
+  

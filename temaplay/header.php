@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <? wp_head(); ?>
     </head>
-<body class="site"?php body_class(); ?>
+<body <?php body_class(); ?>
 <? wp_body_open();?> 
 <div id="page" class="site">
-    <header class="header-play">
+    <header>
         <section class="top-bar">
                 <div class="logo-area">
                     <?php 

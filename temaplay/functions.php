@@ -1,21 +1,12 @@
 <?php
 
 require ('inc/customizer.php');
-require ('custom-post/cpt-videos.php');
-
-
 
 function playtheme_load_scripts() {
     wp_enqueue_style('playtheme_style', get_stylesheet_uri(), array(), '1.0', 'all');
    }
    
    add_action('wp_enqueue_scripts','playtheme_load_scripts');
-
-   function playtheme_admin_styles() {
-	// Admin CSS file
-	wp_enqueue_style( 'stylesheet', get_template_directory_uri() . '/admin.css' );
-}
-add_action('admin_head', 'playtheme_admin_styles');
 
 function playtheme_config() {
     register_nav_menus(
@@ -44,6 +35,7 @@ function playtheme_config() {
 
 }
 
+
 add_action('after_setup_theme', 'playtheme_config',0);
 
 add_action('widgets_init', 'playtheme_sidebars');
@@ -68,8 +60,11 @@ if(! function_exists('wp_body_open')){
     } 
 }
 
+require ('single-videos.php');
 
+function playtheme_admin_styles() {
+	// Admin CSS file
+	wp_enqueue_style( 'stylesheet', get_template_directory_uri() . '/admin.css' );
+}
 
-
-
-
+add_action('admin_head', 'playtheme_admin_styles');

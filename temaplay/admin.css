@@ -1,35 +1,44 @@
-.custom-fields{
-    display: flex;
-    flex-direction: column;
-}
-
-.small_input {
-    width: 40%;
-    height: 40px;
-    border: solid 3px rgb(177, 175, 175);
-}
-
-.input_all {
-    width: 80%;
-    height: 100px;
-    border: solid 3px rgb(177, 175, 175);
-}
-
-.form-butt{
-    width: 60px;
-}
-.send-cover{
-    display: flex;
-    flex-direction: row;
-}
-
-.input-video {
-    border:none;
-    align-content: flex-start;
-    outline: none;
-}
-
- #button-hidden {display:hiden;}
-
-
+#picture__input {
+    display: none;
+  }
   
+  .picture {
+    width: 400px;
+    aspect-ratio: 16/9;
+    background: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #aaa;
+    border: 2px dashed currentcolor;
+    cursor: pointer;
+    margin-bottom: 50px;
+  }
+  
+  .picture:hover {
+    color: #777;
+    background: #ccc;
+  }
+  
+  .picture:active {
+    border-color: turquoise;
+    color: turquoise;
+    background: #eee;
+  }
+  
+  .picture:focus {
+    color: #777;
+    background: #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .picture__img {
+    max-width: 100%;
+  }
+
+ td input {
+  border: solid rgb(201, 198, 198);
+  width: 100%;
+  height: 40px;
+   }
+
