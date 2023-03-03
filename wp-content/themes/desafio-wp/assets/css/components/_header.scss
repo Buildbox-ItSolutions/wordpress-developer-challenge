@@ -1,0 +1,62 @@
+
+html,
+body {
+    font-family: $fonte;
+    font-size: em(16);
+    background-color: $black;
+    color: $white;
+}  
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+header{
+    position: fixed;
+    z-index: 99;
+    background-color: $blackOpacity;
+    width: 100%;
+    top: 0;
+
+    .container:before, .container:after {
+        display: none;
+    }
+    .container {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .logo a {
+        display: block;
+    }
+
+    ul#menu-menu-header-desktop {
+        display: flex;
+        align-items: center;
+
+        li.current-menu-item {
+            a {
+                color: $red;
+            }
+        }
+        li{
+            a{
+                font-size: em(19);
+                display: block;
+                margin-left: em(50);
+                color: $white;
+                padding: em(30) 0;
+                transition: all .2s;
+                &:hover {
+                    color: $red;
+                }
+            }
+        }
+    }
+}
+
+.menu-mobile {
+    display: none;
+}

@@ -1,0 +1,124 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;		
+}
+
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment  {
+    display: none;
+}
+
+::-webkit-scrollbar-track-piece  {
+    background-color: transparent;
+    -webkit-border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    background-color: #ededed;
+    -webkit-border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:horizontal{
+    background: #ededed;
+    border-radius: 4px;
+    width: 10px;
+}
+
+
+::-moz-scrollbar {
+    width: 5px;
+    height: 5px;		
+}
+
+::-moz-scrollbar-button:start:decrement,
+::-moz-scrollbar-button:end:increment  {
+    display: none;
+}
+
+::-moz-scrollbar-track-piece  {
+    background-color: transparent;
+    -webkit-border-radius: 4px;
+}
+
+::-moz-scrollbar-thumb:vertical {
+    background-color: #ededed;
+    -webkit-border-radius: 4px;
+}
+
+::-moz-scrollbar-thumb:horizontal{
+    background: #efefef;
+    border-radius: 4px;
+    width: 10px;
+}
+
+::-scrollbar-button:start:decrement,
+::-scrollbar-button:end:increment  {
+    display: none;
+}
+
+::-scrollbar-track-piece  {
+    background-color: transparent;
+    -webkit-border-radius: 4px;
+}
+
+::-scrollbar-thumb:vertical {
+    background-color: #ededed;
+    -webkit-border-radius: 4px;
+}
+
+::-scrollbar-thumb:horizontal{
+    background: #efefef;
+    border-radius: 4px;
+    width: 10px;
+}

@@ -1,0 +1,287 @@
+@media screen and (max-width: #{$l-device}) {
+
+}
+@media screen and (max-width: #{$m-device - 1}) {
+    .banner {
+        .banner-conteudo {
+            .banner-caption {
+                h2 {
+                    max-width: 100%;
+                    font-size: em(55);
+                    letter-spacing: -1px;
+                }
+            }
+        }
+    }
+
+    #page-archive {
+        .grid {
+            grid-template-columns: 1fr;
+        }
+        
+        .archive-section-videos {
+
+            .row{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 20px;
+
+                &:before, &:after {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .video-item {
+        a {
+            .video-conteudo {
+                h4 {
+                    font-size: em(24);
+                    letter-spacing: -0.2px;
+                }
+            }
+        }
+    }
+
+
+}
+@media screen and (max-width: #{$s-device - 1}) {
+    
+    header{
+        .logo {
+            img {
+                margin: 0 auto;
+                padding: 15px 0;
+            }
+        }
+        .menu-header{
+            display: none;
+        }
+    }
+
+    .menu-mobile {
+        display: block;
+        position: fixed;
+        bottom: 0;
+        background: $blackOpacity;
+        width: 100%;
+        z-index: 99;
+        
+        ul{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            padding: 20px;
+
+            li {
+                a{
+                    color: $white;
+                    font-size: em(9);
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+                &:nth-child(1){
+                    a {
+                        &::before {
+                            content: "";
+                            width: 30px;
+                            height: 40px;
+                            display: block;
+                            background-image: url('/wp-content/themes/desafio-wp/assets/img/filmes-icon.svg');
+                            background-repeat: no-repeat;
+                            background-position: center;
+                        }
+                    }
+                }
+                &:nth-child(2){
+                    a {
+                        &::before {
+                            content: "";
+                            width: 30px;
+                            height: 40px;
+                            display: block;
+                            background-image: url('/wp-content/themes/desafio-wp/assets/img/documentarios-icon.svg');
+                            background-repeat: no-repeat;
+                            background-position: center;
+                        }
+                    }
+                }
+                &:nth-child(3){
+                    a {
+                        &::before {
+                            content: "";
+                            width: 30px;
+                            height: 40px;
+                            display: block;
+                            background-image: url('/wp-content/themes/desafio-wp/assets/img/series-icon.svg');
+                            background-repeat: no-repeat;
+                            background-position: center;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+
+    .banner {
+
+        .banner-conteudo {
+
+            .banner-caption {
+                padding-top: 0;
+
+                .terms {
+                    .tax-name{
+                        font-size: em(12);
+                    }
+                    .tempo-duracao{
+                        font-size: em(12);
+                    }
+                }
+                h2 {
+                    max-width: 100%;
+                    font-size: em(40);
+                    letter-spacing: -1px;
+                }
+                 .btn-info {
+                    font-size: em(12);
+                }
+            }
+        }
+    }
+
+    #front-page {
+
+        .section-video {
+            
+            .container{
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .tituloTaxonomie a {
+                font-size: em(23);
+            }
+
+            .container-video {
+
+                .loop-video {
+                    > div {
+                        padding-right: 10px !important;
+                    }
+                    .video-item {
+                        margin-right: 20px;
+                    }
+                }
+            }
+        } 
+    }
+
+    #page-archive {
+        .grid {
+            grid-template-columns: 1fr;
+        }
+        .content-archive {
+
+            .content-archive-fixo {
+
+                .taxonomy-description {
+                   
+                    h1{
+                        font-size: em(23);
+                    }
+                    article{
+                        font-size: em(12);
+                        line-height: 22px;
+                    }
+                }
+            }
+        }
+        .archive-section-videos {
+
+            .row{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 20px;
+
+                &:before, &:after {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    #single-video {
+        margin-top: 110px;
+
+        .single-title {
+            
+            .terms {
+                .tax-name{
+                    font-size: em(12);
+                }
+                .tempo-duracao{
+                    font-size: em(12);
+                }
+            }
+            h1 {
+                font-size: em(28);
+                
+                letter-spacing: -0.8px;
+            }
+        }
+        .single-descricao-video {
+            p {
+                font-size: em(12);
+                line-height: 22px;
+                letter-spacing: 0.36;
+            }
+        }
+    }
+        
+    .video-item {
+        min-width: auto;
+
+        a {
+
+            .video-img {
+
+                img {
+                    width: 149px;
+                    height: 232px;
+                }
+                
+            }
+
+            .video-conteudo {
+                h4 {
+                    font-size: em(20);
+                    letter-spacing: -0.2px;
+                }
+                .tempo-duracao{
+                    font-size: em(12);
+                }
+            }
+        }
+    }
+    
+    footer {
+        margin-top: 60px;
+        background: #121212;
+        padding-top: em(60);
+        padding-bottom: em(150);
+
+        p {
+            text-align: center;
+            font-size: em(12);
+        }
+
+        img {
+            margin: 20px auto;
+        }
+    }
+}

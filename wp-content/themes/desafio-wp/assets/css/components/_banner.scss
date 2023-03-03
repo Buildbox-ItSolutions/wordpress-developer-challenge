@@ -1,0 +1,65 @@
+.banner {
+    position: relative;
+
+    .banner-item {
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-blend-mode: multiply;
+        background-color: rgb(0, 0, 0, .5);
+    }
+
+    .banner-conteudo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+
+        .banner-caption {
+            color: $white;
+            padding-top: em(210);
+            width: 100%;
+            
+            .terms {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                
+                .tax-name {
+                    @include taxName();
+                    color: $cinza;
+                    background-color: $white;
+                }
+                .tempo-duracao{
+                    @include tempoDuracao();
+                }
+            }
+    
+            h2{
+                max-width: 960px;
+                @include tipografia('x-big');
+                margin-top: 10px;
+                margin-bottom: 35px;
+            }
+
+            .btn-info{
+                @include tipografia('small');
+                background-color: $red;
+                color: $white;
+                padding: em(20) em(75);
+                display: inline-block;
+                border-radius: 3px;
+                transition: all .2s;
+                
+                &:hover{                    
+                    background-color: $redDarken;
+                    transform: scale(1.1);
+                    transition: all .2s;
+                }
+            }
+        }
+    }
+    
+}

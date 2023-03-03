@@ -1,0 +1,789 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment {
+  display: none;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: transparent;
+  -webkit-border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  background-color: #ededed;
+  -webkit-border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  background: #ededed;
+  border-radius: 4px;
+  width: 10px;
+}
+
+::-moz-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-moz-scrollbar-button:start:decrement,
+::-moz-scrollbar-button:end:increment {
+  display: none;
+}
+
+::-moz-scrollbar-track-piece {
+  background-color: transparent;
+  -webkit-border-radius: 4px;
+}
+
+::-moz-scrollbar-thumb:vertical {
+  background-color: #ededed;
+  -webkit-border-radius: 4px;
+}
+
+::-moz-scrollbar-thumb:horizontal {
+  background: #efefef;
+  border-radius: 4px;
+  width: 10px;
+}
+
+::-scrollbar-button:start:decrement,
+::-scrollbar-button:end:increment {
+  display: none;
+}
+
+::-scrollbar-track-piece {
+  background-color: transparent;
+  -webkit-border-radius: 4px;
+}
+
+::-scrollbar-thumb:vertical {
+  background-color: #ededed;
+  -webkit-border-radius: 4px;
+}
+
+::-scrollbar-thumb:horizontal {
+  background: #efefef;
+  border-radius: 4px;
+  width: 10px;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.grid-1 {
+  width: calc(8.3333333333% - 20px);
+}
+
+.grid-2 {
+  width: calc(16.6666666667% - 20px);
+}
+
+.grid-3 {
+  width: calc(25% - 20px);
+}
+
+.grid-4 {
+  width: calc(33.3333333333% - 20px);
+}
+
+.grid-5 {
+  width: calc(41.6666666667% - 20px);
+}
+
+.grid-6 {
+  width: calc(50% - 20px);
+}
+
+.grid-7 {
+  width: calc(58.3333333333% - 20px);
+}
+
+.grid-8 {
+  width: calc(66.6666666667% - 20px);
+}
+
+.grid-9 {
+  width: calc(75% - 20px);
+}
+
+.grid-10 {
+  width: calc(83.3333333333% - 20px);
+}
+
+.grid-11 {
+  width: calc(91.6666666667% - 20px);
+}
+
+.grid-12 {
+  width: calc(100% - 20px);
+}
+
+[class^=grid-] {
+  float: left;
+  min-height: 1px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+@media screen and (max-width: 1199px) {
+  [class^=grid-] {
+    width: 100%;
+    float: none;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+.offset-1 {
+  margin-left: calc(8.3333333333% + 10px);
+}
+
+.offset-2 {
+  margin-left: calc(16.6666666667% + 10px);
+}
+
+.offset-3 {
+  margin-left: calc(25% + 10px);
+}
+
+.offset-4 {
+  margin-left: calc(33.3333333333% + 10px);
+}
+
+.offset-5 {
+  margin-left: calc(41.6666666667% + 10px);
+}
+
+.offset-6 {
+  margin-left: calc(50% + 10px);
+}
+
+.offset-7 {
+  margin-left: calc(58.3333333333% + 10px);
+}
+
+.offset-8 {
+  margin-left: calc(66.6666666667% + 10px);
+}
+
+.offset-9 {
+  margin-left: calc(75% + 10px);
+}
+
+.offset-10 {
+  margin-left: calc(83.3333333333% + 10px);
+}
+
+.offset-11 {
+  margin-left: calc(91.6666666667% + 10px);
+}
+
+.offset-12 {
+  margin-left: calc(100% + 10px);
+}
+
+@media screen and (max-width: 1199px) {
+  .offset-1, .offset-2, .offset-3, .offset-4, .offset-5, .offset-6, .offset-7, .offset-8, .offset-9, .offset-10, .offset-11, .offset-12 {
+    margin-left: 0px;
+  }
+}
+.container {
+  max-width: 1640px;
+  margin: 0px auto;
+  position: relative;
+}
+@media screen and (min-width: 1200px) and (max-width: 1639px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .container {
+    max-width: 700px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+.container::after, .container::before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+@media screen and (max-width: 1199px) {
+  .row {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+.row::after, .row::before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+html,
+body {
+  font-family: "Circular Spotify Tx T", sans-serif;
+  font-size: 1em;
+  background-color: #000;
+  color: #ffffff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+header {
+  position: fixed;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.9019607843);
+  width: 100%;
+  top: 0;
+}
+header .container:before, header .container:after {
+  display: none;
+}
+header .container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+header .logo a {
+  display: block;
+}
+header ul#menu-menu-header-desktop {
+  display: flex;
+  align-items: center;
+}
+header ul#menu-menu-header-desktop li.current-menu-item a {
+  color: #FF0000;
+}
+header ul#menu-menu-header-desktop li a {
+  font-size: 1.1875em;
+  display: block;
+  margin-left: 3.125em;
+  color: #ffffff;
+  padding: 1.875em 0;
+  transition: all 0.2s;
+}
+header ul#menu-menu-header-desktop li a:hover {
+  color: #FF0000;
+}
+
+.menu-mobile {
+  display: none;
+}
+
+footer {
+  margin-top: 200px;
+  background: #121212;
+  padding-top: 6.5625em;
+  padding-bottom: 11.25em;
+}
+footer img {
+  margin-bottom: 2.125em;
+}
+
+#front-page {
+  margin-top: 100px;
+}
+#front-page .section-video .container {
+  max-width: 1780px;
+  margin-left: 7%;
+  margin-right: initial;
+}
+#front-page .section-video .tituloTaxonomie a {
+  font-family: "Circular Spotify Tx T", sans-serif;
+  font-size: 2.5em;
+  color: #FF0000;
+  font-weight: 900;
+  display: inline-block;
+  transition: all 0.2s;
+}
+#front-page .section-video .tituloTaxonomie a:hover {
+  transform: scale(1.05);
+  color: #db0202;
+  transition: all 0.2s;
+}
+#front-page .section-video .container-video {
+  margin-bottom: 40px;
+}
+#front-page .section-video .container-video .loop-video {
+  padding: 50px 0;
+}
+#front-page .section-video .container-video .loop-video .video-item {
+  margin-right: 30px;
+}
+#front-page .section-video .container-video .slick-track {
+  display: flex;
+}
+
+#page-archive {
+  margin-top: 180px;
+}
+#page-archive .grid {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 100px;
+}
+#page-archive .content-archive {
+  position: relative;
+}
+#page-archive .content-archive .content-archive-fixo {
+  position: sticky;
+  top: 100px;
+  bottom: 100px;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  overflow: auto;
+}
+#page-archive .content-archive .content-archive-fixo .taxonomy-description h1 {
+  font-family: "Circular Spotify Tx T", sans-serif;
+  font-size: 2.5em;
+  color: #FF0000;
+  font-weight: 900;
+  margin-bottom: 25px;
+}
+#page-archive .content-archive .content-archive-fixo .taxonomy-description article {
+  font-family: "Circular Spotify Tx T", sans-serif;
+  font-size: 1.125em;
+  font-weight: 400;
+  line-height: 35px;
+  letter-spacing: 0.54px;
+}
+#page-archive .archive-section-videos .video-item {
+  margin-bottom: 40px;
+}
+
+#single-video {
+  margin-top: 240px;
+}
+#single-video .single-title {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 75px;
+}
+#single-video .single-title .terms {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+#single-video .single-title .terms .tax-name {
+  display: inline-block;
+  color: #ffffff;
+  font-family: "Circular Spotify Tx T", sans-serif;
+  font-size: 1.125em;
+  font-weight: 400;
+  font-weight: 500;
+  border: 1px solid #ffffff;
+  border-radius: 3px;
+  letter-spacing: 0.54px;
+  padding: 0.375em 2.5em;
+  margin-bottom: 0.625em;
+  color: #5A5A5A;
+  background-color: #ffffff;
+}
+#single-video .single-title .terms .tempo-duracao {
+  display: inline-block;
+  color: #ffffff;
+  font-family: "Circular Spotify Tx T", sans-serif;
+  font-size: 1.125em;
+  font-weight: 400;
+  font-weight: 500;
+  border: 1px solid #ffffff;
+  border-radius: 3px;
+  letter-spacing: 0.54px;
+  padding: 0.375em 2.5em;
+  margin-bottom: 0.625em;
+}
+#single-video .single-title h1 {
+  font-size: 4.375em;
+  color: #ffffff;
+  font-weight: 900;
+  letter-spacing: -2.8px;
+}
+#single-video .single-descricao-video {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 90px;
+}
+#single-video .single-descricao-video p {
+  font-family: "Circular Spotify Tx T", sans-serif;
+  font-size: 1.125em;
+  font-weight: 400;
+  line-height: 35px;
+  letter-spacing: 0.54px;
+}
+
+.video-item {
+  min-width: 248px;
+}
+.video-item a {
+  display: block;
+}
+.video-item a:hover img {
+  transform: scale(1.05);
+  transition: all 0.4s;
+}
+.video-item a .video-img {
+  overflow: hidden;
+  margin-bottom: 1.875em;
+}
+.video-item a .video-img img {
+  width: 248px;
+  height: 387px;
+  transition: all 0.4s;
+  border-radius: 3px;
+}
+.video-item a .video-conteudo .tempo-duracao {
+  display: inline-block;
+  color: #ffffff;
+  font-family: "Circular Spotify Tx T", sans-serif;
+  font-size: 1.125em;
+  font-weight: 400;
+  font-weight: 500;
+  border: 1px solid #ffffff;
+  border-radius: 3px;
+  letter-spacing: 0.54px;
+  padding: 0.375em 2.5em;
+  margin-bottom: 0.625em;
+}
+.video-item a .video-conteudo h4 {
+  color: #ffffff;
+  font-family: "Circular Spotify Tx T", sans-serif;
+  font-size: 1.875em;
+  font-weight: 900;
+  letter-spacing: -0.3px;
+  height: 140px;
+}
+
+.banner {
+  position: relative;
+}
+.banner .banner-item {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.banner .banner-conteudo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.banner .banner-conteudo .banner-caption {
+  color: #ffffff;
+  padding-top: 13.125em;
+  width: 100%;
+}
+.banner .banner-conteudo .banner-caption .terms {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.banner .banner-conteudo .banner-caption .terms .tax-name {
+  display: inline-block;
+  color: #ffffff;
+  font-family: "Circular Spotify Tx T", sans-serif;
+  font-size: 1.125em;
+  font-weight: 400;
+  font-weight: 500;
+  border: 1px solid #ffffff;
+  border-radius: 3px;
+  letter-spacing: 0.54px;
+  padding: 0.375em 2.5em;
+  margin-bottom: 0.625em;
+  color: #5A5A5A;
+  background-color: #ffffff;
+}
+.banner .banner-conteudo .banner-caption .terms .tempo-duracao {
+  display: inline-block;
+  color: #ffffff;
+  font-family: "Circular Spotify Tx T", sans-serif;
+  font-size: 1.125em;
+  font-weight: 400;
+  font-weight: 500;
+  border: 1px solid #ffffff;
+  border-radius: 3px;
+  letter-spacing: 0.54px;
+  padding: 0.375em 2.5em;
+  margin-bottom: 0.625em;
+}
+.banner .banner-conteudo .banner-caption h2 {
+  max-width: 960px;
+  font-family: "Circular Spotify Tx T", sans-serif;
+  font-size: 6.25em;
+  font-weight: 900;
+  letter-spacing: -4px;
+  margin-top: 10px;
+  margin-bottom: 35px;
+}
+.banner .banner-conteudo .banner-caption .btn-info {
+  font-family: "Circular Spotify Tx T", sans-serif;
+  font-size: 1.125em;
+  font-weight: 400;
+  background-color: #FF0000;
+  color: #ffffff;
+  padding: 1.25em 4.6875em;
+  display: inline-block;
+  border-radius: 3px;
+  transition: all 0.2s;
+}
+.banner .banner-conteudo .banner-caption .btn-info:hover {
+  background-color: #db0202;
+  transform: scale(1.1);
+  transition: all 0.2s;
+}
+
+@media screen and (max-width: 1199px) {
+  .banner .banner-conteudo .banner-caption h2 {
+    max-width: 100%;
+    font-size: 3.4375em;
+    letter-spacing: -1px;
+  }
+  #page-archive .grid {
+    grid-template-columns: 1fr;
+  }
+  #page-archive .archive-section-videos .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  #page-archive .archive-section-videos .row:before, #page-archive .archive-section-videos .row:after {
+    display: none;
+  }
+  .video-item a .video-conteudo h4 {
+    font-size: 1.5em;
+    letter-spacing: -0.2px;
+  }
+}
+@media screen and (max-width: 699px) {
+  header .logo img {
+    margin: 0 auto;
+    padding: 15px 0;
+  }
+  header .menu-header {
+    display: none;
+  }
+  .menu-mobile {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.9019607843);
+    width: 100%;
+    z-index: 99;
+  }
+  .menu-mobile ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+  }
+  .menu-mobile ul li a {
+    color: #ffffff;
+    font-size: 0.5625em;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .menu-mobile ul li:nth-child(1) a::before {
+    content: "";
+    width: 30px;
+    height: 40px;
+    display: block;
+    background-image: url("/wp-content/themes/desafio-wp/assets/img/filmes-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .menu-mobile ul li:nth-child(2) a::before {
+    content: "";
+    width: 30px;
+    height: 40px;
+    display: block;
+    background-image: url("/wp-content/themes/desafio-wp/assets/img/documentarios-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .menu-mobile ul li:nth-child(3) a::before {
+    content: "";
+    width: 30px;
+    height: 40px;
+    display: block;
+    background-image: url("/wp-content/themes/desafio-wp/assets/img/series-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .banner .banner-conteudo .banner-caption {
+    padding-top: 0;
+  }
+  .banner .banner-conteudo .banner-caption .terms .tax-name {
+    font-size: 0.75em;
+  }
+  .banner .banner-conteudo .banner-caption .terms .tempo-duracao {
+    font-size: 0.75em;
+  }
+  .banner .banner-conteudo .banner-caption h2 {
+    max-width: 100%;
+    font-size: 2.5em;
+    letter-spacing: -1px;
+  }
+  .banner .banner-conteudo .banner-caption .btn-info {
+    font-size: 0.75em;
+  }
+  #front-page .section-video .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #front-page .section-video .tituloTaxonomie a {
+    font-size: 1.4375em;
+  }
+  #front-page .section-video .container-video .loop-video > div {
+    padding-right: 10px !important;
+  }
+  #front-page .section-video .container-video .loop-video .video-item {
+    margin-right: 20px;
+  }
+  #page-archive .grid {
+    grid-template-columns: 1fr;
+  }
+  #page-archive .content-archive .content-archive-fixo .taxonomy-description h1 {
+    font-size: 1.4375em;
+  }
+  #page-archive .content-archive .content-archive-fixo .taxonomy-description article {
+    font-size: 0.75em;
+    line-height: 22px;
+  }
+  #page-archive .archive-section-videos .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  #page-archive .archive-section-videos .row:before, #page-archive .archive-section-videos .row:after {
+    display: none;
+  }
+  #single-video {
+    margin-top: 110px;
+  }
+  #single-video .single-title .terms .tax-name {
+    font-size: 0.75em;
+  }
+  #single-video .single-title .terms .tempo-duracao {
+    font-size: 0.75em;
+  }
+  #single-video .single-title h1 {
+    font-size: 1.75em;
+    letter-spacing: -0.8px;
+  }
+  #single-video .single-descricao-video p {
+    font-size: 0.75em;
+    line-height: 22px;
+    letter-spacing: 0.36;
+  }
+  .video-item {
+    min-width: auto;
+  }
+  .video-item a .video-img img {
+    width: 149px;
+    height: 232px;
+  }
+  .video-item a .video-conteudo h4 {
+    font-size: 1.25em;
+    letter-spacing: -0.2px;
+  }
+  .video-item a .video-conteudo .tempo-duracao {
+    font-size: 0.75em;
+  }
+  footer {
+    margin-top: 60px;
+    background: #121212;
+    padding-top: 3.75em;
+    padding-bottom: 9.375em;
+  }
+  footer p {
+    text-align: center;
+    font-size: 0.75em;
+  }
+  footer img {
+    margin: 20px auto;
+  }
+}

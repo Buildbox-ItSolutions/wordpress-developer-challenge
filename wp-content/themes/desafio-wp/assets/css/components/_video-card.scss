@@ -1,0 +1,37 @@
+.video-item {
+    min-width: 248px;
+
+    a {
+        display: block;
+        &:hover{
+            img{
+                transform: scale(1.05);
+                transition: all .4s;
+            }
+        }
+        .video-img {
+            overflow: hidden;
+            margin-bottom: em(30);
+
+            img {
+                width: 248px;
+                height: 387px;
+                transition: all .4s;
+                border-radius: 3px
+            }
+        }
+
+        .video-conteudo {
+
+            .tempo-duracao{
+                @include tempoDuracao();
+            }
+
+            h4 {
+                color: $white;
+                @include tipografia('normal');
+                height: 140px;
+            }
+        }
+    }
+}

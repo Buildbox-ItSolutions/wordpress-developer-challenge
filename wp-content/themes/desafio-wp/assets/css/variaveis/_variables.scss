@@ -1,0 +1,59 @@
+// Colors
+$black: #000;
+$blackOpacity: #000000E6;
+$cinza: #5A5A5A;
+$red: #FF0000;
+$redDarken: #db0202;
+$white: #ffffff;
+
+$fonte: 'Circular Spotify Tx T', sans-serif;
+
+@function em($pixel, $contexto: 16) {
+	@return $pixel / $contexto + em;
+}
+@mixin tipografia($size) {
+	font-family: $fonte;
+	@if $size == 'small' {
+		font-size: em(18);
+    font-weight: 400;
+
+	}@else if $size == 'normal' {
+		font-size: em(30);
+    font-weight: 900;
+    letter-spacing: -0.3px;
+
+  }@else if $size == 'big' {
+		font-size: em(40);
+    color: $red;
+    font-weight: 900;
+    
+  }@else if $size == 'x-big' {
+		font-size: em(100);
+    font-weight: 900;
+    letter-spacing: -4px;
+        
+  }
+}
+
+@mixin taxName() {
+  display: inline-block;
+  color: $white;
+  @include tipografia('small');
+  font-weight: 500;
+  border: 1px solid $white;
+  border-radius: 3px;
+  letter-spacing: 0.54px;
+  padding: em(6) em(40);
+  margin-bottom: em(10);
+}
+@mixin tempoDuracao() {
+  display: inline-block;
+  color: $white;
+  @include tipografia('small');
+  font-weight: 500;
+  border: 1px solid $white;
+  border-radius: 3px;
+  letter-spacing: 0.54px;
+  padding: em(6) em(40);
+  margin-bottom: em(10);
+}

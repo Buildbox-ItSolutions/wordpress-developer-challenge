@@ -1,0 +1,124 @@
+
+#front-page{
+    margin-top: 100px;
+
+    .section-video {
+        .container{
+            max-width: 1780px;
+            margin-left: 7%;
+            margin-right: initial;
+        }
+        
+        .tituloTaxonomie a {
+            @include tipografia('big');
+            display: inline-block;
+            transition: all .2s;
+            
+            &:hover {                
+                transform: scale(1.05);
+                color: #db0202;
+                transition: all .2s;
+            }
+        }
+
+        .container-video{
+            margin-bottom: 40px;
+            
+            .loop-video {
+                padding: 50px 0;
+                
+                .video-item {        
+                    margin-right: 30px;
+                }
+            }
+
+            .slick-track{
+                display: flex;
+            }
+        }
+    }
+}
+    
+#page-archive{
+    margin-top: 180px;
+
+    .grid {        
+        display: grid;
+        grid-template-columns: 1fr 1.1fr;
+        gap: 100px;
+    }
+    .content-archive {
+        position: relative;
+       
+        .content-archive-fixo {
+            position: sticky;
+            top: 100px;
+            bottom: 100px;
+            left: 0;
+            right: 0;
+            padding: 20px;
+            overflow: auto;
+            
+            .taxonomy-description {
+                h1{
+                    @include tipografia('big');
+                    margin-bottom: 25px
+                }
+                
+                article {
+                    @include tipografia('small');
+                    line-height: 35px;
+                    letter-spacing: 0.54px;
+                }
+            }
+        }
+    }
+    .archive-section-videos {
+        .video-item{
+            margin-bottom: 40px;
+        }
+    }
+}
+
+#single-video {
+    margin-top: 240px;
+
+    .single-title {
+        max-width: 800px;
+        margin: 0 auto;
+        margin-bottom: 75px;
+        
+        .terms {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+            
+            .tax-name {
+                @include taxName();
+                color: $cinza;
+                background-color: $white;
+            }
+            .tempo-duracao{
+                @include tempoDuracao();
+            }
+        }
+
+        h1{        
+            font-size: em(70);
+            color: $white;
+            font-weight: 900;
+            letter-spacing: -2.8px;
+        }
+    }
+    .single-descricao-video{        
+        max-width: 800px;
+        margin: 0 auto;
+        margin-top: 90px;
+        p {
+            @include tipografia('small');
+            line-height: 35px;
+            letter-spacing: 0.54px;
+        }
+    }
+}
