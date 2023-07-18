@@ -23,15 +23,15 @@ Nestes links você encontra o protótipo com mais detalhes, na versão [Desktop]
 
 ### Pré-requisitos
 
--  Criar um custom post type para os vídeos;
--  Criar uma taxonomia customizada para segmentar os vídeos em 3 diferentes termos: Filmes, Documentários e Séries;
+-  Criar um custom post type para os vídeos, registrada como `video`;
+-  Criar uma taxonomia customizada para segmentar os vídeos (`video_type`) em 3 diferentes termos: Filmes, Documentários e Séries;
 -  Todo o conteúdo deve ser carregado dinamicamente, como Título, Imagem de Capa, Descrição, Tempo de Duração, Sinopse e Embed de Vídeo.
    -  Todas essas informações devem ser editáveis na edição do post do vídeo no painel administrativo;
    -  Conteúdo estático (hard coded) será desconsiderado.
 
 ### Diferenciais
 
--  Uso de SASS.
+-  Uso de SASS ou Tailwind.
 -  Uso de boas práticas em todas as linguagens utilizadas.
 -  Organização dos arquivos.
 
