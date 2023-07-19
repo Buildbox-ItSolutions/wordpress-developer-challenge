@@ -1,3 +1,5 @@
+![Screenshot](https://github.com/Buildbox-ItSolutions/wordpress-developer-challenge/blob/main/wp-content/themes/desafio-wp/screenshot.jpg?raw=true)
+
 # Desafio Buildbox - Play: Tema Wordpress
 
 Olá! Seja bem-vindo(a) ao desafio WordPress da Buildbox.
@@ -28,6 +30,7 @@ Nestes links você encontra o protótipo com mais detalhes, na versão [Desktop]
 -  Todo o conteúdo deve ser carregado dinamicamente, como Título, Imagem de Capa, Descrição, Tempo de Duração, Sinopse e Embed de Vídeo.
    -  Todas essas informações devem ser editáveis na edição do post do vídeo no painel administrativo;
    -  Conteúdo estático (hard coded) será desconsiderado.
+-  **IMPORTANTE**: Não altere a estrutura de pastas. Lembre-se de preencher seu nome em `style.css`.
 
 ### Diferenciais
 
