@@ -49,7 +49,7 @@ Não vamos considerar nenhuma configuração que venha do painel do WordPress.
 
 ## Como enviar
 
-Para submeter a resposta deste desafio, você deve fazer um fork **privado** deste repositório.  
+Para submeter a resposta deste desafio, você deve fazer uma cópia **privada** deste repositório, usando a opção template.  
 Com seu tema concluído e submetido, convide `wp@buildbox.com.br` como colaborador do seu fork, preencha e envie [este formulário](https://forms.clickup.com/f/xf5uw-4783/9X2E01YKFQB8UXNM03).  
 Nele você colocará suas informações de identificação.  
 Após isto, nós vamos instalar e avaliar seu tema.
