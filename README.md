@@ -30,6 +30,8 @@ Nestes links você encontra o protótipo com mais detalhes, na versão [Desktop]
 -  Todo o conteúdo deve ser carregado dinamicamente, como Título, Imagem de Capa, Descrição, Tempo de Duração, Sinopse e Embed de Vídeo.
    -  Todas essas informações devem ser editáveis na edição do post do vídeo no painel administrativo;
    -  Conteúdo estático (hard coded) será desconsiderado.
+   -  Tempo de Duração: número (registrado como `bx_play_video_duration`)
+   -  Embed de Vídeo: URL do YouTube (registrado como `bx_play_video_ID`).
 -  **IMPORTANTE**: Não altere a estrutura de pastas. Lembre-se de preencher seu nome em `style.css`.
 
 ### Diferenciais
