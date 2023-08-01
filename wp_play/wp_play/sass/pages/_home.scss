@@ -1,0 +1,30 @@
+.section-header{
+    display: flex;
+    position: relative;
+    width: 100vw;
+    height: 85vh; 
+
+    @include respond(phone) {
+        width: 100%;
+        margin-top: 20px;
+        height: 70vh;
+        //padding-top: rem;
+        justify-content: center;
+        align-content: center;
+    }
+
+    }
+
+.section-slider{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    padding-left: 14rem;
+    padding-top: 10rem; 
+    
+        
+    @include respond(phone){
+        padding-left: 4rem;
+       
+    }
+}

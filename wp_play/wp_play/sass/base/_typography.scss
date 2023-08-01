@@ -1,0 +1,136 @@
+@font-face {
+
+font-family: "Spotifyblack";
+src: url("/themes/play/assets/fonts/CircularSpotifyTxT-Black.woff2")format(".woff2");
+src: url("/themes/play/assets/fonts/CircularSpotifyTxT-Black.woff")format(".woff");
+src: url("/themes/play/assets/fonts/CircularSpotifyTxT-Black.eot")format(".eot");
+src: url("/themes/play/assets/fonts/CircularSpotifyTxT-Black.ttf")format(".ttf");
+src: url("/themes/play/assets/fonts/CircularSpotifyTxT-Black.svg")format(".svg");
+font-family: "Spotifybold";
+src: url("/themes/play/assets/fonts/CircularSpotifyTxT-Bold.woff2")format(".woff2");
+src: url("/themes/play/assets/fonts/CircularSpotifyTxT-Bold.woff")format(".woff");  
+src: url("/themes/play/assets/fonts/CircularSpotifyTxT-Bold.eot")format(".eot");
+src: url("/themes/play/assets/fonts/CircularSpotifyTxT-Bold.ttf")format(".ttf");
+src: url("/themes/play/assets/fonts/CircularSpotifyTxT-Bold.svg")format(".svg");
+font-family: "Spotifybook";
+src: url("/themes/play/assets/fonts/CircularSpotifyTxT-Book.woff2")format(".woff2");
+src: url("/themes/play/assets/fonts/CircularSpotifyTxT-Book.woff")format(".woff");  
+src: url("/themes/play/assets/fonts/CircularSpotifyTxT-Book.eot")format(".eot");
+src: url("/themes/play/assets/fonts/CircularSpotifyTxT-Book.ttf")format(".ttf");
+src: url("/themes/play/assets/fonts/CircularSpotifyTxT-Book.svg")format(".svg");
+font-family: "Spotifylight";
+src: url("/themes/play/assets/fonts/CircularSpotifyTxT-Light.woff2")format(".woff2");
+src: url("/themes/play/assets/fonts/CircularSpotifyTxT-Light.woff")format(".woff");  
+src: url("/themes/play/assets/fonts/CircularSpotifyTxT-Light.eot")format(".eot");
+src: url("/themes/play/assets/fonts/CircularSpotifyTxT-Light.ttf")format(".ttf");
+src: url("/themes/play/assets/fonts/CircularSpotifyTxT-Light.svg")format(".svg");
+font-family: "Spotifymed";
+src: url("/themes/play/assets/fonts/CircularSpotifyTxT-Med.woff2")format(".woff2");
+src: url("/themes/play/assets/fonts/CircularSpotifyTxT-Med.woff")format(".woff");  
+src: url("/themes/play/assets/fonts/CircularSpotifyTxT-Med.eot")format(".eot");
+src: url("/themes/play/assets/fonts/CircularSpotifyTxT-Med.ttf")format(".ttf");
+src: url("/themes/play/assets/fonts/CircularSpotifyTxT-Med.svg")format(".svg");
+}
+
+
+
+.paragraph {
+    text-align: left;
+    font-family: 'Spotifymed', sans-serif;
+    font-size: 1.8rem;
+    opacity: 1;
+    color: $wp_play-white;
+}
+   
+
+    
+.heading-primary{
+    font-family:"Spotifyblack", sans-serif ;
+    font-size: 10rem;
+    text-align: left;
+    letter-spacing: -.4rem;
+    line-height: 90%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: $wp_play-white;
+    text-decoration: none;
+
+    @include respond(phone){
+        font-size: 5.7rem;
+    }
+
+    }
+
+.heading-primary-modified{
+    font-family:"Spotifyblack", sans-serif ;
+    font-size: 7rem;
+    text-align: left;
+    letter-spacing: -2.8px;
+    line-height: 90%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: $wp_play-white;
+    text-decoration: none;
+
+    @include respond(phone){
+        font-size: 5rem;
+        height: 10rem;
+        
+    }
+    
+    @include respond(phone){
+        font-size: 4.2rem;
+        height: 8rem;
+        
+    }
+
+}
+    
+   
+.heading-secondary{
+    font-family: "Spotifyblack", sans-serif;
+    font-size: 4rem;
+    color: $wp_play-red;
+    margin-bottom: 3.4rem;
+
+    @include respond(phone){
+        font-size: 3.3rem;
+    }
+
+     
+}
+
+.heading-tertiary{
+    font-family: "Spotifyblack", sans-serif;
+    font-size: 3rem;
+    color: $wp_play-white;
+    height: 16rem;
+    word-wrap: break-word;
+    width: 24rem;
+   
+    @include respond(phone){
+       
+        width: 19rem;
+
+    }
+    
+    
+    @include respond(phone){
+       
+        width: 19rem;
+
+    }
+
+    }
+
+.navigation{
+
+    &__link,
+    &__item{
+        font-family: "Spotifymed", sans-serif;
+    font-size: 1.8rem;
+    color: $wp_play-white;
+    text-decoration: none;
+    }    
+}
+

@@ -1,0 +1,63 @@
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: 9vh;  
+    margin: 0;  
+    padding-top: 4rem;
+   
+    
+    &__logo-box{
+        display: flex;
+        padding-left: 14rem;
+
+                @include respond(phone) {
+            width: 100%;
+            height: 14rem;
+            text-align: center;
+            flex-direction: column;
+            padding-left: 0;
+            padding-top: 2rem;
+            justify-content: center;
+            align-content: center;
+
+        }
+    }
+    
+    &__logo-img{
+        width: 10.4rem;
+     }
+
+    &__nav{
+        margin: 0;
+        text-align: right;
+        padding-right: 14rem;
+
+        @include respond(tab-port) {
+            padding-right: 0;
+        }
+        
+        @include respond(phone) {
+            display:none;
+        }
+    }
+
+    &__menu-item {
+        margin-left: 3rem;
+ }
+
+} 
+
+.navigation ul li a{
+    color: $wp_play-white;
+}
+
+.navigation ul li {
+     display: inline-flex;
+     flex-direction: row;
+     justify-content: space-between;
+     list-style: none;
+     font-family: "Spotifymed", sans-serif;
+     font-size: 1.9rem; 
+}
+

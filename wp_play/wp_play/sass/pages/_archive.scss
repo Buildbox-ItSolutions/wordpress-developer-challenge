@@ -1,0 +1,12 @@
+.section-archive{
+    
+    margin: 0;
+    padding-left: 14rem;
+    padding-top: 10rem;
+
+    @include respond(phone){
+        padding-left: 3rem;
+    }
+   
+}
+

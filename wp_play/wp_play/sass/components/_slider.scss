@@ -1,0 +1,35 @@
+.slider{
+    padding-top: 118px;
+    padding-left: 141px;
+}
+
+.slider-single{
+
+    &__article{
+    width: 90vw;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+   // gap: 30px;
+    }
+
+    &__wrapper{
+        display: flex;
+        flex-direction: row;
+        width: calc(95vw - 141px);
+        overflow: hidden;
+        }
+
+    &__arrow{
+        display: flex;
+        flex-direction: row;
+        width: calc(95vw - 141px);
+        justify-content: space-between;
+    }
+
+    }
+    
+   
+
+  

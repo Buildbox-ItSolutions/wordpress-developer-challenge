@@ -1,0 +1,162 @@
+button{
+    cursor:pointer;
+    box-shadow: 0 1.5rem 4rem rgba($wp_play-black, .5);
+    transition: all .2s;
+    
+    &:hover{
+        transform: scale(115%);
+
+   }
+}
+
+
+
+.btn{
+    font-family: "Spotifymed", sans-serif;
+    border-radius: .3rem;
+
+    &--white {
+        width: 12.8rem;
+        height: 3.2rem;
+        margin-right: .5rem;
+        background-color: $wp_play-white;
+        border: 1px solid $wp_play-white; 
+        
+           
+        }
+     
+        &--white a{
+            color: $wp_play-black !important;
+            }
+
+    
+    
+    &--black{
+        width: 12.8rem;
+        height: 3.2rem;
+        background-color: transparent;
+        color: $wp_play-white;
+        border: 1px solid $wp_play-white;       
+      
+                  
+    }
+
+    &--red-desktop{
+        width: 31rem;
+        height: 6.4rem;        
+        background-color: $wp_play-red;
+        color: $wp_play-white;
+        border: none;
+
+        @include respond(phone){
+            display: none;
+        }
+        
+    }
+
+    &--red-phone{
+        background-color: $wp_play-red;
+        color: $wp_play-white;
+        border: none;
+        width: 26rem;
+        height: 5.4rem;   
+        display: none;
+       
+
+        @include respond(phone){
+            display: block;
+        }
+
+    }
+
+    &--article{
+        margin-top: 4.8rem;
+        margin-bottom: 2rem;
+    }
+
+
+}
+
+
+//DIV FOR 2 BUTTONS (HOME, SINGLE)
+.box-btx{
+    width: 100%;
+    height: 100%;
+
+    &__dynamic-cover{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+}
+
+.btn-play{
+    font-size:9rem;
+    color: $wp_play-white;
+    background-color: transparent;
+    box-shadow: none;
+    border:none;
+    position: absolute;
+    margin: 0 auto;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+      
+
+   }
+   
+    
+    @include respond(tab-land){
+        display: block;
+        padding-left: 377px;
+        transform: translateY(-50%) scale(60%);
+         }
+    
+    @include respond(tab-port){
+        
+       padding-left: 277px;
+      transform: translateY(-50%) scale(60%);
+        }
+
+     @include respond(phone){
+    padding-left: 210px;
+    transform: translateY(-50%) scale(50%);
+     }
+
+    
+
+
+
+
+  
+
+
+.post-categories a li ul :link :visited{
+    color: $wp_play-black;
+}
+
+
+//slide control
+
+.btn-slider{
+    height: 32px;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    &:hover{
+        transform: scale(1.20);
+    }
+}
+
+.btn-slider-left{
+    margin-right: -100px;
+    z-index: 99; 
+}   
+
+.btn-slider-right{
+    margin-left: -80px;
+    z-index: 99; 
+}
+
+

@@ -1,0 +1,14 @@
+{
+  "name": "wp_play",
+  "version": "1.0.0",
+  "description": "desafio wordpress",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass":  "node-sass sass/style.scss style.css"
+  },
+  "author": "Ana Maria mendes Rangel",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}

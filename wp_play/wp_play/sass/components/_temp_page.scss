@@ -1,0 +1,42 @@
+.article-box{
+    width: 100%;
+    height: 100%;
+
+
+
+   
+    &__dynamic-cover{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        object-fit: cover;
+
+       
+    }
+
+    &__video-data{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        padding-left: 14rem;
+        background-color: rgba($wp_play-black,.5);
+
+        @include respond(phone){
+            padding-left: 4rem;
+        }
+
+    }
+
+    &__title-area{
+        height: 22vh;
+        width: 60%;
+       
+    }
+
+    }
+
+    
+

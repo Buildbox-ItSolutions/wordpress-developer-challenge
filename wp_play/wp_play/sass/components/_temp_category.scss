@@ -1,0 +1,71 @@
+.category-archive{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100vw;
+    
+
+    @include respond(tab-land){
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    
+      
+    
+    &__aside {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        padding-left: 10rem;
+        @include respond(tab-land){
+            width: 90%;
+        }
+    }
+
+    &__aside p{
+        color: $wp_play-white;
+        font-size: 1.8rem;
+        text-align: left;
+        font-family: 'Spotifymed', sans-serif;
+        opacity: 1;
+        padding-right: 10rem;
+
+       
+        @include respond(tab-land){
+            padding-right: 3rem;
+            padding-bottom: 3rem;
+            width: 70%;
+        }
+
+        
+        @include respond(tab-port){
+            width: 100%;
+        }
+
+    }
+
+    &__thumb{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:left;
+        width: 60vw;
+        gap: 30px;
+        align-items: flex-start;
+
+        @include respond(phone){
+            width:100%;
+            justify-content: flex-start;
+            margin: 0;
+            padding: 0;
+        }
+        
+           }
+    }
+
+   
+
+
+
+

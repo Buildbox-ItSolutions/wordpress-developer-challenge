@@ -1,0 +1,119 @@
+.single-post{
+
+    &__title{
+        padding-top: 10rem;
+        padding-left: 46rem;
+
+       
+        @include respond(tab-land){
+            padding-top: 12rem;
+            padding-left: 10rem;          
+            }
+              
+        @include respond(tab-port){
+            padding-top: 7rem;
+            padding-left: 8rem;          
+            }
+                
+        @include respond(phone){
+        padding-top: 5rem;
+        padding-left: 2.5rem;
+        padding-bottom: 3rem;
+        }
+    }
+
+    &__video{
+        width: 85vw;
+        height: 85vh;
+        padding-left: 14rem;
+        padding-right: 14rem;
+        position: relative;
+        margin-top: 7.4rem;
+
+        @include respond(tab-land){
+            width: 700px;
+            height: 441px;
+            padding-left: 10rem;
+            padding-right: 0;
+            margin-top: 0;;          
+            }
+       
+        @include respond(tab-port){
+            width: 500px;
+            height: 315px;
+            padding-left: 8rem;
+            padding-right: 0;
+            margin-top: 0;;          
+            }
+
+            @include respond(phone){
+                width: 375px;
+                height: 210px;
+                padding-left: 0;
+                padding-right: 0;
+                margin-top: 0;          
+                }
+    }
+
+   
+
+    &__single-cover{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        object-fit: cover;
+        z-index: 500;
+
+        @include respond(phone){
+            object-fit:fill;
+                       
+            }
+        
+    }
+
+    &__button{
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 999;
+        
+        
+        background-color: rgba($wp_play-black,.3);
+    }
+
+    &__sinopse{
+        margin: 0;
+        padding-left: 22vw;
+        padding-right: 29vh;
+        padding-top: 9.3rem;
+
+        @include respond(tab-land){
+            padding-left: 10rem;
+            padding-right: 0rem;
+            width: 70rem;
+            padding-top: 6rem;
+        }
+       
+        @include respond(tab-port){
+            padding-left: 8rem;
+            padding-right: 8rem;
+            padding-top: 6rem;
+        }
+
+        @include respond(phone){
+            padding-left: 3rem;
+            padding-right: 3rem;
+            padding-top: 6rem;
+            padding-bottom: 200px;
+        }
+
+        }
+ 
+
+}
+
+   
+
+

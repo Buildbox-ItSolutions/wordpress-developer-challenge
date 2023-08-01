@@ -1,0 +1,36 @@
+.footer{
+   
+   margin: 0;
+   box-sizing: border-box; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-height: 32rem;
+    padding-left: 14rem;
+    bottom: 0;
+    left: 0;
+    position: relative;
+    
+
+    font-family: "Spotifymed", sans-serif;
+    color: $wp_play-white;
+    font-size: 1.8rem;
+    text-align: left;
+    
+    &__logo-img{
+        width: 10.4rem;
+        margin-bottom: 2rem;
+
+        @include respond(phone){
+            text-align: center;
+            padding: 0;
+        }
+    }
+
+   @include respond(phone){
+    text-align: center;
+    padding: 0;
+   }
+
+}

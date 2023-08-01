@@ -1,0 +1,44 @@
+/*basic reset*/
+
+*, 
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    text-decoration: none;
+    
+}
+
+html {
+    // This defines what 1rem is
+    font-size: 43.7%; //1 rem = px; 7px/16px = 43.7%
+
+    @include respond(tab-land) { // width < 1200?
+        font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
+    }
+
+    @include respond(tab-port) { // width < 900?
+        font-size: 50%; //1 rem = 8px, 8/16 = 50%
+    }
+    
+    @include respond(big-desktop) {
+        font-size: 68,8; //1rem = 10, 11/16
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: $wp_play-black;
+    
+    @include respond(tab-port) {
+        padding: 0;
+    }
+}
+
+::selection {
+   background-color: $wp_play-red;
+   color: $wp_play-white;
+    }

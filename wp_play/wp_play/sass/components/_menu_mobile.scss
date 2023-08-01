@@ -1,0 +1,54 @@
+.mobile-menu {
+
+   
+   width: 0.1px;
+   visibility: hidden;
+   
+   @include respond(phone){
+      margin: 0;
+      padding: 0;
+      position: fixed;
+      top: 729px;
+      width: 100%;
+      visibility: visible;
+      padding-top: 3rem;
+      padding-left: 3rem;
+      padding-right: 3rem;
+      height: 12rem;
+      background-color: rgba($wp_play-black, .8);
+
+      &__icon{
+         color: $wp_play-white;
+         height: 32px;
+         display: block;
+         padding-left: 40px;
+         padding-right: 40px;
+         }
+      
+         &__active{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            
+         }
+         
+         &__p{
+            color:$wp_play-white;
+            font-size: 1.5rem;
+            font-family: "Spotifymed", sans-serif;
+            padding-top: 1rem;
+            width: 112px;
+            text-align: center;
+
+        
+            }
+    }
+
+
+&ul,
+&li {
+   text-decoration: none;
+   list-style: none;
+}
+
+}
