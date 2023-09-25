@@ -33,6 +33,7 @@ Nestes links você encontra o protótipo com mais detalhes, na versão [Desktop]
    -  Tempo de Duração: número (registrado como `bx_play_video_duration`)
    -  Embed de Vídeo: URL do YouTube (registrado como `bx_play_video_ID`).
 -  **IMPORTANTE**: Não altere a estrutura de pastas. Lembre-se de preencher seu nome em `style.css`.
+-  A pasta `assets` contém imagens e a fonte que são utilizadas no protótipo pra sua conveniência. Ela deve ser removida no sua cópia deste repositório.
 
 ### Diferenciais
 
